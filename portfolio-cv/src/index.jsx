@@ -11,6 +11,7 @@ import AboutMeDelay from './pages/about-me-delay/AboutMeDelay';
 import Formation from './pages/formation/Formation';
 import Portfolio from './pages/portfolio/Portfolio';
 import Resume from './pages/resume/Resume';
+import Contact from './pages/contact/Contact';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/formation" exact component={Formation} />
         <Route path="/portfolio" exact component={Portfolio} />
         <Route path="/resume" exact component={Resume} />
+        <Route path="/contact" exact component={Contact} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

@@ -19,8 +19,8 @@ export default function Header() {
       <div className="profile">
         <img src={information.personal.photoURL} alt={information.personal.name} />
         <p className="name">{information.personal.name}</p>
-        <p className="contact">{information.personal.email}</p>
-        <p className="contact">{information.personal.phone}</p>
+        <p className="profile__contact">{information.personal.email}</p>
+        <p className="profile__contact">{information.personal.phone}</p>
         <div className="media">
           <a href={information.personal.linkedin} className="media__icon">
             <LinkedInIcon />
@@ -56,6 +56,12 @@ export default function Header() {
         <Link to="/portfolio" className="link">
           <hr />
           Portfolio
+          <ChevronRightIcon className="icon" />
+        </Link>
+
+        <Link to="/contact" className="link">
+          <hr />
+          Contact
           <ChevronRightIcon className="icon" />
         </Link>
       </nav>
