@@ -1,0 +1,60 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.formation {
+  @include flex(column, flex-start, flex-start);
+  margin: 10px;
+  width: 100vw;
+  height: 98vh;
+  margin-left: 320px;
+  position: fixed;
+  overflow: hidden;
+  color: $color-white-hard;
+  background-color: orange;
+
+  .a {
+    position: relative;
+
+    .b {
+      border-right: 2px solid #aaa;
+
+      left: 16px;
+      position: absolute;
+      top: 0px;
+
+      height: 100%;
+    }
+
+    .c {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+
+      .d {
+        margin-bottom: 8px;
+
+        .e {
+          align-items: center;
+          display: flex;
+
+          .g {
+            background-color: rgb(170, 170, 170);
+            border-radius: 9999px;
+
+            height: 32px;
+            width: 32px;
+          }
+
+          .h {
+            flex: 1;
+          }
+        }
+
+        .f {
+          margin-left: 48px;
+        }
+      }
+    }
+  }
+}

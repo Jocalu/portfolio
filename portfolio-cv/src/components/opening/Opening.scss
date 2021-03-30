@@ -1,0 +1,91 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.opening {
+  @include flex(column, center, center);
+  position: absolute;
+  background-color: $color-blue-hard;
+  color: $color-white-hard;
+  width: 100vw;
+  height: 100vh;
+  top: -1000px;
+  z-index: 3;
+  font-size: 20px;
+  animation: hide 4s;
+
+  @keyframes hide {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 0;
+    }
+    100% {
+      top: -1000px;
+    }
+  }
+
+  .title {
+    @include flex(column, center, center);
+    font-family: $font-secondary;
+    color: $color-white-hard;
+    opacity: 0;
+    animation: letter 3s;
+    margin-top: 50px;
+
+    div {
+      @include flex(row, space-evenly, center);
+      font-size: 36px;
+      font-family: $font-secondary;
+      margin: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+    @keyframes letter {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.2;
+      }
+      30% {
+        opacity: 0.4;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.8;
+        transform: translateY(-50px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-50px);
+      }
+      70% {
+        opacity: 0.8;
+        transform: translateY(-50px);
+      }
+      80% {
+        opacity: 0.6;
+        transform: translateY(-50px);
+      }
+      90% {
+        opacity: 0.3;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+    }
+  }
+}

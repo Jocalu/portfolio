@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.portfolio {
+  @include flex(column, flex-start, flex-start);
+  margin: 10px;
+  width: 100vw;
+  height: 98vh;
+  margin-left: 320px;
+  position: fixed;
+  overflow: hidden;
+  color: $color-white-hard;
+  background-color: blueviolet;
+}

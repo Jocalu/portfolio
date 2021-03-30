@@ -1,0 +1,16 @@
+@import "../styles/fonts";
+@import "../styles/colors";
+@import "../styles/mixins";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-primary_4;
+  font-family: $font-primary;
+}

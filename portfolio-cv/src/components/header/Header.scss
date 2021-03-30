@@ -1,0 +1,90 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+header {
+  @include shadow(0px 0px 9px 8px $color-primary_5);
+  position: absolute;
+  margin: 10px;
+  width: 300px;
+  height: 98vh;
+  position: fixed;
+  background-color: $color-primary_3;
+  z-index: 1;
+
+  .profile {
+    @include flex(column, center, center);
+    background-color: $color-primary_2;
+
+    img {
+      border-radius: 50%;
+      width: 140px;
+      margin: 20px;
+      margin-top: 40px;
+    }
+
+    .name {
+      @include fontsemibold(27px, $color-white-hard);
+
+      &.light {
+        color: $color-primary_5;
+      }
+    }
+
+    .contact {
+      @include fontregular(14px, $color-grey);
+      margin-top: 5px;
+    }
+
+    .media {
+      @include flex(row, space-between, center);
+      margin: 20px;
+      font-size: 20px;
+      width: 60px;
+
+      .media__icon {
+        color: $color-grey;
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  nav {
+    @include flex(column, flex-start, flex-end);
+    list-style: none;
+    margin: 20px;
+    margin-top: 50px;
+
+    .link {
+      cursor: pointer;
+      @include flex(row, flex-end, center);
+      @include fontregular(18px, $color-white-hard);
+      text-decoration: none;
+      margin: 10px 0;
+      position: relative;
+
+      hr {
+        position: absolute;
+        right: 300px;
+        width: 100px;
+        background-color: $color-primary_3;
+        transition: all 1s;
+      }
+
+      &:hover {
+        text-decoration: underline;
+
+        hr {
+          right: 150px;
+        }
+      }
+
+      .icon {
+        font-size: 30px;
+      }
+    }
+  }
+}
