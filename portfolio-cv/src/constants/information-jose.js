@@ -84,15 +84,15 @@ const information = {
     },
     ],
     hardskills: [{
-      name: 'Work Ethic',
+      name: 'Work eEthic',
       ability: 65,
     },
     {
-      name: 'Work Ethic',
+      name: 'Work rEthic',
       ability: 78,
     },
     {
-      name: 'Work Ethic',
+      name: 'Work wEthic',
       ability: 80,
     },
     {
@@ -104,11 +104,11 @@ const information = {
       ability: 90,
     },
     {
-      name: 'Flux',
+      name: 'Fluxw',
       ability: 90,
     },
     {
-      name: 'Flux',
+      name: 'Fluxq',
       ability: 90,
     },
     {

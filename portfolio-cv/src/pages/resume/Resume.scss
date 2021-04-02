@@ -66,8 +66,11 @@
       height: 500px;
       width: 40%;
 
-      .container {
-        @include flex(column, flex-start, flex-start);
+      .icons__languages {
+        @include flex(column, center, center);
+        width: 400px;
+        height: 500px;
+        background-color: red;
 
         .icon {
           cursor: pointer;

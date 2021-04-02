@@ -16,7 +16,7 @@ export default function Resume() {
         <h3>Hard skills</h3>
         <div className="container">
           {information.skills.hardskills.map((skill) => (
-            <div className="circular">
+            <div key={`hard ${skill.name}`} className="circular">
               <p>{skill.name}</p>
               <CircularProgress className="circle" value={skill.ability} color="blue">
                 <CircularProgressLabel>{`${skill.ability}%` }</CircularProgressLabel>
@@ -32,7 +32,7 @@ export default function Resume() {
           {' '}
           {information.skills.softskills.map((skill) => (
             <div>
-              <label htmlFor={skill.name}>
+              <label key={`soft ${skill.name}`} htmlFor={skill.name}>
                 {skill.name}
 
               </label>
@@ -44,9 +44,9 @@ export default function Resume() {
         <div className="skills__languages">
 
           <h3>Programming languages</h3>
-          <div className="container">
+          <div className="icons__languages">
             {information.skills.programmingLanguages.map((skill) => (
-              <div className="icon">
+              <div className="icon" key={`icon ${skill.name}`}>
                 <img src={skill.icon} alt={skill.name} />
               </div>
             ))}
