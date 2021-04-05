@@ -55,10 +55,12 @@ export default function Contact() {
         <FormControl>
           <InputLabel htmlFor="my-input">Email address</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
+          <Input id="my-input" aria-describedby="my-helper-text" />
+          <Input id="my-input" aria-describedby="my-helper-text" />
           <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-        </FormControl>
 
-        <button type="button" className="btn btn--blue">Send message</button>
+          <input type="submit" className="btn btn--blue" value="Send message" />
+        </FormControl>
 
       </section>
     </main>
