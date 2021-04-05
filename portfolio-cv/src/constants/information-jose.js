@@ -25,30 +25,52 @@ const information = {
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
 
-  experience: {
-    freelance: {
-      position: 'Freelance Web Developer',
-      date: '04-2021 - Actually',
-      description: 'Freelance Web Developer',
-
-    },
-    skylab: {
-      position: 'Junior Web Developer',
-      date: '01-2021 - 04-2021',
-      description: 'Full stack web developer responsible for end-to-end web app development and creative cloud engineering. Led three teams of five employees each.Prototyped an average of 25 new product features per year.Drove best practice implementation for 22 employees across multiple departments. Decreased rework by 23% and costs by 15%.Boosted user experience scores by 55% over company-wide previous best.',
-    },
+  experience: [{
+    place: 'MidDay restaurant',
+    position: 'Diseño, maquetación y programación web',
+    date: '04-2021 - Actually',
+    description: ['Programación de la app web con Angular.',
+      'Diseño propio de toda la web.',
+      'Buena relación con el cliente.'],
 
   },
+  {
+    place: 'Skylab Coders Academy',
+    position: 'Junior Web Developer',
+    date: '01-2021 - 04-2021',
+    description: ['Ability to write documented code that is usable in a team environment.',
+      'Experience with test-driven development.',
+      'Experience with integration patterns and api consumption from the front end.',
+      'Familiarity with Agile development.',
+      'Strong problem-solving skills.',
+      'Resourceful and self-motivated on innovation.'],
+  },
+  ],
 
   education: {
-    place: 'University of Virginia',
-    studies: 'MS, Computer Science',
-    date: '2007-2010',
-    description: 'Followed my passion in a core of prototyping and cloud computing classes.Excelled in user experience and user interfaces.Pursued a Generalist Scholars grant to study software architecture.Wrote a column on the future of the internet for the student paper.',
-  },
+    skylab: {
+      place: 'Skylab Coders Academy',
+      studies: 'Web development',
+      date: '01-2021 - 04-2021',
+      description: ['Mejor Bootcamp de programación del mundo según SwitchUp.', 'Más de 1200 horas de programación.', 'Enfocado especialmente en buenas prácticas y unit-testing (Jest, Jasmine).',
+        'Conocimientos en programación web: HTML, CSS, Javascript, Typescript, SASS, Angular, React.',
+        'Utilización de Herramientas de Control de versiones: Git'],
+    },
+    ehtb: {
+      place: 'Escuela Hostelería y Turismo de Barcelona',
+      studies: 'Grado superior en Dirección de cocina',
+      date: '09-2013 - 09-2015',
+      description: ['Nota media de 9,0 - Graduado con honores',
+        'Responsable en elaboración de menús en el restaurante de la escuela EHTB durante el curso del Ciclo Formativo.'],
+    },
+    epseb: {
+      place: 'Escuela Superior Edificación de Barcelona',
+      studies: 'Grado en Ingeniería de edificación',
+      date: '09-2005 - 09-2010',
+      description: ['Nota media de 7,0.',
+        'Mención especial en Rehabilitación de Edificaciones.'],
+    },
 
-  activities: {
-    description: 'Received a 2015 Website of the Year Award for Best Navigation and Structure',
   },
 
   skills: {

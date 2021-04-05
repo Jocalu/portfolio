@@ -5,14 +5,13 @@
 .formation {
   @include flex(column, flex-start, flex-start);
   margin: 10px;
-  width: 100vw;
+  width: 80%;
   height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
-  background-color: orange;
-  padding: 100px;
+  padding: 30px 50px;
 
   .a {
     position: relative;
