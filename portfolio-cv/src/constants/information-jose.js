@@ -16,7 +16,10 @@ const information = {
   },
 
   resume: {
-    info: 'Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal, documentary launch website, and donations webapp for a local charity. Passionate about software architecture and cloud computing. Regular attendee of web developer meetups and hackathons.',
+    info: [
+      'Passionate about technology, I have decided to enter the world of programming and web development. And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
+      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
+      'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
 
   experience: {
@@ -191,7 +194,7 @@ const information = {
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
-      description: 'Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca.',
+      description: '"Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca."',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 

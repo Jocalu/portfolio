@@ -26,7 +26,7 @@ export default function AboutMe() {
               .
             </b>
           </p>
-          <p className="info">{information.resume.info}</p>
+          <p className="info">{information.resume.info.join('\n')}</p>
           <button type="button" className="btn btn--blue">Download CV</button>
           <button type="button" className="btn">
             <a href={`mailto:${information.personal.email}`}>Contact</a>
@@ -88,12 +88,12 @@ export default function AboutMe() {
           </div>
           <div className="recommendations__target">
             <img
-              src={information.recommendations.laia.photoURL}
-              alt={information.recommendations.lluis.name}
+              src={information.recommendations.diana.photoURL}
+              alt={information.recommendations.diana.name}
             />
-            <p className="recommendations__desc">{information.recommendations.laia.description}</p>
-            <p className="recommendations__name">{information.recommendations.laia.name}</p>
-            <p className="recommendations__pos">{information.recommendations.laia.position}</p>
+            <p className="recommendations__desc">{information.recommendations.diana.description}</p>
+            <p className="recommendations__name">{information.recommendations.diana.name}</p>
+            <p className="recommendations__pos">{information.recommendations.diana.position}</p>
           </div>
         </div>
 
