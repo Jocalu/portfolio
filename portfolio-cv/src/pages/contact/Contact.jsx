@@ -11,21 +11,19 @@ export default function Contact() {
     email: '',
     subject: '',
     message: '',
+    send: false,
   });
 
-  const handleInputChange = (event) => {
+  const handleChanges = (event) => {
     setData({
       ...data,
-      [data.fullname]: event.target.value,
-      [event.target.email]: event.target.value,
-
+      [event.target.fullname]: event.target.value,
+      send: true,
     });
   };
 
   const sendData = (event) => {
     event.preventDefault();
-    // eslint-disable-next-line no-console
-    console.log(`${data.fullname}ssss ${data.message}`);
   };
 
   return (
@@ -83,7 +81,7 @@ export default function Contact() {
                 type="text"
                 name="fullname"
                 placeholder="Full Name"
-                onChange={handleInputChange}
+                onChange={handleChanges}
 
               />
             </label>
@@ -93,7 +91,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Email Address"
-                onChange={handleInputChange}
+                onChange={handleChanges}
 
               />
             </label>
@@ -103,7 +101,7 @@ export default function Contact() {
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                onChange={handleInputChange}
+                onChange={handleChanges}
 
               />
             </label>
@@ -121,7 +119,7 @@ export default function Contact() {
               cols="30"
               rows="10"
               placeholder="Message"
-              onChange={handleInputChange}
+              onChange={handleChanges}
             />
           </label>
         </form>
