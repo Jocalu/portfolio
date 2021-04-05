@@ -39,7 +39,12 @@ export default function AboutMe() {
 
         </div>
 
-        <div className="image"><img src={information.personal.photoCoverURL} alt={information.personal.name} /></div>
+        <div className="image">
+          <img
+            src={information.personal.photoCoverURL}
+            alt={information.personal.name}
+          />
+        </div>
 
       </section>
 
@@ -77,9 +82,9 @@ export default function AboutMe() {
 
               </p>
             </div>
-
           </div>
         </div>
+
         <div className="recommendations">
           <h3>Recommendations</h3>
 
