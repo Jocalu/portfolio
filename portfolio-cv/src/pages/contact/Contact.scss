@@ -62,40 +62,64 @@
       }
     }
 
+    h3 {
+      margin-bottom: 20px;
+    }
+
     .formcontrol {
-      @include flex(row, center, center);
+      @include flex(row, center, flex-start);
 
       .inputs {
         @include flex(column, center, center);
-      }
-    }
 
-    .btn {
-      a {
-        text-decoration: none;
-        @include fontregular(14px, $color-white-hard);
-      }
-      cursor: pointer;
-      @include fontregular(14px, $color-white-hard);
-      @include shadow(0px 0px 10px 5px rgba(30, 36, 41, 0.75));
-      min-height: 40px;
-      padding: 13px 28px;
-      background-color: $color-primary_3;
-      border: none;
-      margin-top: 20px;
-      margin-right: 10px;
-      transition: all 0.5s;
+        input {
+          @include fontlight(14px, $color-grey);
+          padding: 10px;
+          margin: 10px;
+          border: 2px solid $color-primary_3;
+          background-color: $color-primary_4;
+          width: 300px;
 
-      &:focus {
-        outline: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        .btn {
+          width: 160px;
+          cursor: pointer;
+          @include fontregular(14px, $color-white-hard);
+          @include shadow(0px 0px 10px 5px rgba(30, 36, 41, 0.75));
+          min-height: 40px;
+          padding: 13px 28px;
+          background-color: $color-blue;
+          border: none;
+          margin-top: 20px;
+          margin-right: 10px;
+          transition: all 0.5s;
+          align-self: flex-start;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background-color: $color-hover;
+          }
+        }
       }
 
-      &:hover {
-        background-color: $color-hover;
+      textarea {
+        padding: 10px;
+        @include fontlight(14px, $color-grey);
+        margin: 10px;
+        border: 2px solid $color-primary_3;
+        background-color: $color-primary_4;
+        width: 300px;
+
+        &:focus {
+          outline: none;
+        }
       }
-    }
-    .btn--blue {
-      background-color: $color-blue;
     }
   }
 }

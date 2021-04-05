@@ -3,9 +3,6 @@ import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-/* import {
-  FormControl, InputLabel, Input, FormHelperText,
-} from '@material-ui/core'; */
 import information from '../../constants/information-jose';
 
 export default function Contact() {
@@ -63,23 +60,13 @@ export default function Contact() {
             <label htmlFor="subject">
               <input type="text" name="subject" className="subject" placeholder="Subject" />
             </label>
+            <input type="submit" className="btn" value="Send message" />
           </div>
+
           <label htmlFor="message">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" />
           </label>
         </div>
-        <input type="submit" className="btn btn--blue" value="Send message" />
-
-        {/*    <FormControl>
-          <InputLabel htmlFor="my-input">Email address</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-          <Input id="my-input" aria-describedby="my-helper-text" />
-          <Input id="my-input" aria-describedby="my-helper-text" />
-          <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-
-          <input type="submit" className="btn btn--blue" value="Send message" />
-        </FormControl>
- */}
       </section>
     </main>
 
