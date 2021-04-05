@@ -62,6 +62,14 @@
       }
     }
 
+    .formcontrol {
+      @include flex(row, center, center);
+
+      .inputs {
+        @include flex(column, center, center);
+      }
+    }
+
     .btn {
       a {
         text-decoration: none;
