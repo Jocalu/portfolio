@@ -4,7 +4,7 @@
 
 .recommendations__target {
   @include flex(column, flex-end, flex-start);
-  padding: 20px 30px 20px 0;
+  padding: 30px 30px 30px 0;
   width: 470px;
   border-radius: 6px;
   background-color: $color-primary_3;
@@ -14,8 +14,8 @@
   transition: all 0.3s;
 
   &:hover {
-    transform: translateX(-5px);
-    @include shadow(0px 0px 6px 4px $color-primary_1);
+    transform: translateY(-5px);
+    @include shadow(0px 0px 5px 5px $color-primary_5);
     transition: all 0.3s;
   }
 
@@ -36,16 +36,14 @@
 
   .recommendations__desc {
     @include fontregular(14px, $color-grey);
-    margin-top: 10px;
   }
 
   .recommendations__name {
     @include fontsemibold(14px, $color-white-hard);
-    margin-top: 10px;
+    padding-top: 10px;
   }
 
   .recommendations__pos {
     @include fontregular(11px, $color-blue);
-    margin-bottom: 10px;
   }
 }
