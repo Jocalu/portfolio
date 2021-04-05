@@ -38,13 +38,11 @@
         @include fontregular(14px, $color-grey);
         margin-top: 10px;
         letter-spacing: 1px;
+        padding-right: 40px;
       }
 
       .btn {
-        a {
-          text-decoration: none;
-          @include fontregular(14px, $color-white-hard);
-        }
+        text-decoration: none;
         cursor: pointer;
         @include fontregular(14px, $color-white-hard);
         @include shadow(0px 0px 10px 5px rgba(30, 36, 41, 0.75));
@@ -122,6 +120,7 @@
     }
 
     .recommendations {
+      margin-top: -200px;
       width: 300px;
       h3 {
         @include fontsemibold(21px, $color-white-hard);

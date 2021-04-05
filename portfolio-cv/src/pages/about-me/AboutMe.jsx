@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.scss';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+import { Link } from 'react-router-dom';
 import information from '../../constants/information-jose';
 
 export default function AboutMe() {
@@ -26,11 +27,13 @@ export default function AboutMe() {
               .
             </b>
           </p>
-          <p className="info">{information.resume.info}</p>
+          <p className="info">{information.sumary.info[0]}</p>
+          <p className="info">{information.sumary.info[1]}</p>
+          <p className="info">{information.sumary.info[2]}</p>
           <button type="button" className="btn btn--blue">Download CV</button>
-          <button type="button" className="btn">
-            <a href={`mailto:${information.personal.email}`}>Contact</a>
-          </button>
+          <Link to="/contact" type="button" className="btn">
+            Contact
+          </Link>
 
         </div>
 
@@ -77,23 +80,25 @@ export default function AboutMe() {
         </div>
         <div className="recommendations">
           <h3>Recommendations</h3>
+
           <div className="recommendations__target">
             <img
-              src={information.recommendations.gilberto.photoURl}
-              alt={information.recommendations.gilberto.name}
+              src={information.recommendations.diana.photoURL}
+              alt={information.recommendations.diana.name}
             />
-            <p className="recommendations__desc">{information.recommendations.gilberto.description}</p>
-            <p className="recommendations__name">{information.recommendations.gilberto.name}</p>
-            <p className="recommendations__pos">{information.recommendations.gilberto.position}</p>
+            <p className="recommendations__desc">{information.recommendations.diana.description}</p>
+            <p className="recommendations__name">{information.recommendations.diana.name}</p>
+            <p className="recommendations__pos">{information.recommendations.diana.position}</p>
           </div>
+
           <div className="recommendations__target">
             <img
-              src={information.recommendations.laia.photoURL}
-              alt={information.recommendations.lluis.name}
+              src={information.recommendations.alvaro.photoURL}
+              alt={information.recommendations.alvaro.name}
             />
-            <p className="recommendations__desc">{information.recommendations.laia.description}</p>
-            <p className="recommendations__name">{information.recommendations.laia.name}</p>
-            <p className="recommendations__pos">{information.recommendations.laia.position}</p>
+            <p className="recommendations__desc">{information.recommendations.alvaro.description}</p>
+            <p className="recommendations__name">{information.recommendations.alvaro.name}</p>
+            <p className="recommendations__pos">{information.recommendations.alvaro.position}</p>
           </div>
         </div>
 

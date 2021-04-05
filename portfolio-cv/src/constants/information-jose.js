@@ -12,11 +12,17 @@ const information = {
   },
 
   sumary: {
-    info: 'Prolific, full stack web developer with a passion for metrics and beatingformer best-yets. Prototyped 25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for Flexor, Inc. Passionate about building world class web applications. One of my sites received a 2015 Webby for Best Navigation and Structure.',
+    info:
+    ['Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
+      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
+      'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
 
   resume: {
-    info: 'Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal, documentary launch website, and donations webapp for a local charity. Passionate about software architecture and cloud computing. Regular attendee of web developer meetups and hackathons.',
+    info: [
+      'Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
+      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
+      'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
 
   experience: {
@@ -186,6 +192,20 @@ const information = {
       position: 'Partner at Skylab Academy',
       description: '"Great partner, better person"',
       photoURL: 'https://i.postimg.cc/y8s2bMwk/Laia.jpg',
+    },
+
+    diana: {
+      name: 'Diana Expósito',
+      position: 'Campus Manager at Skylab Academy',
+      description: '"Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca."',
+      photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
+    },
+
+    alvaro: {
+      name: 'Álvaro Valladares',
+      position: 'Partner at Skylab Academy',
+      description: '"Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona."',
+      photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },
 
   },
