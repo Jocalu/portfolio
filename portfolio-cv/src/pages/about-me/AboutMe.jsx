@@ -4,6 +4,7 @@ import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import { Link } from 'react-router-dom';
 import information from '../../constants/information-jose';
+import Recommendations from '../../components/recommendations/Recommendations';
 
 export default function AboutMe() {
   return (
@@ -27,6 +28,7 @@ export default function AboutMe() {
               .
             </b>
           </p>
+
           <p className="info">{information.sumary.info[0]}</p>
           <p className="info">{information.sumary.info[1]}</p>
           <p className="info">{information.sumary.info[2]}</p>
@@ -81,25 +83,8 @@ export default function AboutMe() {
         <div className="recommendations">
           <h3>Recommendations</h3>
 
-          <div className="recommendations__target">
-            <img
-              src={information.recommendations.diana.photoURL}
-              alt={information.recommendations.diana.name}
-            />
-            <p className="recommendations__desc">{information.recommendations.diana.description}</p>
-            <p className="recommendations__name">{information.recommendations.diana.name}</p>
-            <p className="recommendations__pos">{information.recommendations.diana.position}</p>
-          </div>
-
-          <div className="recommendations__target">
-            <img
-              src={information.recommendations.alvaro.photoURL}
-              alt={information.recommendations.alvaro.name}
-            />
-            <p className="recommendations__desc">{information.recommendations.alvaro.description}</p>
-            <p className="recommendations__name">{information.recommendations.alvaro.name}</p>
-            <p className="recommendations__pos">{information.recommendations.alvaro.position}</p>
-          </div>
+          <Recommendations />
+          <Recommendations />
         </div>
 
       </section>
