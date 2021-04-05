@@ -114,7 +114,9 @@
         margin: 10px;
         border: 2px solid $color-primary_3;
         background-color: $color-primary_4;
-        width: 300px;
+        max-width: 470px;
+        max-height: 250px;
+        resize: none;
 
         &:focus {
           outline: none;
