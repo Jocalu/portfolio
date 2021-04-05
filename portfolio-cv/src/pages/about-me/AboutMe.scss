@@ -40,31 +40,6 @@
         letter-spacing: 1px;
         padding-right: 40px;
       }
-
-      .btn {
-        text-decoration: none;
-        cursor: pointer;
-        @include fontregular(14px, $color-white-hard);
-        @include shadow(0px 0px 10px 5px rgba(30, 36, 41, 0.75));
-        min-height: 40px;
-        padding: 13px 28px;
-        background-color: $color-primary_3;
-        border: none;
-        margin-top: 20px;
-        margin-right: 10px;
-        transition: all 0.5s;
-
-        &:focus {
-          outline: none;
-        }
-
-        &:hover {
-          background-color: $color-hover;
-        }
-      }
-      .btn--blue {
-        background-color: $color-blue;
-      }
     }
 
     .image {
@@ -85,13 +60,6 @@
     .whatido {
       width: 540px;
       padding-right: 50px;
-
-      h3 {
-        @include fontsemibold(21px, $color-white-hard);
-        text-decoration: underline;
-        text-decoration-color: $color-blue;
-        margin-bottom: 20px;
-      }
 
       .whatido__desc {
         @include flex(row, flex-start, flex-start);
@@ -130,7 +98,8 @@
       }
 
       .recommendations__target {
-        @include flex(column, flex-start, flex-start);
+        @include flex(column, flex-end, flex-start);
+        padding: 20px 30px 20px 0;
         width: 470px;
         border-radius: 6px;
         background-color: $color-primary_3;

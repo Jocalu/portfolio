@@ -71,7 +71,11 @@ export default function Contact() {
 
         <h3>How I can help you?</h3>
 
-        <form className="formcontrol" onSubmit={sendData}>
+        <form
+          className="formcontrol"
+          onSubmit={sendData}
+        >
+
           <div className="inputs">
 
             <label htmlFor="fullname">
@@ -105,7 +109,7 @@ export default function Contact() {
             </label>
             <input
               type="submit"
-              className="btn"
+              className="btn btn--blue"
               value="Send message"
             />
           </div>
