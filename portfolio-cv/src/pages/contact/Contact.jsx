@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
@@ -6,6 +6,28 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import information from '../../constants/information-jose';
 
 export default function Contact() {
+  const [data, setData] = useState({
+    fullname: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleInputChange = (event) => {
+    setData({
+      ...data,
+      [data.fullname]: event.target.value,
+      [event.target.email]: event.target.value,
+
+    });
+  };
+
+  const sendData = (event) => {
+    event.preventDefault();
+    // eslint-disable-next-line no-console
+    console.log(`${data.fullname}ssss ${data.message}`);
+  };
+
   return (
     <main
       className="contact"
@@ -49,24 +71,56 @@ export default function Contact() {
 
         <h3>How I can help you?</h3>
 
-        <div className="formcontrol">
+        <form className="formcontrol" onSubmit={sendData}>
           <div className="inputs">
+
             <label htmlFor="fullname">
-              <input type="text" name="fullname" className="fullname" placeholder="Full Name" />
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                onChange={handleInputChange}
+
+              />
             </label>
+
             <label htmlFor="email-address">
-              <input type="text" name="email-address" className="email-address" placeholder="Email Address" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                onChange={handleInputChange}
+
+              />
             </label>
+
             <label htmlFor="subject">
-              <input type="text" name="subject" className="subject" placeholder="Subject" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                onChange={handleInputChange}
+
+              />
             </label>
-            <input type="submit" className="btn" value="Send message" />
+            <input
+              type="submit"
+              className="btn"
+              value="Send message"
+            />
           </div>
 
           <label htmlFor="message">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              onChange={handleInputChange}
+            />
           </label>
-        </div>
+        </form>
       </section>
     </main>
 
