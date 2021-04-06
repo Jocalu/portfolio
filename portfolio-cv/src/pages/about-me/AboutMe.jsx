@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import './AboutMe.scss';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
@@ -8,14 +7,6 @@ import information from '../../constants/information-jose';
 import Recommendations from '../../components/recommendations/Recommendations';
 
 export default function AboutMe() {
-  const diana = {
-
-    name: 'Diana Expósito',
-    position: 'Campus Manager at Skylab Academy',
-    description: '"Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca."',
-    photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
-
-  };
   return (
     <main
       className="aboutme"
@@ -96,9 +87,8 @@ export default function AboutMe() {
 
         <div className="recommendations">
           <h3>Recommendations</h3>
-          <Recommendations diana={diana} />
-          {console.log(diana)}
-          <Recommendations />
+          <Recommendations person={information.recommendations.diana} />
+          <Recommendations person={information.recommendations.alvaro} />
         </div>
 
       </section>

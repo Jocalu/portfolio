@@ -1,31 +1,30 @@
-/* eslint-disable no-console */
 import React from 'react';
 import './Recommendations.scss';
 import PropTypes from 'prop-types';
 
-export default function Recommendations({
-  photoURL, name, description, position,
-}) {
+export default function Recommendations({ person }) {
   return (
 
     <div className="recommendations__target">
       <img
-        src={photoURL}
-        alt={name}
+        src={person.photoURL}
+        alt={person.name}
       />
       <p className="recommendations__desc">
-        hello,
-        {console.log(description)}
+
+        {person.description}
       </p>
-      <p className="recommendations__name">{name}</p>
-      <p className="recommendations__pos">{position}</p>
+      <p className="recommendations__name">{person.name}</p>
+      <p className="recommendations__pos">{person.position}</p>
     </div>
   );
 }
 
 Recommendations.propTypes = {
-  photoURL: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
+  person: PropTypes.shape({
+    photoURL: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
