@@ -12,8 +12,9 @@ export default function Formation() {
       data-aos-duration="400"
     >
       <h3>Experience</h3>
-      {information.experience.forEach((job) => {
-        <div className="a">
+      {information.experience.map((job) => (
+
+        <div key={job.place} className="a">
           <div className="b" />
           <ul className="c">
             <li className="d">
@@ -25,8 +26,8 @@ export default function Formation() {
               <div className="f">{job.description.join(' ')}</div>
             </li>
           </ul>
-        </div>;
-      })}
+        </div>
+      ))}
 
     </main>
   );

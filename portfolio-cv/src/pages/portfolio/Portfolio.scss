@@ -5,11 +5,11 @@
 .portfolio {
   @include flex(column, flex-start, flex-start);
   margin: 10px;
-  width: 100vw;
+  width: 80%;
   height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
-  background-color: blueviolet;
+  padding: 30px 50px;
 }
