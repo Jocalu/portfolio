@@ -53,9 +53,9 @@ export default function Header() {
           <ChevronRightIcon className="icon" />
         </Link>
 
-        <Link to="/portfolio" className="link">
+        <Link to="/projects" className="link">
           <hr />
-          Portfolio
+          Projects
           <ChevronRightIcon className="icon" />
         </Link>
 

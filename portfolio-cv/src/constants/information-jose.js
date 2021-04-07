@@ -1,4 +1,32 @@
 const information = {
+  projects: [
+    {
+      name: 'Moodsic',
+      description: 'Moodsic is a web app that are giving you the opportunity to listen to all kinds of songs and artists selected from people all over the world, based on how it makes them feel.',
+      image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
+      github: 'https://github.com/Jocalu/Moodsic',
+      url: '',
+      video: 'video',
+      technology: {
+        name: 'React',
+        icon: 'https://i.postimg.cc/VL7F8Jjb/icons8-react-native-50.png',
+      },
+    },
+    {
+      name: 'MidDay Restaurant',
+      description: 'MidDay is an application that allows the management of restaurant reservations for lunch menus. It also generates its own database for each restaurant, so that it can manage its dishes and menus.',
+      image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
+      github: 'https://github.com/Jocalu/MidDay-Project',
+      url: 'https://midday-restaurant.web.app/home',
+      video: '',
+      technology: {
+        name: 'Angular',
+        icon: 'https://i.postimg.cc/Yq7P9LGn/icons8-angularjs-50.png',
+      },
+    },
+
+  ],
+
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',
@@ -153,7 +181,7 @@ const information = {
     {
       name: 'React',
       ability: 90,
-      icon: ' https://img.icons8.com/ios-filled/50/000000/react-native.png',
+      icon: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
     },
     {
       name: 'React Native',

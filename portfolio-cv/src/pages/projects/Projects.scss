@@ -2,14 +2,15 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
 
-.portfolio {
-  @include flex(column, flex-start, flex-start);
-  margin: 10px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
   width: 80%;
   height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
-  padding: 30px 50px;
+  padding: 5px 25px;
 }

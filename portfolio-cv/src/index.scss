@@ -60,3 +60,15 @@ textarea {
 .btn--blue {
   background-color: $color-blue;
 }
+
+.media__icon {
+  color: $color-grey;
+  font-size: 20px;
+  margin: 0px !important;
+  width: 30px;
+  text-align: center;
+
+  :hover {
+    cursor: pointer;
+  }
+}
