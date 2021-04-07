@@ -6,7 +6,7 @@ export default function Formation() {
   return (
     <main
       className="formation"
-      data-aos="fade-up-left"
+      data-aos="flip-down"
       data-aos-offset="0"
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"

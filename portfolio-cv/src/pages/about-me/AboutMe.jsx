@@ -30,42 +30,39 @@ export default function AboutMe() {
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"
     >
-      <section className="aboutme__info-container">
-        <div className="aboutme__info">
-          <p className="profession">
-            {information.personal.profession}
-          </p>
-          <p className="name">
-            Hi, I'm
-            <b>
-              <br />
-              {information.personal.name}
-            </b>
-          </p>
+      <section className="aboutme__info">
 
-          <p className="info">{information.sumary.info[0]}</p>
-          <p className="info">{information.sumary.info[1]}</p>
-          <p className="info">{information.sumary.info[2]}</p>
-          <button
-            type="button"
-            className="btn btn--blue"
-            onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
-          >
-            Download CV
-          </button>
-          <Snackbar
-            anchorOrigin={{ vertical, horizontal }}
-            open={open}
-            onClose={handleClose}
-            TransitionComponent={state.Transition}
-            message="✅ Downloaded successfully"
-            key={vertical + horizontal}
-          />
-          <Link to="/contact" type="button" className="btn">
-            Contact
-          </Link>
+        <p className="profession">
+          {information.personal.profession}
+        </p>
+        <p className="name">
+          Hi, I'm
+          <b>
+            <br />
+            {information.personal.name}
+          </b>
+        </p>
+        {information.sumary.info.map((info) => <p className="info">{info}</p>)}
 
-        </div>
+        <button
+          type="button"
+          className="btn btn--blue"
+          onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
+        >
+          Download CV
+        </button>
+
+        <Snackbar
+          anchorOrigin={{ vertical, horizontal }}
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={state.Transition}
+          message="✅ Downloaded successfully"
+          key={vertical + horizontal}
+        />
+        <Link to="/contact" type="button" className="btn">
+          Contact
+        </Link>
 
       </section>
 

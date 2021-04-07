@@ -3,7 +3,7 @@
 @import "../../../styles/fonts";
 
 .aboutme {
-  @include flex(row, space-between, space-between);
+  @include flex(row, flex-start, flex-start);
   width: 1120px;
   height: 900px;
   margin-left: 320px;
@@ -12,58 +12,54 @@
   color: $color-white-hard;
   padding: 30px 50px;
 
-  .aboutme__info-container {
-    @include flex(row, flex-start, flex-start);
+  .aboutme__info {
     width: 50%;
+    position: relative;
 
-    .aboutme__info {
-      position: relative;
+    .profession {
+      @include fontlight(16px, $color-grey);
+    }
 
-      .profession {
-        @include fontlight(16px, $color-grey);
-      }
+    .name {
+      @include fontlight(52px, $color-white-hard);
+      line-height: 1.1em;
+      margin-top: 10px;
 
-      .name {
-        @include fontlight(52px, $color-white-hard);
-        line-height: 1.1em;
-        margin-top: 10px;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .info {
-        @include fontregular(14px, $color-grey);
-        margin-top: 10px;
-        letter-spacing: 1px;
-        padding-right: 40px;
-      }
-
-      .MuiSnackbarContent-root {
-        background-color: $color-blue;
-        letter-spacing: 1px;
-        font-family: $font-secondary;
-        position: absolute;
-        right: -1050px;
-        top: -50px;
+      &:hover {
+        text-decoration: underline;
       }
     }
+
+    .info {
+      @include fontregular(14px, $color-grey);
+      margin-top: 10px;
+      letter-spacing: 1px;
+      padding-right: 40px;
+    }
+
+    .MuiSnackbarContent-root {
+      background-color: $color-blue;
+      letter-spacing: 1px;
+      font-family: $font-secondary;
+      position: absolute;
+      right: -1080px;
+      top: -150px;
+    }
   }
+}
 
-  .services {
-    width: 50%;
-    @include flex(column, flex-start, flex-start);
+.services {
+  width: 50%;
+  @include flex(column, flex-start, flex-start);
 
-    .image {
+  .image {
+    width: 100%;
+    margin-bottom: 20px;
+
+    img {
       width: 100%;
-      margin-bottom: 20px;
-
-      img {
-        width: 100%;
-        opacity: 0.6;
-        border-radius: 6px;
-      }
+      opacity: 0.6;
+      border-radius: 6px;
     }
   }
 }

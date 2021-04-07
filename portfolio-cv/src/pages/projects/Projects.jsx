@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <main
       className="projects"
-      data-aos="fade-down-left"
+      data-aos="fade-left"
       data-aos-offset="0"
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"

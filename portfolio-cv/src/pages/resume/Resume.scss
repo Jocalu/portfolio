@@ -3,14 +3,14 @@
 @import "../../../styles/fonts";
 
 .resume {
-  @include flex(column, flex-start, flex-start);
-  margin: 10px;
-  width: 100vw;
-  height: 98vh;
+  @include flex(row, flex-start, flex-start);
+  width: 1120px;
+  height: 900px;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
+  padding: 30px 50px;
 
   h3 {
     @include fontsemibold(21px, $color-white-hard);

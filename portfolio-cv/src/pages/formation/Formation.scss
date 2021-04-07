@@ -4,9 +4,8 @@
 
 .formation {
   @include flex(column, flex-start, flex-start);
-  margin: 10px;
-  width: 80%;
-  height: 98vh;
+  width: 1120px;
+  height: 900px;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
