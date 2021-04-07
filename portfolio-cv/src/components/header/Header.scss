@@ -24,11 +24,11 @@ header {
     }
 
     .name {
-      @include fontsemibold(27px, $color-white-hard);
+      @include fontsemibold(30px, $color-white-hard);
+    }
 
-      &.light {
-        color: $color-primary_5;
-      }
+    .profession {
+      @include fontregular(18px, $color-white-hard);
     }
 
     .profile__contact {

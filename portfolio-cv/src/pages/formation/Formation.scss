@@ -3,7 +3,7 @@
 @import "../../../styles/fonts";
 
 .formation {
-  @include flex(column, flex-start, flex-start);
+  @include flex(row, flex-start, flex-start);
   width: 1120px;
   height: 900px;
   margin-left: 320px;
@@ -12,48 +12,49 @@
   color: $color-white-hard;
   padding: 30px 50px;
 
-  .a {
-    position: relative;
+  .experience, .education {
+    width: 50%;
+    padding-right: 50px;
 
-    .b {
-      border-right: 2px solid #aaa;
+    .container {
+      border-left: 1px solid $color-hover;
+      border-bottom: 1px solid $color-hover;
+      padding: 0px 30px 10px 30px;
+      position: relative;
 
-      left: 16px;
-      position: absolute;
-      top: 0px;
+      .data {
+        @include flex(row, flex-start, center);
+        position: absolute;
+        top: -35px;
+        left: -20px;
 
-      height: 100%;
-    }
-
-    .c {
-      list-style-type: none;
-      margin: 0px;
-      padding: 0px;
-
-      .d {
-        margin-bottom: 8px;
-
-        .e {
-          align-items: center;
-          display: flex;
-
-          .g {
-            background-color: rgb(170, 170, 170);
-            border-radius: 9999px;
-
-            height: 32px;
-            width: 32px;
-          }
-
-          .h {
-            flex: 1;
-          }
+        .date {
+          border: 2px solid $color-blue;
+          padding: 3px 15px;
         }
 
-        .f {
-          margin-left: 48px;
+        .place {
+          @include fontregular(18px, $color-grey);
+          letter-spacing: 1px;
+          margin-left: 20px;
         }
       }
+
+      .position {
+        letter-spacing: 1.2px;
+        margin: 60px 0 10px 0;
+        padding-top: 10px;
+      }
+
+      .description {
+        @include fontregular(14px, $color-grey);
+        letter-spacing: 1.2px;
+      }
     }
+  }
+
+  .education {
+    width: 50%;
+    padding-right: 30px;
   }
 }

@@ -16,10 +16,11 @@ body {
 }
 
 h3 {
-  @include fontsemibold(21px, $color-white-hard);
+  @include fontsemibold(25px, $color-white-hard);
   text-decoration: underline;
   text-decoration-color: $color-blue;
   margin-bottom: 20px;
+  letter-spacing: 1.5px;
 }
 
 input,

@@ -17,7 +17,8 @@
     position: relative;
 
     .profession {
-      @include fontlight(16px, $color-grey);
+      @include fontlight(18px, $color-grey);
+      letter-spacing: 1px;
     }
 
     .name {
@@ -31,7 +32,7 @@
     }
 
     .info {
-      @include fontregular(14px, $color-grey);
+      @include fontregular(16px, $color-grey);
       margin-top: 10px;
       letter-spacing: 1px;
       padding-right: 40px;

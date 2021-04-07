@@ -23,7 +23,7 @@
   }
 
   p {
-    @include fontregular(13px, $color-grey);
+    @include fontregular(14px, $color-grey);
     letter-spacing: 1px;
   }
 }
