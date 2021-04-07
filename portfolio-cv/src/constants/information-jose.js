@@ -8,7 +8,7 @@ import {
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-const information = {
+export default {
   projects: [
     {
       name: 'Moodsic',
@@ -149,72 +149,104 @@ const information = {
       name: 'Critical Thinking',
       ability: 90,
     }],
-    hardskills: [{
-      name: 'Javascript ES6',
-      icon: faJsSquare,
-    },
-    {
-      name: 'React',
-      icon: faReact,
-    },
-    {
-      name: 'React Native',
-      icon: faReact,
-    },
-    {
-      name: 'Sass',
-      icon: faSass,
-    },
-    {
-      name: 'Angular',
-      icon: faAngular,
-    },
-    {
-      name: 'HTML',
-      icon: faHtml5,
-    },
-    {
-      name: 'CSS',
-      icon: faCss3Alt,
-    },
-    {
-      name: 'Node JS',
-      icon: faNodeJs,
-    },
-    {
-      name: 'Flux',
-    },
-    {
-      name: 'MongoDB',
-    },
-    {
-      name: 'Redux',
-    },
-    {
-      name: 'Typescript',
-    },
-    {
-      name: 'Git',
-    },
-    {
-      name: 'TDD',
-    },
-    {
-      name: 'SCRUM',
-    },
-    {
-      name: 'Agile',
-    },
-    {
-      name: 'Jest',
-    },
-    {
-      name: 'Jasmine',
-    },
-    {
-      name: 'Unit Testing',
-    },
+    hardskills: [
+      {
+        name: 'HTML',
+        icon: faHtml5,
+        programmingLanguage: true,
+      },
+      {
+        name: 'Javascript',
+        icon: faJsSquare,
+        programmingLanguage: true,
+      },
+      {
+        name: 'CSS',
+        icon: faCss3Alt,
+        programmingLanguage: true,
+      },
+      {
+        name: 'SCRUM',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Agile',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Unit Testing',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Sass',
+        icon: faSass,
+        programmingLanguage: true,
+      },
 
+      {
+        name: 'Node JS',
+        icon: faNodeJs,
+        programmingLanguage: true,
+      },
+      {
+        name: 'Flux',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'MongoDB',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Redux',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Typescript',
+        icon: null,
+        programmingLanguage: true,
+      },
+      {
+        name: 'Angular',
+        icon: faAngular,
+        programmingLanguage: true,
+      },
+      {
+        name: 'Git',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'TDD',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'React',
+        icon: faReact,
+        programmingLanguage: true,
+      },
+      {
+        name: 'React Native',
+        icon: faReact,
+        programmingLanguage: true,
+      },
+
+      {
+        name: 'Jest',
+        icon: null,
+        programmingLanguage: false,
+      },
+      {
+        name: 'Jasmine',
+        icon: null,
+        programmingLanguage: false,
+      },
     ],
   },
 
@@ -257,5 +289,3 @@ const information = {
   },
 
 };
-
-export default information;

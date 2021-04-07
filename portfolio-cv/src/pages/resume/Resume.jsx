@@ -32,8 +32,8 @@ export default function Resume() {
         <div className="soft-skills">
           <h3>Soft skills</h3>
           {information.skills.softskills.map((skill) => (
-            <div className="">
-              <label key={`soft ${skill.name}`} htmlFor={skill.name}>
+            <div key={skill.name}>
+              <label htmlFor={skill.name}>
                 {skill.name}
 
               </label>
@@ -48,11 +48,13 @@ export default function Resume() {
           <div className={classes.root}>
             {information.skills.hardskills.map((skill) => (
               <Chip
+                key={skill.name}
                 className="chip"
                 icon={<FontAwesomeIcon icon={skill.icon} />}
                 label={skill.name}
                 color="primary"
                 clickable
+                variant={skill.programmingLanguage === true ? 'default' : 'outlined'}
               />
             ))}
           </div>

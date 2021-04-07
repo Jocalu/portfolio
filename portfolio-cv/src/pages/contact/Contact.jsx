@@ -67,7 +67,7 @@ export default function Contact() {
 
         </div>
 
-        <h3>How I can help you?</h3>
+        <h3>How can I help you?</h3>
 
         <form
           className="formcontrol"
