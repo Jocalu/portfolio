@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -7,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import './Projects.scss';
+import './ProjectsCard.scss';
 
 const useStyles = makeStyles({
   root: {
@@ -15,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Projects() {
+export default function ProjectsCard({ project }) {
   const classes = useStyles();
 
   return (
@@ -33,8 +34,7 @@ export default function Projects() {
             Lizard
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {project.description}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -49,3 +49,18 @@ export default function Projects() {
     </Card>
   );
 }
+
+ProjectsCard.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    video: PropTypes.string.isRequired,
+    technology: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};

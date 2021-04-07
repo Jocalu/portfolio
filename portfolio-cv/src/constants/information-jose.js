@@ -1,4 +1,30 @@
 const information = {
+  projects: [{
+    name: 'Moodsic',
+    description: 'Moodsic is a web app that are giving you the opportunity to listen to all kinds of songs and artists selected from people all over the world, based on how it makes them feel.',
+    image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
+    github: 'https://github.com/Jocalu/Moodsic',
+    url: '',
+    video: '',
+    technology: {
+      name: 'React',
+      icon: '',
+    },
+  },
+  {
+    name: 'MidDay restaurant',
+    description: 'MidDay is an application that allows the management of restaurant reservations for lunch menus. It also generates its own database for each restaurant, so that it can manage its dishes and menus.',
+    image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
+    github: 'https://github.com/Jocalu/MidDay-Project',
+    url: 'https://midday-restaurant.web.app/home',
+    video: 'video',
+    technology: {
+      name: 'Angular',
+      icon: '',
+    },
+  },
+  ],
+
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',

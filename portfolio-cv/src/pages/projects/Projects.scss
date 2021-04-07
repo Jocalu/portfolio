@@ -2,7 +2,7 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
 
-.portfolio {
+.projects {
   @include flex(column, flex-start, flex-start);
   margin: 10px;
   width: 80%;
