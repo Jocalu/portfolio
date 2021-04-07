@@ -14,9 +14,13 @@ export default function Services() {
         <div>
           <h4>Ecommerce</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur enim unde quasi ducimus nam?
-            {' '}
+            In eCommerce, competition is fierce; the offers are short-lived
+            and transparent for the user. As a website operator,
+            you are therefore permanently faced with the challenge of monitoring
+            the market and generating unique content with added value for the user
+            on the ongoing new product pages. In doing so, you create competitive
+            advantages for yourself while remaining visible in the search engines
+            and for the user.
           </p>
         </div>
 
@@ -29,10 +33,10 @@ export default function Services() {
         <div>
           <h4>Web design</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur enim unde quasi ducimus nam?
-            {' '}
-
+            These include websites and eCommerce solutions
+            focused on usability and responsive design, creative branding
+            solutions that inject personality into your business,
+            and custom programming for ideas that you need help bringing to fruition.
           </p>
         </div>
       </div>
