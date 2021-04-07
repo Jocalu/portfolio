@@ -1,0 +1,19 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.card {
+  margin: 20px;
+  background-color: $color-primary_3;
+  color: $color-white-hard;
+
+  h4 {
+    @include fontsemibold(18px, $color-white-hard);
+    margin-bottom: 10px;
+  }
+
+  p {
+    @include fontregular(13px, $color-grey);
+    letter-spacing: 1px;
+  }
+}

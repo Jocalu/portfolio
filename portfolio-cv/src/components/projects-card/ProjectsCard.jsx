@@ -7,8 +7,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import './ProjectsCard.scss';
+import information from '../../constants/information-jose';
 
 const useStyles = makeStyles({
   root: {
@@ -16,37 +16,37 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProjectsCard({ project }) {
+export default function ProjectsCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {project.description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+    <>
+      {information.projects.map((project) => (
+        <Card className={`card ${classes.root}`}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt={project.name}
+              height="140"
+              image={project.image}
+              title={project.name}
+            />
+            <CardContent>
+              <h4>{project.name}</h4>
+              <p>{project.description}</p>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      ))}
+    </>
   );
 }
 

@@ -3,7 +3,7 @@
 @import "../../../styles/fonts";
 
 .projects {
-  @include flex(column, flex-start, flex-start);
+  @include flex(row, flex-start, flex-start);
   margin: 10px;
   width: 80%;
   height: 98vh;
