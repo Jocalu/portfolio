@@ -2,35 +2,27 @@ import React from 'react';
 import './AboutMe.scss';
 import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
-import { Fade, Slide } from '@material-ui/core';
 import information from '../../constants/information-jose';
 import Recommendations from '../../components/recommendations/Recommendations';
 import Services from '../../components/services-offered/Services';
 
-function SlideTransition(props) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Slide {...props} direction="up" />;
-}
-
 export default function AboutMe() {
   const [state, setState] = React.useState({
     open: false,
-    Transition: Fade,
+    vertical: '',
+    horizontal: '',
   });
 
-  const handleClick = (Transition) => () => {
-    setState({
-      open: true,
-      Transition,
-    });
+  const { vertical, horizontal, open } = state;
+
+  const handleClick = (newState) => () => {
+    setState({ open: true, ...newState });
   };
 
   const handleClose = () => {
-    setState({
-      ...state,
-      open: false,
-    });
+    setState({ ...state, open: false });
   };
+
   return (
     <main
       className="aboutme"
@@ -56,13 +48,14 @@ export default function AboutMe() {
           <p className="info">{information.sumary.info[0]}</p>
           <p className="info">{information.sumary.info[1]}</p>
           <p className="info">{information.sumary.info[2]}</p>
-          <button type="button" className="btn btn--blue" onClick={handleClick(SlideTransition)}>Download CV</button>
+          <button type="button" className="btn btn--blue" onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}>Download CV</button>
           <Snackbar
-            open={state.open}
+            anchorOrigin={{ vertical, horizontal }}
+            open={open}
             onClose={handleClose}
             TransitionComponent={state.Transition}
-            message="I love snacks"
-            key={state.Transition.name}
+            message="✅ Downloaded successfully"
+            key={vertical + horizontal}
           />
           <Link to="/contact" type="button" className="btn">
             Contact

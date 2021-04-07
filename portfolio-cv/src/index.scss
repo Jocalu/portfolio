@@ -48,6 +48,8 @@ textarea {
   margin-top: 20px;
   margin-right: 10px;
   transition: all 0.5s;
+  letter-spacing: 0.5px;
+  font-family: $font-secondary;
 
   &:focus {
     outline: none;

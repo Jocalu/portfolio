@@ -47,6 +47,8 @@
 
       .MuiSnackbarContent-root {
         background-color: $color-blue;
+        letter-spacing: 1px;
+        font-family: $font-secondary;
       }
     }
 
