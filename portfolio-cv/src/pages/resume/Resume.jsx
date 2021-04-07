@@ -1,11 +1,23 @@
 import React from 'react';
 import './Resume.scss';
-import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Chip, makeStyles } from '@material-ui/core';
 import information from '../../constants/information-jose';
 import Recommendations from '../../components/recommendations/Recommendations';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(0.5),
+    },
+  },
+}));
+
 export default function Resume() {
+  const classes = useStyles();
+
   return (
     <main
       className="resume"
@@ -14,26 +26,11 @@ export default function Resume() {
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"
     >
-      <div className="skills__hard">
-        <h3>Hard skills</h3>
-        <div className="container">
-          {information.skills.hardskills.map((skill) => (
-            <div key={`hard ${skill.name}`} className="circular">
-              <p>{skill.name}</p>
-              <CircularProgress className="circle" value={skill.ability} color="blue">
-                <CircularProgressLabel>{`${skill.ability}%` }</CircularProgressLabel>
-              </CircularProgress>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <section>
-        <div className="skills__soft">
+      <section className="skills">
+        <div className="soft-skills">
           <h3>Soft skills</h3>
-          {' '}
           {information.skills.softskills.map((skill) => (
-            <div>
+            <div className="">
               <label key={`soft ${skill.name}`} htmlFor={skill.name}>
                 {skill.name}
 
@@ -41,26 +38,29 @@ export default function Resume() {
               <progress className="progress" max="100" value={skill.ability}>{skill.ability}</progress>
             </div>
           ))}
-
         </div>
-        <div className="skills__languages">
 
-          <h3>Programming languages</h3>
-          <div className="icons__languages">
+        <div className="hard-skills">
+          <h3>Hard skills</h3>
+
+          <div className={classes.root}>
             {information.skills.programmingLanguages.map((skill) => (
-              <div className="icon" key={`icon ${skill.name}`}>
-                <FontAwesomeIcon icon={skill.icon} />
-              </div>
+              <Chip
+                className="chip"
+                icon={skill.icon}
+                label={skill.name}
+                color="primary"
+                clickable
+              />
             ))}
           </div>
-
         </div>
+      </section>
 
-        <div className="recommendations">
-          <h3>Recommendations</h3>
-          <Recommendations person={information.recommendations.diana} />
-          <Recommendations person={information.recommendations.alvaro} />
-        </div>
+      <section className="recommendations">
+        <h3>Recommendations</h3>
+        <Recommendations person={information.recommendations.diana} />
+        <Recommendations person={information.recommendations.alvaro} />
       </section>
 
     </main>
