@@ -8,7 +8,7 @@ import {
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-export default {
+const information = {
   projects: [
     {
       name: 'Moodsic',
@@ -37,7 +37,6 @@ export default {
     },
 
   ],
-
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',
@@ -49,21 +48,12 @@ export default {
     photoURL: 'https://i.postimg.cc/Fs6t6kFB/profile-photo-removebg-preview.png',
     photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
   },
-
-  sumary: {
-    info:
-    ['Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
-      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
-      'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
-  },
-
   resume: {
     info: [
       'Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
       'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
-
   experience: [{
     place: 'MidDay restaurant',
     position: 'Diseño, maquetación y programación web',
@@ -83,9 +73,7 @@ export default {
       'Familiarity with Agile development.',
       'Strong problem-solving skills.',
       'Resourceful and self-motivated on innovation.'],
-  },
-  ],
-
+  }],
   education: {
     skylab: {
       place: 'Skylab Coders Academy',
@@ -109,183 +97,182 @@ export default {
       description: ['Nota media de 7,0.',
         'Mención especial en Rehabilitación de Edificaciones.'],
     },
-
   },
 
-  skills: {
-    softskills: [{
-      name: 'Leadership',
-      ability: 90,
-    },
-    {
-      name: 'Collaboration',
-      ability: 65,
-    },
-    {
-      name: 'Communication',
-      ability: 60,
-    },
-    {
-      name: 'Creativity',
-      ability: 75,
-    },
-    {
-      name: 'Organization',
-      ability: 80,
-    },
-    {
-      name: 'Enthusiasm',
-      ability: 90,
-    },
-    {
-      name: 'Work Ethic',
-      ability: 75,
-    },
-    {
-      name: 'Problem Solving',
-      ability: 100,
-    },
-    {
-      name: 'Critical Thinking',
-      ability: 90,
-    }],
-    hardskills: [
-      {
-        name: 'HTML',
-        icon: faHtml5,
-        programmingLanguage: true,
-      },
-      {
-        name: 'Javascript',
-        icon: faJsSquare,
-        programmingLanguage: true,
-      },
-      {
-        name: 'CSS',
-        icon: faCss3Alt,
-        programmingLanguage: true,
-      },
-      {
-        name: 'SCRUM',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Agile',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Unit Testing',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Sass',
-        icon: faSass,
-        programmingLanguage: true,
-      },
-
-      {
-        name: 'Node JS',
-        icon: faNodeJs,
-        programmingLanguage: true,
-      },
-      {
-        name: 'Flux',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'MongoDB',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Redux',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Typescript',
-        icon: null,
-        programmingLanguage: true,
-      },
-      {
-        name: 'Angular',
-        icon: faAngular,
-        programmingLanguage: true,
-      },
-      {
-        name: 'Git',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'TDD',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'React',
-        icon: faReact,
-        programmingLanguage: true,
-      },
-      {
-        name: 'React Native',
-        icon: faReact,
-        programmingLanguage: true,
-      },
-
-      {
-        name: 'Jest',
-        icon: null,
-        programmingLanguage: false,
-      },
-      {
-        name: 'Jasmine',
-        icon: null,
-        programmingLanguage: false,
-      },
-    ],
+  softskills: [{
+    name: 'Leadership',
+    ability: 100,
   },
+  {
+    name: 'Collaboration',
+    ability: 75,
+  },
+  {
+    name: 'Communication',
+    ability: 70,
+  },
+  {
+    name: 'Creativity',
+    ability: 75,
+  },
+  {
+    name: 'Organization',
+    ability: 90,
+  },
+  {
+    name: 'Enthusiasm',
+    ability: 80,
+  },
+  {
+    name: 'Work Ethic',
+    ability: 75,
+  },
+  {
+    name: 'Problem Solving',
+    ability: 100,
+  },
+  {
+    name: 'Critical Thinking',
+    ability: 90,
+  }],
+  hardskills: [
+    {
+      name: 'HTML',
+      icon: faHtml5,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Javascript',
+      icon: faJsSquare,
+      programmingLanguage: true,
+    },
+    {
+      name: 'CSS',
+      icon: faCss3Alt,
+      programmingLanguage: true,
+    },
+    {
+      name: 'SCRUM',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Agile',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Unit Testing',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Sass',
+      icon: faSass,
+      programmingLanguage: true,
+    },
+
+    {
+      name: 'Node JS',
+      icon: faNodeJs,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Flux',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'MongoDB',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Redux',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Typescript',
+      icon: null,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Angular',
+      icon: faAngular,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Git',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'TDD',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'React',
+      icon: faReact,
+      programmingLanguage: true,
+    },
+    {
+      name: 'React Native',
+      icon: faReact,
+      programmingLanguage: true,
+    },
+
+    {
+      name: 'Jest',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Jasmine',
+      icon: null,
+      programmingLanguage: false,
+    },
+  ],
 
   recommendations: {
     gilberto: {
       name: 'Gilberto Cao',
       position: 'Web programming teacher at Skylab Academy',
-      description: '"The best student I have ever had. It is applied, organized and designs like God."',
+      description: 'The best student I have ever had. It is applied, organized and designs like God.',
       photoURl: 'https://avatars.githubusercontent.com/u/10716392?s=460&u=1a4b8066bc0abf6ec89b8b394f7a7d8d9b6f5c3a&v=4',
     },
 
     lluis: {
       name: 'Lluis Quintana',
       position: 'Partner at Skylab Academy',
-      description: '"He is a very diligent student. When I didn\'t achieve a goal, Jose helped me. He taught me everything I know."',
+      description: 'He is a very diligent student. When I didn\'t achieve a goal, Jose helped me. He taught me everything I know.',
       photoURL: 'https://i.postimg.cc/yYFwn1pM/Lluis.jpg',
     },
 
     laia: {
       name: 'Laia Solanes',
       position: 'Partner at Skylab Academy',
-      description: '"Great partner, better person"',
+      description: 'Great partner, better person',
       photoURL: 'https://i.postimg.cc/y8s2bMwk/Laia.jpg',
     },
 
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
-      description: '"Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca."',
+      description: 'Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca.',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 
     alvaro: {
       name: 'Álvaro Valladares',
       position: 'Partner at Skylab Academy',
-      description: '"Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona."',
+      description: 'Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona.',
       photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },
 
   },
 
 };
+
+export default information;

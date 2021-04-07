@@ -31,13 +31,17 @@ export default function Resume() {
       <section className="skills">
         <div className="soft-skills">
           <h3>Soft skills</h3>
-          {information.skills.softskills.map((skill) => (
-            <div key={skill.name}>
+          {information.softskills.map((skill) => (
+            <div key={skill.name} className="skills-bars">
               <label htmlFor={skill.name}>
                 {skill.name}
-
               </label>
-              <progress className="progress" max="100" value={skill.ability}>{skill.ability}</progress>
+              <progress
+                max="100"
+                value={skill.ability}
+              >
+                {skill.ability}
+              </progress>
             </div>
           ))}
         </div>
@@ -46,7 +50,7 @@ export default function Resume() {
           <h3>Hard skills</h3>
 
           <div className={classes.root}>
-            {information.skills.hardskills.map((skill) => (
+            {information.hardskills.map((skill) => (
               <Chip
                 key={skill.name}
                 className="chip"

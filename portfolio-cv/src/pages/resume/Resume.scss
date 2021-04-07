@@ -15,17 +15,27 @@
   .skills {
     @include flex(column, flex-start, flex-start);
     width: 50%;
+    padding-right: 40px;
+    @include fontregular(14px, $color-white-hard);
+    font-family: $font-secondary;
 
     .soft-skills {
+      width: 100%;
       margin-bottom: 20px;
-      .progress {
-        width: 300px;
+
+      .skills-bars {
+        @include flex(row, space-between, center);
+        width: 100%;
+        margin-bottom: 10px;
+
+        progress {
+          width: 70%;
+          height: 30px;
+        }
       }
     }
 
     .hard-skills {
-      padding-right: 30px;
-
       .chip {
         @include fontregular(14px, $color-white-hard);
         font-family: $font-secondary;
