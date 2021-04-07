@@ -15,7 +15,7 @@
   .skills {
     @include flex(column, flex-start, flex-start);
     width: 50%;
-    padding-right: 40px;
+    padding-right: 50px;
     @include fontregular(14px, $color-white-hard);
     font-family: $font-secondary;
 
@@ -24,13 +24,18 @@
       margin-bottom: 20px;
 
       .skills-bars {
-        @include flex(row, space-between, center);
+        @include flex(column, center, flex-start);
         width: 100%;
         margin-bottom: 10px;
 
+        label {
+          width: 100%;
+          @include flex(row, space-between, space-between);
+        }
+
         progress {
-          width: 70%;
-          height: 30px;
+          width: 100%;
+          height: 15px;
         }
       }
     }

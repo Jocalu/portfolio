@@ -35,6 +35,10 @@ export default function Resume() {
             <div key={skill.name} className="skills-bars">
               <label htmlFor={skill.name}>
                 {skill.name}
+                <div>
+                  {skill.ability}
+                  %
+                </div>
               </label>
               <progress
                 max="100"
