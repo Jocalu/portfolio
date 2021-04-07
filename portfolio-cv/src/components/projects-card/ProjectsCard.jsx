@@ -5,7 +5,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import './ProjectsCard.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PlayCircleFilledWhiteOutlinedIcon from '@material-ui/icons/PlayCircleFilledWhiteOutlined';
@@ -21,7 +20,7 @@ export default function ProjectsCard() {
             <CardMedia
               component="img"
               alt={project.name}
-              height="140"
+              height="100"
               image={project.image}
               title={project.name}
             />
@@ -30,16 +29,26 @@ export default function ProjectsCard() {
               <p>{project.description}</p>
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              <GitHubIcon />
-            </Button>
-            <Button size="small" color="primary">
-              <LanguageIcon />
-            </Button>
-            <Button size="small" color="primary">
-              <PlayCircleFilledWhiteOutlinedIcon />
-            </Button>
+          <CardActions className="card__actions">
+            {project.github !== ''
+            && (
+            <a href={project.github} className="media__icon">
+              <GitHubIcon className="media__icon" />
+            </a>
+            )}
+            {project.url !== ''
+            && (
+            <a href={project.url} className="media__icon">
+              <LanguageIcon className="media__icon" />
+            </a>
+            )}
+            {project.video !== ''
+            && (
+            <a href={project.video} className="media__icon">
+              <PlayCircleFilledWhiteOutlinedIcon className="media__icon" />
+            </a>
+            )}
+            <img className="media__icon" src={project.technology.icon} alt={project.technology.icon} />
           </CardActions>
         </Card>
       ))}

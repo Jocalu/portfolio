@@ -4,9 +4,14 @@
 
 .card {
   margin: 20px;
-  background-color: $color-primary_3;
+  background-color: $color-primary_3 !important;
   color: $color-white-hard;
   max-width: 320px;
+  max-height: 335px;
+
+  &:hover {
+    @include effect();
+  }
 
   h4 {
     @include fontsemibold(18px, $color-white-hard);
@@ -18,8 +23,11 @@
     letter-spacing: 1px;
     min-height: 120px;
   }
+  .card__actions {
+    @include flex(row, space-around, center);
 
-  &:hover {
-    @include effect();
+    a {
+      @include flexcenter();
+    }
   }
 }

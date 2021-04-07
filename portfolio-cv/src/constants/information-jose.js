@@ -6,10 +6,10 @@ const information = {
       image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
       github: 'https://github.com/Jocalu/Moodsic',
       url: '',
-      video: '',
+      video: 'video',
       technology: {
         name: 'React',
-        icon: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
+        icon: 'https://i.postimg.cc/VL7F8Jjb/icons8-react-native-50.png',
       },
     },
     {
@@ -18,12 +18,13 @@ const information = {
       image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
       github: 'https://github.com/Jocalu/MidDay-Project',
       url: 'https://midday-restaurant.web.app/home',
-      video: 'video',
+      video: '',
       technology: {
         name: 'Angular',
-        icon: 'https://img.icons8.com/ios-filled/50/000000/angularjs.png',
+        icon: 'https://i.postimg.cc/Yq7P9LGn/icons8-angularjs-50.png',
       },
     },
+
   ],
 
   personal: {

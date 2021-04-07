@@ -3,13 +3,14 @@
 @import "../../../styles/fonts";
 
 .projects {
-  @include flex(row, flex-start, flex-start);
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
   width: 80%;
   height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
-  padding: 10px 30px;
+  padding: 5px 25px;
 }

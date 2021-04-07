@@ -39,16 +39,7 @@ header {
     .media {
       @include flex(row, space-between, center);
       margin: 20px;
-      font-size: 20px;
-      width: 60px;
-
-      .media__icon {
-        color: $color-grey;
-
-        :hover {
-          cursor: pointer;
-        }
-      }
+      width: 70px;
     }
   }
 
