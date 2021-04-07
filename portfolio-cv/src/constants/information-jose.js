@@ -37,7 +37,6 @@ const information = {
     },
 
   ],
-
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',
@@ -49,21 +48,12 @@ const information = {
     photoURL: 'https://i.postimg.cc/Fs6t6kFB/profile-photo-removebg-preview.png',
     photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
   },
-
-  sumary: {
-    info:
-    ['Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
-      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
-      'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
-  },
-
   resume: {
     info: [
       'Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
       'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
-
   experience: [{
     place: 'MidDay restaurant',
     position: 'Diseño, maquetación y programación web',
@@ -83,9 +73,7 @@ const information = {
       'Familiarity with Agile development.',
       'Strong problem-solving skills.',
       'Resourceful and self-motivated on innovation.'],
-  },
-  ],
-
+  }],
   education: {
     skylab: {
       place: 'Skylab Coders Academy',
@@ -109,116 +97,142 @@ const information = {
       description: ['Nota media de 7,0.',
         'Mención especial en Rehabilitación de Edificaciones.'],
     },
-
   },
-
-  skills: {
-    softskills: [{
-      name: 'Leadership',
-      ability: 90,
-    },
-    {
-      name: 'Collaboration',
-      ability: 65,
-    },
-    {
-      name: 'Communication',
-      ability: 60,
-    },
-    {
-      name: 'Creativity',
-      ability: 75,
-    },
-    {
-      name: 'Organization',
-      ability: 80,
-    },
-    {
-      name: 'Enthusiasm',
-      ability: 90,
-    },
-    {
-      name: 'Work Ethic',
-      ability: 75,
-    },
-    {
-      name: 'Problem Solving',
-      ability: 100,
-    },
-    {
-      name: 'Critical Thinking',
-      ability: 90,
-    },
-    ],
-    hardskills: [{
-      name: 'Work eEthic',
-      ability: 65,
-    },
-    {
-      name: 'Work rEthic',
-      ability: 78,
-    },
-    {
-      name: 'Work wEthic',
-      ability: 80,
-    },
-    {
-      name: 'mongoDB',
-      ability: 90,
-    },
-    {
-      name: 'Redux',
-      ability: 90,
-    },
-    {
-      name: 'Fluxw',
-      ability: 90,
-    },
-    {
-      name: 'Fluxq',
-      ability: 90,
-    },
-    {
-      name: 'Flux',
-      ability: 90,
-    },
-
-    ],
-    programmingLanguages: [{
-      name: 'Javascript ES6',
-      icon: faJsSquare,
-    },
-    {
-      name: 'React',
-      icon: faReact,
-    },
-    {
-      name: 'React Native',
-      icon: faReact,
-    },
-    {
-      name: 'Sass',
-      icon: faSass,
-    },
-    {
-      name: 'Angular',
-      icon: faAngular,
-    },
+  softskills: [{
+    name: 'Leadership',
+    ability: 100,
+  },
+  {
+    name: 'Collaboration',
+    ability: 75,
+  },
+  {
+    name: 'Communication',
+    ability: 70,
+  },
+  {
+    name: 'Creativity',
+    ability: 75,
+  },
+  {
+    name: 'Organization',
+    ability: 90,
+  },
+  {
+    name: 'Enthusiasm',
+    ability: 80,
+  },
+  {
+    name: 'Work Ethic',
+    ability: 75,
+  },
+  {
+    name: 'Problem Solving',
+    ability: 100,
+  },
+  {
+    name: 'Critical Thinking',
+    ability: 90,
+  }],
+  hardskills: [
     {
       name: 'HTML',
       icon: faHtml5,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Javascript',
+      icon: faJsSquare,
+      programmingLanguage: true,
     },
     {
       name: 'CSS',
       icon: faCss3Alt,
+      programmingLanguage: true,
     },
+    {
+      name: 'SCRUM',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Agile',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Unit Testing',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Sass',
+      icon: faSass,
+      programmingLanguage: true,
+    },
+
     {
       name: 'Node JS',
       icon: faNodeJs,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Flux',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'MongoDB',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Redux',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Typescript',
+      icon: null,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Angular',
+      icon: faAngular,
+      programmingLanguage: true,
+    },
+    {
+      name: 'Git',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'TDD',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'React',
+      icon: faReact,
+      programmingLanguage: true,
+    },
+    {
+      name: 'React Native',
+      icon: faReact,
+      programmingLanguage: true,
     },
 
-    ],
-  },
+    {
+      name: 'Jest',
+      icon: null,
+      programmingLanguage: false,
+    },
+    {
+      name: 'Jasmine',
+      icon: null,
+      programmingLanguage: false,
+    },
+  ],
 
   recommendations: {
     gilberto: {

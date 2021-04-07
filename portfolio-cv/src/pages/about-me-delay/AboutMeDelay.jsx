@@ -1,10 +1,27 @@
 import React from 'react';
-import '../about-me/AboutMe';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+import '../about-me/AboutMe.scss';
+import { Link } from 'react-router-dom';
+import Snackbar from '@material-ui/core/Snackbar';
 import information from '../../constants/information-jose';
+import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
+  const [state, setState] = React.useState({
+    open: false,
+    vertical: '',
+    horizontal: '',
+  });
+
+  const { vertical, horizontal, open } = state;
+
+  const handleClick = (newState) => () => {
+    setState({ open: true, ...newState });
+  };
+
+  const handleClose = () => {
+    setState({ ...state, open: false });
+  };
+
   return (
     <main
       className="aboutme"
@@ -15,90 +32,52 @@ export default function AboutMe() {
       data-aos-delay="2500"
     >
       <section className="aboutme__info">
-        <div>
-          <p className="profession">
-            {information.personal.profession}
-          </p>
-          <p className="name">
-            Hi, I'm
-            {' '}
-            <b>
-              {information.personal.name}
-              .
-            </b>
-          </p>
-          <p className="info">{information.resume.info}</p>
-          <button type="button" className="btn btn--blue">Download CV</button>
-          <button type="button" className="btn">
-            <a href={`mailto:${information.personal.email}`}>Contact</a>
-          </button>
 
-        </div>
+        <p className="profession">
+          {information.personal.profession}
+        </p>
+        <p className="name">
+          Hi, I'm
+          <b>
+            <br />
+            {information.personal.name}
+          </b>
+        </p>
+        {information.resume.info.map((info) => <p className="info">{info}</p>)}
 
-        <div className="image"><img src={information.personal.photoCoverURL} alt={information.personal.name} /></div>
+        <button
+          type="button"
+          className="btn btn--blue"
+          onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
+        >
+          Download CV
+        </button>
 
-      </section>
-
-      <section>
-        <div className="whatido">
-          {' '}
-          <h3>What I do</h3>
-          <div className="whatido__desc">
-            <div className="icon">
-              <LocalGroceryStoreIcon />
-            </div>
-
-            <div>
-              <h4>Ecommerce</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur enim unde quasi ducimus nam?
-                {' '}
-
-              </p>
-            </div>
-
-          </div>
-          <div className="whatido__desc">
-            <div className="icon">
-              <ImportantDevicesIcon />
-            </div>
-
-            <div>
-              <h4>Web design</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur enim unde quasi ducimus nam?
-                {' '}
-
-              </p>
-            </div>
-
-          </div>
-        </div>
-        <div className="recommendations">
-          <h3>Recommendations</h3>
-          <div className="recommendations__target">
-            <img
-              src={information.recommendations.gilberto.photoURl}
-              alt={information.recommendations.gilberto.name}
-            />
-            <p className="recommendations__desc">{information.recommendations.gilberto.description}</p>
-            <p className="recommendations__name">{information.recommendations.gilberto.name}</p>
-            <p className="recommendations__pos">{information.recommendations.gilberto.position}</p>
-          </div>
-          <div className="recommendations__target">
-            <img
-              src={information.recommendations.laia.photoURL}
-              alt={information.recommendations.lluis.name}
-            />
-            <p className="recommendations__desc">{information.recommendations.laia.description}</p>
-            <p className="recommendations__name">{information.recommendations.laia.name}</p>
-            <p className="recommendations__pos">{information.recommendations.laia.position}</p>
-          </div>
-        </div>
+        <Snackbar
+          anchorOrigin={{ vertical, horizontal }}
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={state.Transition}
+          message="✅ Downloaded successfully"
+          key={vertical + horizontal}
+        />
+        <Link to="/contact" type="button" className="btn">
+          Contact
+        </Link>
 
       </section>
+
+      <section className="services">
+        <div className="image">
+          <img
+            src={information.personal.photoCoverURL}
+            alt={information.personal.name}
+          />
+        </div>
+        <h3>What I do</h3>
+        <Services />
+      </section>
+
     </main>
   );
 }

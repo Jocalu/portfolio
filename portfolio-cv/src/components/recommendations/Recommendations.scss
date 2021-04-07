@@ -12,6 +12,7 @@
   position: relative;
   margin-left: 30px;
   transition: all 0.3s;
+  position: relative;
 
   &:hover {
     @include effect();
@@ -34,6 +35,8 @@
 
   .recommendations__desc {
     @include fontregular(14px, $color-grey);
+    text-indent: 20px;
+    position: relative;
   }
 
   .recommendations__name {
@@ -43,5 +46,23 @@
 
   .recommendations__pos {
     @include fontregular(11px, $color-blue);
+  }
+
+  .quotes {
+    color: $color-grey;
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.2;
+    bottom: -30px;
+    right: 0px;
+  }
+
+  .reverse {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    opacity: 0.3;
+    font-size: 30px;
+    transform: rotate(180deg);
   }
 }

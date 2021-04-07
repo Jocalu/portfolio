@@ -42,7 +42,7 @@ export default function AboutMe() {
             {information.personal.name}
           </b>
         </p>
-        {information.sumary.info.map((info) => <p className="info">{info}</p>)}
+        {information.resume.info.map((info) => <p className="info">{info}</p>)}
 
         <button
           type="button"

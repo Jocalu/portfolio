@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recommendations.scss';
 import PropTypes from 'prop-types';
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
 export default function Recommendations({ person }) {
   return (
@@ -11,11 +12,14 @@ export default function Recommendations({ person }) {
         alt={person.name}
       />
       <p className="recommendations__desc">
-
-        {person.description}
+        <FormatQuoteIcon className="quotes reverse" />
+        <i>
+          {person.description}
+        </i>
       </p>
       <p className="recommendations__name">{person.name}</p>
       <p className="recommendations__pos">{person.position}</p>
+      <FormatQuoteIcon className="quotes" />
     </div>
   );
 }
