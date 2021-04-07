@@ -9,12 +9,11 @@ import './ProjectsCard.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PlayCircleFilledWhiteOutlinedIcon from '@material-ui/icons/PlayCircleFilledWhiteOutlined';
 import LanguageIcon from '@material-ui/icons/Language';
-import information from '../../constants/information-jose';
 
-export default function ProjectsCard() {
+export default function ProjectsCard({ projects }) {
   return (
     <>
-      {information.projects.map((project) => (
+      {projects.map((project) => (
         <Card className="card">
           <CardActionArea>
             <CardMedia
@@ -48,7 +47,7 @@ export default function ProjectsCard() {
               <PlayCircleFilledWhiteOutlinedIcon className="media__icon" />
             </a>
             )}
-            <img className="media__icon" src={project.technology.icon} alt={project.technology.icon} />
+            <img className="media__icon technology" src={project.technology.icon} alt={project.technology.icon} />
           </CardActions>
         </Card>
       ))}
@@ -57,7 +56,7 @@ export default function ProjectsCard() {
 }
 
 ProjectsCard.propTypes = {
-  project: PropTypes.shape({
+  projects: PropTypes.shape([{
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
@@ -68,5 +67,5 @@ ProjectsCard.propTypes = {
       name: PropTypes.string.isRequired,
       icon: PropTypes.string.isRequired,
     }).isRequired,
-  }).isRequired,
+  }]).isRequired,
 };

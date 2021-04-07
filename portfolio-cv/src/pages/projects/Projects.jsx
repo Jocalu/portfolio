@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectsCard from '../../components/projects-card/ProjectsCard';
 import './Projects.scss';
+import information from '../../constants/information-jose';
 
 export default function Projects() {
   return (
@@ -12,7 +13,7 @@ export default function Projects() {
       data-aos-duration="400"
     >
 
-      <ProjectsCard />
+      <ProjectsCard projects={information.projects} />
     </main>
   );
 }

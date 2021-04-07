@@ -8,6 +8,7 @@
   color: $color-white-hard;
   max-width: 320px;
   max-height: 335px;
+  position: relative;
 
   &:hover {
     @include effect();
@@ -16,6 +17,8 @@
   h4 {
     @include fontsemibold(18px, $color-white-hard);
     margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: $color-blue;
   }
 
   p {
@@ -29,5 +32,15 @@
     a {
       @include flexcenter();
     }
+  }
+
+  .technology {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: $color-primary_5;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
   }
 }
