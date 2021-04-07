@@ -9,6 +9,7 @@ import './ProjectsCard.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PlayCircleFilledWhiteOutlinedIcon from '@material-ui/icons/PlayCircleFilledWhiteOutlined';
 import LanguageIcon from '@material-ui/icons/Language';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ProjectsCard({ projects }) {
   return (
@@ -47,7 +48,7 @@ export default function ProjectsCard({ projects }) {
               <PlayCircleFilledWhiteOutlinedIcon className="media__icon" />
             </a>
             )}
-            <img className="media__icon technology" src={project.technology.icon} alt={project.technology.icon} />
+            <FontAwesomeIcon className="media__icon technology" icon={project.technology.icon} />
           </CardActions>
         </Card>
       ))}

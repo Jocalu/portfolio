@@ -1,3 +1,5 @@
+import { faAngular, faReact } from '@fortawesome/free-brands-svg-icons';
+
 const information = {
   projects: [
     {
@@ -9,7 +11,8 @@ const information = {
       video: 'video',
       technology: {
         name: 'React',
-        icon: 'https://i.postimg.cc/VL7F8Jjb/icons8-react-native-50.png',
+        icon: faReact,
+
       },
     },
     {
@@ -21,7 +24,7 @@ const information = {
       video: '',
       technology: {
         name: 'Angular',
-        icon: 'https://i.postimg.cc/Yq7P9LGn/icons8-angularjs-50.png',
+        icon: faAngular,
       },
     },
 
