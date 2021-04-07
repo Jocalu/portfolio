@@ -58,11 +58,10 @@ export default function Resume() {
               <Chip
                 key={skill.name}
                 className="chip"
-                icon={<FontAwesomeIcon icon={skill.icon} />}
+                icon={skill.icon !== '' ? <FontAwesomeIcon icon={skill.icon} /> : ''}
                 label={skill.name}
-                color="primary"
                 clickable
-                variant={skill.programmingLanguage === true ? 'default' : 'outlined'}
+                color="primary"
               />
             ))}
           </div>

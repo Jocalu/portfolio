@@ -19,6 +19,7 @@ export default function Header() {
       <div className="profile">
         <img src={information.personal.photoURL} alt={information.personal.name} />
         <p className="name">{information.personal.name}</p>
+        <p className="profession">{information.personal.profession}</p>
         <p className="profile__contact">{information.personal.email}</p>
         <p className="profile__contact">{information.personal.phone}</p>
         <div className="media">

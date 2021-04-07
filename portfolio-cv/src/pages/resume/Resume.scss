@@ -31,6 +31,10 @@
         label {
           width: 100%;
           @include flex(row, space-between, space-between);
+
+          div {
+            color: $color-grey;
+          }
         }
 
         progress {
@@ -45,6 +49,7 @@
         @include fontregular(14px, $color-white-hard);
         font-family: $font-secondary;
         margin: 5px;
+        background-color: $color-blue;
 
         .MuiChip-icon {
           font-size: 30px;
