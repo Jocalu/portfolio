@@ -1,6 +1,8 @@
 import React from 'react';
 import './Resume.scss';
 import { Chip, makeStyles } from '@material-ui/core';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import information from '../../constants/information-jose';
 import Recommendations from '../../components/recommendations/Recommendations';
 
@@ -44,10 +46,10 @@ export default function Resume() {
           <h3>Hard skills</h3>
 
           <div className={classes.root}>
-            {information.skills.programmingLanguages.map((skill) => (
+            {information.skills.hardskills.map((skill) => (
               <Chip
                 className="chip"
-                icon={skill.icon}
+                icon={<FontAwesomeIcon icon={skill.icon} />}
                 label={skill.name}
                 color="primary"
                 clickable

@@ -24,8 +24,18 @@
     }
 
     .hard-skills {
-      @include flex(column, flex-start, flex-start);
       padding-right: 20px;
+
+      .chip {
+        @include fontregular(14px, $color-white-hard);
+        font-family: $font-secondary;
+        margin: 5px;
+
+        .MuiChip-icon {
+          font-size: 30px;
+          padding: 5px;
+        }
+      }
     }
   }
 }

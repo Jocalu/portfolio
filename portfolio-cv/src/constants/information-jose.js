@@ -148,43 +148,8 @@ const information = {
     {
       name: 'Critical Thinking',
       ability: 90,
-    },
-    ],
+    }],
     hardskills: [{
-      name: 'Work eEthic',
-      ability: 65,
-    },
-    {
-      name: 'Work rEthic',
-      ability: 78,
-    },
-    {
-      name: 'Work wEthic',
-      ability: 80,
-    },
-    {
-      name: 'mongoDB',
-      ability: 90,
-    },
-    {
-      name: 'Redux',
-      ability: 90,
-    },
-    {
-      name: 'Fluxw',
-      ability: 90,
-    },
-    {
-      name: 'Fluxq',
-      ability: 90,
-    },
-    {
-      name: 'Flux',
-      ability: 90,
-    },
-
-    ],
-    programmingLanguages: [{
       name: 'Javascript ES6',
       icon: faJsSquare,
     },
@@ -215,6 +180,39 @@ const information = {
     {
       name: 'Node JS',
       icon: faNodeJs,
+    },
+    {
+      name: 'Flux',
+    },
+    {
+      name: 'MongoDB',
+    },
+    {
+      name: 'Redux',
+    },
+    {
+      name: 'Typescript',
+    },
+    {
+      name: 'Git',
+    },
+    {
+      name: 'TDD',
+    },
+    {
+      name: 'SCRUM',
+    },
+    {
+      name: 'Agile',
+    },
+    {
+      name: 'Jest',
+    },
+    {
+      name: 'Jasmine',
+    },
+    {
+      name: 'Unit Testing',
     },
 
     ],
