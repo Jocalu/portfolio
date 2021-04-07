@@ -2,6 +2,10 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
 
+.slide {
+  background-color: wheat;
+}
+
 .aboutme {
   @include flex(column, flex-start, flex-start);
   margin: 10px;
@@ -12,11 +16,11 @@
   overflow: hidden;
   color: $color-white-hard;
 
-  .aboutme__info {
+  .aboutme__info-container {
     @include flex(row, flex-start, flex-start);
     padding: 30px 50px;
 
-    div {
+    .aboutme__info {
       width: 540px;
       position: relative;
 
@@ -39,6 +43,10 @@
         margin-top: 10px;
         letter-spacing: 1px;
         padding-right: 40px;
+      }
+
+      .MuiSnackbarContent-root {
+        background-color: $color-blue;
       }
     }
 
