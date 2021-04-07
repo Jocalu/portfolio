@@ -1,10 +1,9 @@
 import React from 'react';
 import './AboutMe.scss';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import { Link } from 'react-router-dom';
 import information from '../../constants/information-jose';
 import Recommendations from '../../components/recommendations/Recommendations';
+import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
   return (
@@ -49,40 +48,10 @@ export default function AboutMe() {
       </section>
 
       <section>
-        <div className="whatido">
-          {' '}
+        <div className="services">
+
           <h3>What I do</h3>
-          <div className="whatido__desc">
-            <div className="icon">
-              <LocalGroceryStoreIcon />
-            </div>
-
-            <div>
-              <h4>Ecommerce</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur enim unde quasi ducimus nam?
-                {' '}
-
-              </p>
-            </div>
-
-          </div>
-          <div className="whatido__desc">
-            <div className="icon">
-              <ImportantDevicesIcon />
-            </div>
-
-            <div>
-              <h4>Web design</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur enim unde quasi ducimus nam?
-                {' '}
-
-              </p>
-            </div>
-          </div>
+          <Services />
         </div>
 
         <div className="recommendations">

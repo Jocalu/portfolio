@@ -57,34 +57,9 @@
     @include flex(row, flex-start, flex-start);
     padding: 0 50px;
 
-    .whatido {
+    .services {
       width: 540px;
       padding-right: 50px;
-
-      .whatido__desc {
-        @include flex(row, flex-start, flex-start);
-        margin-bottom: 20px;
-
-        .icon {
-          @include flexcenter();
-          color: $color-blue;
-          background-color: $color-primary_3;
-          min-width: 50px;
-          height: 50px;
-          border-radius: 6px;
-          margin-right: 20px;
-        }
-
-        h4 {
-          @include fontsemibold(18px, $color-white-hard);
-          margin-bottom: 10px;
-        }
-
-        p {
-          @include fontregular(13px, $color-grey);
-          letter-spacing: 1px;
-        }
-      }
     }
 
     .recommendations {
@@ -96,7 +71,6 @@
         text-decoration-color: $color-blue;
         margin-bottom: 20px;
       }
-
     }
   }
 }
