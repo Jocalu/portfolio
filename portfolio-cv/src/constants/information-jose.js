@@ -9,11 +9,11 @@ const information = {
       video: '',
       technology: {
         name: 'React',
-        icon: '',
+        icon: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
       },
     },
     {
-      name: 'MidDay restaurant',
+      name: 'MidDay Restaurant',
       description: 'MidDay is an application that allows the management of restaurant reservations for lunch menus. It also generates its own database for each restaurant, so that it can manage its dishes and menus.',
       image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
       github: 'https://github.com/Jocalu/MidDay-Project',
@@ -21,7 +21,7 @@ const information = {
       video: 'video',
       technology: {
         name: 'Angular',
-        icon: '',
+        icon: 'https://img.icons8.com/ios-filled/50/000000/angularjs.png',
       },
     },
   ],
@@ -180,7 +180,7 @@ const information = {
     {
       name: 'React',
       ability: 90,
-      icon: ' https://img.icons8.com/ios-filled/50/000000/react-native.png',
+      icon: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
     },
     {
       name: 'React Native',

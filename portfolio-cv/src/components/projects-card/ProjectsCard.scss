@@ -6,6 +6,7 @@
   margin: 20px;
   background-color: $color-primary_3;
   color: $color-white-hard;
+  max-width: 320px;
 
   h4 {
     @include fontsemibold(18px, $color-white-hard);
@@ -15,5 +16,10 @@
   p {
     @include fontregular(13px, $color-grey);
     letter-spacing: 1px;
+    min-height: 120px;
+  }
+
+  &:hover {
+    @include effect();
   }
 }

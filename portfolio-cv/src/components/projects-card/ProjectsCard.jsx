@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,21 +7,16 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import './ProjectsCard.scss';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import PlayCircleFilledWhiteOutlinedIcon from '@material-ui/icons/PlayCircleFilledWhiteOutlined';
+import LanguageIcon from '@material-ui/icons/Language';
 import information from '../../constants/information-jose';
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-});
-
 export default function ProjectsCard() {
-  const classes = useStyles();
-
   return (
     <>
       {information.projects.map((project) => (
-        <Card className={`card ${classes.root}`}>
+        <Card className="card">
           <CardActionArea>
             <CardMedia
               component="img"
@@ -38,10 +32,13 @@ export default function ProjectsCard() {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              Share
+              <GitHubIcon />
             </Button>
             <Button size="small" color="primary">
-              Learn More
+              <LanguageIcon />
+            </Button>
+            <Button size="small" color="primary">
+              <PlayCircleFilledWhiteOutlinedIcon />
             </Button>
           </CardActions>
         </Card>
