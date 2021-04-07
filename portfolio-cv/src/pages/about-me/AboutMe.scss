@@ -2,26 +2,21 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
 
-.slide {
-  background-color: wheat;
-}
-
 .aboutme {
-  @include flex(column, flex-start, flex-start);
-  margin: 10px;
-  width: 100vw;
-  height: 98vh;
+  @include flex(row, space-between, space-between);
+  width: 1120px;
+  height: 900px;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
   color: $color-white-hard;
+  padding: 30px 50px;
 
   .aboutme__info-container {
     @include flex(row, flex-start, flex-start);
-    padding: 30px 50px;
+    width: 50%;
 
     .aboutme__info {
-      width: 540px;
       position: relative;
 
       .profession {
@@ -54,35 +49,20 @@
         top: -50px;
       }
     }
+  }
+
+  .services {
+    width: 50%;
+    @include flex(column, flex-start, flex-start);
 
     .image {
-      width: 500px;
+      width: 100%;
+      margin-bottom: 20px;
 
       img {
         width: 100%;
         opacity: 0.6;
         border-radius: 6px;
-      }
-    }
-  }
-
-  section {
-    @include flex(row, flex-start, flex-start);
-    padding: 0 50px;
-
-    .services {
-      width: 540px;
-      padding-right: 50px;
-    }
-
-    .recommendations {
-      margin-top: -200px;
-      width: 300px;
-      h3 {
-        @include fontsemibold(21px, $color-white-hard);
-        text-decoration: underline;
-        text-decoration-color: $color-blue;
-        margin-bottom: 20px;
       }
     }
   }

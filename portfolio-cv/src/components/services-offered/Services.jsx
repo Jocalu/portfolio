@@ -14,8 +14,7 @@ export default function Services() {
         <div>
           <h4>Ecommerce</h4>
           <p>
-            In eCommerce, competition is fierce; the offers are short-lived
-            and transparent for the user. As a website operator,
+            As a website operator,
             you are therefore permanently faced with the challenge of monitoring
             the market and generating unique content with added value for the user
             on the ongoing new product pages. In doing so, you create competitive

@@ -5,6 +5,7 @@
 .services__description {
   @include flex(row, flex-start, flex-start);
   margin-bottom: 20px;
+  width: 100%;
 
   .icon {
     @include flexcenter();

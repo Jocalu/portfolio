@@ -3,7 +3,6 @@ import './AboutMe.scss';
 import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
 import information from '../../constants/information-jose';
-import Recommendations from '../../components/recommendations/Recommendations';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
@@ -38,17 +37,22 @@ export default function AboutMe() {
           </p>
           <p className="name">
             Hi, I'm
-            {' '}
             <b>
+              <br />
               {information.personal.name}
-              .
             </b>
           </p>
 
           <p className="info">{information.sumary.info[0]}</p>
           <p className="info">{information.sumary.info[1]}</p>
           <p className="info">{information.sumary.info[2]}</p>
-          <button type="button" className="btn btn--blue" onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}>Download CV</button>
+          <button
+            type="button"
+            className="btn btn--blue"
+            onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
+          >
+            Download CV
+          </button>
           <Snackbar
             anchorOrigin={{ vertical, horizontal }}
             open={open}
@@ -63,29 +67,19 @@ export default function AboutMe() {
 
         </div>
 
+      </section>
+
+      <section className="services">
         <div className="image">
           <img
             src={information.personal.photoCoverURL}
             alt={information.personal.name}
           />
         </div>
-
+        <h3>What I do</h3>
+        <Services />
       </section>
 
-      <section>
-        <div className="services">
-
-          <h3>What I do</h3>
-          <Services />
-        </div>
-
-        <div className="recommendations">
-          <h3>Recommendations</h3>
-          <Recommendations person={information.recommendations.diana} />
-          <Recommendations person={information.recommendations.alvaro} />
-        </div>
-
-      </section>
     </main>
   );
 }

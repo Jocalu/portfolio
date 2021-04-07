@@ -1,4 +1,12 @@
-import { faAngular, faReact } from '@fortawesome/free-brands-svg-icons';
+import {
+  faAngular,
+  faReact,
+  faSass,
+  faJsSquare,
+  faHtml5,
+  faCss3Alt,
+  faNodeJs,
+} from '@fortawesome/free-brands-svg-icons';
 
 const information = {
   projects: [
@@ -33,7 +41,7 @@ const information = {
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',
-    name: 'Jose Cárcamo',
+    name: 'Jose Cárcamo.',
     phone: '620-664-432',
     email: 'jocalu87@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jose-c%C3%A1rcamo-lucena-95b653114/',
@@ -178,48 +186,35 @@ const information = {
     ],
     programmingLanguages: [{
       name: 'Javascript ES6',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/javascript.png',
+      icon: faJsSquare,
     },
     {
       name: 'React',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
+      icon: faReact,
     },
     {
       name: 'React Native',
-      ability: 90,
-      icon: ' https://img.icons8.com/ios-filled/50/000000/react-native.png',
+      icon: faReact,
     },
     {
       name: 'Sass',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/sass.png',
+      icon: faSass,
     },
     {
       name: 'Angular',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/angularjs.png',
-    },
-    {
-      name: 'Typescript',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/typescript.png',
+      icon: faAngular,
     },
     {
       name: 'HTML',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/html-5.png',
+      icon: faHtml5,
     },
     {
       name: 'CSS',
-      ability: 90,
-      icon: 'https://img.icons8.com/ios-filled/50/000000/css3.png',
+      icon: faCss3Alt,
     },
     {
       name: 'Node JS',
-      ability: 90,
-      icon: 'https://img.icons8.com/windows/64/000000/node-js.png',
+      icon: faNodeJs,
     },
 
     ],

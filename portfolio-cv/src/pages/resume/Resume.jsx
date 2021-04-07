@@ -1,7 +1,9 @@
 import React from 'react';
 import './Resume.scss';
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import information from '../../constants/information-jose';
+import Recommendations from '../../components/recommendations/Recommendations';
 
 export default function Resume() {
   return (
@@ -47,11 +49,17 @@ export default function Resume() {
           <div className="icons__languages">
             {information.skills.programmingLanguages.map((skill) => (
               <div className="icon" key={`icon ${skill.name}`}>
-                <img src={skill.icon} alt={skill.name} />
+                <FontAwesomeIcon icon={skill.icon} />
               </div>
             ))}
           </div>
 
+        </div>
+
+        <div className="recommendations">
+          <h3>Recommendations</h3>
+          <Recommendations person={information.recommendations.diana} />
+          <Recommendations person={information.recommendations.alvaro} />
         </div>
       </section>
 
