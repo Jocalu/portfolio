@@ -12,9 +12,26 @@
   color: $color-white-hard;
   padding: 30px 50px;
 
-  .experience, .education {
+  @include for-phone-only {
+    @include flex(column, center, center);
+    height: 100%;
+    margin-left: 0px;
+    overflow: visible;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  .experience,
+  .education {
     width: 50%;
     padding-right: 50px;
+
+    @include for-phone-only {
+      width: 100% !important;
+      padding: 0;
+      margin-bottom: 20px;
+    }
 
     .container {
       border-left: 1px solid $color-hover;
@@ -27,6 +44,11 @@
         position: absolute;
         top: -35px;
         left: -20px;
+
+        @include for-phone-only {
+          top: -60px;
+          left: -5px;
+        }
 
         .date {
           border: 2px solid $color-blue;
@@ -44,6 +66,10 @@
         letter-spacing: 1.2px;
         margin: 60px 0 10px 0;
         padding-top: 10px;
+
+        @include for-phone-only {
+          margin: 80px 0 10px 0;
+        }
       }
 
       .description {
