@@ -24,7 +24,7 @@ const information = {
   resume: {
     info: [
       'Passionate about technology, I have decided to enter the world of programming and web development. And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
-      'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
+      'What can you find in me? A leader, a person excited about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a hight degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
   experience: [
@@ -247,7 +247,7 @@ const information = {
   projects: [
     {
       name: 'Moodsic',
-      description: 'Moodsic is a web app that are giving you the opportunity to listen to all kinds of songs and artists selected from people all over the world, based on how it makes them feel.',
+      description: 'Moodsic is a web app that gives you the opportunity to listen to all kinds of songs and artists selected from people all over the world, based on how it makes them feel.',
       image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
       github: 'https://github.com/Jocalu/Moodsic',
       url: '',

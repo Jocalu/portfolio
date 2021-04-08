@@ -72,9 +72,16 @@ export default function AboutMe() {
             message="✅ Downloaded successfully"
             key={vertical + horizontal}
           />
-          <Link to="/contact" type="button" className="btn">
+          {/*   <Link
+            to="/contact"
+            type="button"
+            className="btn"
+          >
             Contact
-          </Link>
+          </Link> */}
+          <a href={`mailto:${information.personal.email}`} className="btn">
+            Contact
+          </a>
         </div>
 
       </section>

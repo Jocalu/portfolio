@@ -64,7 +64,7 @@
       @include fontregular(15px, $color-grey);
       margin-top: 10px;
       letter-spacing: 1px;
-      padding-right: 40px;
+      padding-right: 60px;
       text-align: justify;
 
       @include for-phone-only {
