@@ -57,7 +57,12 @@ export default function Contact() {
 
           </div>
 
-          <a className="target" href={information.personal.linkedin}>
+          <a
+            className="target"
+            href={information.personal.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
 
             <div className="icon">
               <LinkedInIcon style={{ fontSize: 40 }} />

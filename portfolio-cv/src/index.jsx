@@ -12,6 +12,7 @@ import Formation from './pages/formation/Formation';
 import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
 import Projects from './pages/projects/Projects';
+import Footer from './components/footer/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="/contact" exact component={Contact} />
         <Route path="/*" exact component={AboutMe} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),

@@ -274,7 +274,7 @@ const information = {
       description: 'This same portfolio. Made with react, Typescript and using react material',
       image: 'https://i.postimg.cc/Jnd4SY8g/Captura-de-pantalla-2021-04-07-a-las-18-42-28.png',
       github: 'https://github.com/Jocalu/Portfolio',
-      url: 'https://midday-restaurant.web.app/home',
+      url: 'https://portfolio-jose-carcamo.web.app/',
       video: '',
       technology: {
         name: 'React',

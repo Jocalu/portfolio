@@ -1,0 +1,16 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.footer {
+  display: none;
+
+  @include for-phone-only {
+    @include flexcenter();
+    background-color: $color-primary_1;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+  }
+}
