@@ -31,8 +31,12 @@
       }
     }
 
+    .buttons {
+      margin-top: 30px;
+    }
+
     .info {
-      @include fontregular(16px, $color-grey);
+      @include fontregular(15px, $color-grey);
       margin-top: 10px;
       letter-spacing: 1px;
       padding-right: 40px;

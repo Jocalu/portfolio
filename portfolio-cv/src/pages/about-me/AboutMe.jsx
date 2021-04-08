@@ -8,8 +8,8 @@ import Services from '../../components/services-offered/Services';
 export default function AboutMe() {
   const [state, setState] = React.useState({
     open: false,
-    vertical: '',
-    horizontal: '',
+    vertical: 'bottom',
+    horizontal: 'left',
   });
 
   const { vertical, horizontal, open } = state;
@@ -44,25 +44,30 @@ export default function AboutMe() {
         </p>
         {information.resume.info.map((info) => <p className="info">{info}</p>)}
 
-        <button
-          type="button"
-          className="btn btn--blue"
-          onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
-        >
-          Download CV
-        </button>
+        <div className="buttons">
+          <Link
+            to="/Users/Jocalu/Desktop/Portfolio/portfolio-cv/src/files/jose-carcamo-web-developer-2021.pdf"
+            type="button"
+            className="btn btn--blue"
+            target="_blank"
+            download
+            onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
+          >
+            Download CV
+          </Link>
 
-        <Snackbar
-          anchorOrigin={{ vertical, horizontal }}
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={state.Transition}
-          message="✅ Downloaded successfully"
-          key={vertical + horizontal}
-        />
-        <Link to="/contact" type="button" className="btn">
-          Contact
-        </Link>
+          <Snackbar
+            anchorOrigin={{ vertical, horizontal }}
+            open={open}
+            onClose={handleClose}
+            TransitionComponent={state.Transition}
+            message="✅ Downloaded successfully"
+            key={vertical + horizontal}
+          />
+          <Link to="/contact" type="button" className="btn">
+            Contact
+          </Link>
+        </div>
 
       </section>
 
