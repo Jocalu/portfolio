@@ -7,7 +7,7 @@ export default function Opening() {
     <section className="opening">
       <div className="title">
         <div>
-          <img src="https://i.postimg.cc/7LPtZ1gG/logo-white.png" alt="logo" />
+          <img src="https://i.postimg.cc/T25QTbtK/jc-black.png" alt="logo" />
           <p>{information.personal.name}</p>
         </div>
         <p>{information.personal.profession}</p>

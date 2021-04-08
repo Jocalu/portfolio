@@ -106,7 +106,7 @@
         .btn--blue {
           width: 170px;
           align-self: flex-start;
-          margin-left: 10px;
+          margin: 30px 0 0 10px;
 
           @include for-phone-only {
             position: absolute;
