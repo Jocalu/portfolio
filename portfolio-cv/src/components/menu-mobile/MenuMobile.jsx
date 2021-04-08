@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MenuMobile.scss';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 export default function MenuMobile() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);

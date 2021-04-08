@@ -23,7 +23,7 @@ export default function Resume() {
   return (
     <main
       className="resume"
-      data-aos="flip-down"
+      data-aos="fade-left"
       data-aos-offset="0"
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"

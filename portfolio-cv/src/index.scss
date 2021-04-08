@@ -13,10 +13,6 @@
 body {
   background: $color-primary_4;
   font-family: $font-primary;
-
-  @include for-phone-only {
-    overflow-x: hidden;
-  }
 }
 
 h3 {
