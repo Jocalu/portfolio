@@ -35,8 +35,12 @@ export default function AboutMe() {
         <p className="profession">
           {information.personal.profession}
         </p>
-        <div className="photo">
-          <img src={information.personal.photoURL} alt={information.personal.name} />
+        <div className="image">
+          <img
+            className="photo"
+            src={information.personal.photoURL}
+            alt={information.personal.name}
+          />
         </div>
         <p className="name">
           Hi, I'm
