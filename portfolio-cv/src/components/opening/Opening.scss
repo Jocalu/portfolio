@@ -15,7 +15,7 @@
   animation: hide 4s;
 
   @include for-phone-only {
-    overflow-x: hidden;
+    display: none;
   }
 
   @keyframes hide {

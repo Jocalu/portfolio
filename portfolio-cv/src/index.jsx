@@ -18,9 +18,9 @@ import MenuMobile from './components/menu-mobile/MenuMobile';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Opening />
       <MenuMobile />
       <Header />
+      <Opening />
       <Switch>
         <Route path="/" exact component={AboutMeDelay} />
         <Route path="/about-me" exact component={AboutMe} />
