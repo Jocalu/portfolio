@@ -6,11 +6,16 @@
   display: none;
 
   @include for-phone-only {
-    @include flexcenter();
-    background-color: $color-primary_1;
+    @include flex(row, space-around, center);
+    background-color: $color-primary_5;
     width: 100vw;
     position: fixed;
     bottom: 0px;
     height: 60px;
+
+    .footer__icon {
+      font-size: 40px;
+      color: $color-grey;
+    }
   }
 }

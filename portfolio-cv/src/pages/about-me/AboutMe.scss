@@ -16,10 +16,12 @@
     @include flex(column, center, center);
     height: 100%;
     margin-left: 0px;
-    overflow: visible;
     padding: 30px;
     position: relative;
     width: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 60px;
+    overflow-x: hidden;
   }
 
   .aboutme__info {

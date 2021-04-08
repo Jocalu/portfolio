@@ -14,6 +14,10 @@
   font-size: 20px;
   animation: hide 4s;
 
+  @include for-phone-only {
+    overflow-x: hidden;
+  }
+
   @keyframes hide {
     0% {
       top: 0;

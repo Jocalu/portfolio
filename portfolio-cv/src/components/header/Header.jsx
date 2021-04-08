@@ -37,7 +37,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon className="media__icon" />
+            <GitHubIcon />
           </a>
         </div>
 
