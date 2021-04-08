@@ -13,4 +13,24 @@
   overflow: hidden;
   color: $color-white-hard;
   padding: 5px 25px;
+
+  @include for-phone-only {
+    @include flex(column, center, center);
+    height: 100%;
+    margin-left: 0px;
+    overflow: visible;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+  }
+
+  h3 {
+    display: none;
+
+    @include for-phone-only {
+      display: flex;
+      align-self: flex-start;
+    }
+  }
 }

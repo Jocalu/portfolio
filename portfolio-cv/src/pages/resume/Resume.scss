@@ -60,6 +60,9 @@
     }
 
     .hard-skills {
+      @include for-phone-only {
+        margin-bottom: 20px;
+      }
       .chip {
         @include fontregular(14px, $color-white-hard);
         font-family: $font-secondary;

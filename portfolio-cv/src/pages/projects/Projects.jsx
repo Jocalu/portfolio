@@ -12,7 +12,7 @@ export default function Projects() {
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"
     >
-
+      <h3>Projects</h3>
       <ProjectsCard projects={information.projects} />
     </main>
   );
