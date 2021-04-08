@@ -22,7 +22,7 @@ const information = {
   },
   resume: {
     info: [
-      'Passionate about technology, I have decided to enter the world of programming and web development.And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
+      'Passionate about technology, I have decided to enter the world of programming and web development. And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
       'What can you find in me? A leader, a person passionate about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a height degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
@@ -211,35 +211,35 @@ const information = {
     gilberto: {
       name: 'Gilberto Cao',
       position: 'Web programming teacher at Skylab Academy',
-      description: '"The best student I have ever had. It is applied, organized and designs like God."',
+      description: 'The best student I have ever had. It is applied, organized and designs like God.',
       photoURl: 'https://avatars.githubusercontent.com/u/10716392?s=460&u=1a4b8066bc0abf6ec89b8b394f7a7d8d9b6f5c3a&v=4',
     },
 
     lluis: {
       name: 'Lluis Quintana',
       position: 'Partner at Skylab Academy',
-      description: '"He is a very diligent student. When I didn\'t achieve a goal, Jose helped me. He taught me everything I know."',
+      description: 'He is a very diligent student. When I didn\'t achieve a goal, Jose helped me. He taught me everything I know.',
       photoURL: 'https://i.postimg.cc/yYFwn1pM/Lluis.jpg',
     },
 
     laia: {
       name: 'Laia Solanes',
       position: 'Partner at Skylab Academy',
-      description: '"Great partner, better person"',
+      description: 'Great partner, better person',
       photoURL: 'https://i.postimg.cc/y8s2bMwk/Laia.jpg',
     },
 
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
-      description: '"Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca."',
+      description: 'Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca.',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 
     alvaro: {
       name: 'Álvaro Valladares',
       position: 'Partner at Skylab Academy',
-      description: '"Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona."',
+      description: 'Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona.',
       photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },
   },

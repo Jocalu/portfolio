@@ -3,27 +3,33 @@
 @import "../../../styles/fonts";
 
 .services__description {
-  @include flex(row, flex-start, flex-start);
-  margin-bottom: 20px;
+  @include flex(column, center, flex-start);
+  margin-bottom: 10px;
   width: 100%;
 
-  .icon {
-    @include flexcenter();
-    color: $color-blue;
-    background-color: $color-primary_3;
-    min-width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    margin-right: 20px;
-  }
+  .title {
+    @include flex(row, flex-start, center);
 
-  h4 {
-    @include fontsemibold(18px, $color-white-hard);
-    margin-bottom: 10px;
+    .icon {
+      @include flexcenter();
+      color: $color-blue;
+      background-color: $color-primary_3;
+      min-width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+
+    h4 {
+      @include fontsemibold(18px, $color-white-hard);
+      letter-spacing: 1px;
+    }
   }
 
   p {
     @include fontregular(14px, $color-grey);
+    text-indent: 70px;
     letter-spacing: 1px;
+    text-align: justify;
   }
 }

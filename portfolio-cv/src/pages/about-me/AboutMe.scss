@@ -66,6 +66,7 @@
       margin-top: 10px;
       letter-spacing: 1px;
       padding-right: 40px;
+      text-align: justify;
 
       @include for-phone-only {
         padding: 0;
