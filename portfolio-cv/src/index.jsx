@@ -13,11 +13,13 @@ import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
 import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
+import MenuMobile from './components/menu-mobile/MenuMobile';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Opening />
+      <MenuMobile />
       <Header />
       <Switch>
         <Route path="/" exact component={AboutMeDelay} />

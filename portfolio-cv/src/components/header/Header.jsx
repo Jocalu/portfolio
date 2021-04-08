@@ -15,7 +15,6 @@ export default function Header() {
       data-aos-duration="1200"
       data-aos-delay="2500"
     >
-
       <div className="profile">
         <img src={information.personal.photoURL} alt={information.personal.name} />
         <p className="name">{information.personal.name}</p>

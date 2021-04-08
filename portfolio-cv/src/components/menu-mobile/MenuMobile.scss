@@ -1,0 +1,29 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.menu-mobile {
+  display: none;
+
+  @include for-phone-only {
+    @include flexcenter();
+    background-color: $color-primary_5;
+    color: $color-primary_3;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+
+    .menu__icon {
+      color: $color-grey;
+      font-size: 2.5rem;
+    }
+
+    .MuiMenu-list {
+      @include flex(column, space-around, center);
+    }
+  }
+}

@@ -40,22 +40,26 @@ export default function Contact() {
         <hr className="line" />
 
         <div className="contact__target">
-          <div className="target">
-            {' '}
+          <a
+            className="target"
+            href={`mailto:${information.personal.email}`}
+          >
             <div className="icon">
               <MailOutlined style={{ fontSize: 40 }} />
             </div>
             <p>{information.personal.email}</p>
 
-          </div>
-          <div className="target">
-            {' '}
+          </a>
+
+          <a
+            className="target"
+            href={`tel:${information.personal.phone}`}
+          >
             <div className="icon">
               <PhoneIphoneIcon style={{ fontSize: 40 }} />
             </div>
             <p>{information.personal.phone}</p>
-
-          </div>
+          </a>
 
           <a
             className="target"

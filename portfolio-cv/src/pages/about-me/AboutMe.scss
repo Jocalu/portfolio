@@ -37,6 +37,20 @@
       letter-spacing: 1px;
     }
 
+    .photo {
+      display: none;
+
+      @include for-phone-only {
+        @include flexcenter();
+
+        img {
+          border-radius: 50%;
+          margin: 20px 0 0 0;
+          width: 50%;
+        }
+      }
+    }
+
     .name {
       @include fontlight(52px, $color-white-hard);
       line-height: 1.1em;
