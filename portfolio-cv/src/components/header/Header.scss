@@ -12,6 +12,10 @@ header {
   background-color: $color-primary_3;
   z-index: 1;
 
+  @include for-phone-only {
+    display: none;
+  }
+
   .profile {
     @include flex(column, center, center);
     background-color: $color-primary_2;

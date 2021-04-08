@@ -12,9 +12,23 @@
   color: $color-white-hard;
   padding: 30px 50px;
 
+  @include for-phone-only {
+    @include flex(column, center, center);
+    height: 100%;
+    margin-left: 0px;
+    overflow: visible;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+  }
+
   .aboutme__info {
     width: 50%;
     position: relative;
+
+    @include for-phone-only {
+      width: 100%;
+    }
 
     .profession {
       @include fontlight(18px, $color-grey);
@@ -31,15 +45,26 @@
       }
     }
 
-    .buttons {
-      margin-top: 30px;
-    }
-
     .info {
       @include fontregular(15px, $color-grey);
       margin-top: 10px;
       letter-spacing: 1px;
       padding-right: 40px;
+
+      @include for-phone-only {
+        padding: 0;
+      }
+    }
+
+    .buttons {
+      margin-top: 30px;
+
+      @include for-phone-only {
+        @include flex(row, space-around, flex-start);
+        .btn {
+          margin: 30px 0;
+        }
+      }
     }
 
     .MuiSnackbarContent-root {
@@ -49,6 +74,10 @@
       position: absolute;
       right: -1080px;
       top: -150px;
+
+      @include for-phone-only {
+        display: none;
+      }
     }
   }
 }
@@ -56,6 +85,10 @@
 .services {
   width: 50%;
   @include flex(column, flex-start, flex-start);
+
+  @include for-phone-only {
+    width: 100%;
+  }
 
   .image {
     width: 100%;
@@ -65,6 +98,11 @@
       width: 90%;
       opacity: 0.6;
       border-radius: 6px;
+
+      @include for-phone-only {
+        width: 100%;
+        opacity: 1;
+      }
     }
   }
 }

@@ -12,12 +12,27 @@
   color: $color-white-hard;
   padding: 30px 50px;
 
+  @include for-phone-only {
+    @include flex(column, center, center);
+    height: 100%;
+    margin-left: 0px;
+    overflow: visible;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+  }
+
   .skills {
     @include flex(column, flex-start, flex-start);
     width: 50%;
     padding-right: 50px;
     @include fontregular(14px, $color-white-hard);
     font-family: $font-secondary;
+
+    @include for-phone-only {
+      width: 100%;
+      padding: 0;
+    }
 
     .soft-skills {
       width: 100%;
