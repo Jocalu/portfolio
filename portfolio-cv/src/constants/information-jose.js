@@ -19,6 +19,7 @@ const information = {
     github: 'https://github.com/Jocalu',
     photoURL: 'https://i.postimg.cc/Fs6t6kFB/profile-photo-removebg-preview.png',
     photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
+    icon: 'https://i.postimg.cc/T25QTbtK/jc-black.png',
   },
   resume: {
     info: [

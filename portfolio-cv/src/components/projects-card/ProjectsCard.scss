@@ -23,8 +23,7 @@
   h4 {
     @include fontsemibold(18px, $color-white-hard);
     margin-bottom: 10px;
-    text-decoration: underline;
-    text-decoration-color: $color-blue;
+    letter-spacing: 1px;
   }
 
   p {
