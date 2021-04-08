@@ -15,7 +15,7 @@ const information = {
     name: 'Jose Cárcamo',
     phone: '+34 620-664-432',
     email: 'jocalu87@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/jose-c%C3%A1rcamo-lucena-95b653114/',
+    linkedin: 'https://www.linkedin.com/in/jose-carcamo-lucena-web-developer/',
     github: 'https://github.com/Jocalu',
     photoURL: 'https://i.postimg.cc/Fs6t6kFB/profile-photo-removebg-preview.png',
     photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
