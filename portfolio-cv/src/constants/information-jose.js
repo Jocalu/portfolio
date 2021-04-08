@@ -250,7 +250,7 @@ const information = {
       image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
       github: 'https://github.com/Jocalu/Moodsic',
       url: '',
-      video: 'https://www.linkedin.com/feed/update/urn:li:activity:6767533377479286784/',
+      video: 'https://vimeo.com/534338172',
       technology: {
         name: 'React',
         icon: faReact,
