@@ -1,7 +1,6 @@
 import React from 'react';
 import './MenuMobile.scss';
-import { Link } from 'react-router-dom';
-import { Button, Menu } from '@material-ui/core';
+import { Button, Menu, MenuItem } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 export default function MenuMobile() {
@@ -27,96 +26,48 @@ export default function MenuMobile() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link
-          to="/about-me"
+        <MenuItem
+          component="a"
+          href="/about-me"
           className="link"
           onClick={handleClose}
         >
-          About Me
+          🔹 About Me
 
-        </Link>
-        <Link
-          to="/resume"
+        </MenuItem>
+        <MenuItem
+          component="a"
+          href="/resume"
           className="link"
           onClick={handleClose}
         >
-          Resume
-        </Link>
-        <Link
-          to="/formation"
+          🔹 Resume
+        </MenuItem>
+        <MenuItem
+          component="a"
+          href="/formation"
           className="link"
           onClick={handleClose}
         >
-          Experience & Education
-        </Link>
-        <Link
-          to="/projects"
+          🔹 Experience & Education
+        </MenuItem>
+        <MenuItem
+          component="a"
+          href="/projects"
           className="link"
           onClick={handleClose}
         >
-          Projects
-        </Link>
-        <Link
-          to="/contact"
+          🔹 Projects
+        </MenuItem>
+        <MenuItem
+          component="a"
+          href="/contact"
           className="link"
           onClick={handleClose}
         >
-          Contact
-        </Link>
+          🔹 Contact
+        </MenuItem>
       </Menu>
-      {/* <PopupState
-        variant="popover"
-        popupId="demo-popup-menu"
-      >
-        {(popupState) => (
-          <>
-            <IconButton
-              ariant="contained"
-              {...bindTrigger(popupState)}
-            >
-              <MoreVertIcon className="menu__icon" />
-            </IconButton>
-            <Menu {...bindMenu(popupState)}>
-              <Link
-                to="/about-me"
-                className="link"
-                onClick={popupState.close}
-              >
-                About Me
-
-              </Link>
-              <Link
-                to="/resume"
-                className="link"
-                onClick={popupState.close}
-              >
-                Resume
-              </Link>
-              <Link
-                to="/formation"
-                className="link"
-                onClick={popupState.close}
-              >
-                Experience & Education
-              </Link>
-              <Link
-                to="/projects"
-                className="link"
-                onClick={popupState.close}
-              >
-                Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="link"
-                onClick={popupState.close}
-              >
-                Contact
-              </Link>
-            </Menu>
-          </>
-        )}
-      </PopupState> */}
     </section>
   );
 }
