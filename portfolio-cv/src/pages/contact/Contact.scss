@@ -12,10 +12,25 @@
   overflow: hidden;
   color: $color-white-hard;
 
+  @include for-phone-only {
+    @include flex(column, center, center);
+    height: 100%;
+    margin-left: 0px;
+    overflow: visible;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .contact__info {
     @include flex(column, center, center);
     padding: 30px 50px;
     width: 1080px;
+
+    @include for-phone-only {
+      padding: 0;
+    }
 
     h1 {
       @include fontbold(52px, $color-white-hard);
@@ -31,6 +46,11 @@
       padding: 0 100px;
       margin: 30px 0;
 
+      @include for-phone-only {
+        @include flex(row, center, center);
+        padding: 0;
+      }
+
       .target {
         cursor: pointer;
         @include flex(column, center, center);
@@ -43,6 +63,15 @@
         text-decoration: none;
         font-family: $font-secondary;
         line-height: 36px;
+
+        @include for-phone-only {
+          width: 100px;
+          margin: 0 10px;
+
+          p {
+            display: none;
+          }
+        }
 
         &:hover {
           transform: translateX(-5px);
@@ -61,12 +90,25 @@
     .formcontrol {
       @include flex(row, center, flex-start);
 
+      @include for-phone-only {
+        @include flex(column, center, center);
+
+        input {
+          min-width: 350px;
+        }
+      }
+
       .inputs {
         @include flex(column, center, center);
 
         .btn--blue {
           width: 170px;
           align-self: flex-start;
+
+          @include for-phone-only {
+            position: absolute;
+            top: 770px;
+          }
         }
       }
 
@@ -74,6 +116,10 @@
         max-height: 250px;
         min-width: 470px;
         resize: none;
+
+        @include for-phone-only {
+          min-width: 350px;
+        }
       }
     }
   }

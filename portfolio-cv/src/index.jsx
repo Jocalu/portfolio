@@ -25,6 +25,7 @@ ReactDOM.render(
         <Route path="/projects" exact component={Projects} />
         <Route path="/resume" exact component={Resume} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/*" exact component={AboutMe} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

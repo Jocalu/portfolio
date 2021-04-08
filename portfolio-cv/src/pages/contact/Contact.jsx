@@ -45,7 +45,7 @@ export default function Contact() {
             <div className="icon">
               <MailOutlined style={{ fontSize: 40 }} />
             </div>
-            {information.personal.email}
+            <p>{information.personal.email}</p>
 
           </div>
           <div className="target">
@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="icon">
               <PhoneIphoneIcon style={{ fontSize: 40 }} />
             </div>
-            {information.personal.phone}
+            <p>{information.personal.phone}</p>
 
           </div>
 
@@ -62,7 +62,7 @@ export default function Contact() {
             <div className="icon">
               <LinkedInIcon style={{ fontSize: 40 }} />
             </div>
-            Linkedin
+            <p>Linkedln</p>
           </a>
 
         </div>

@@ -39,6 +39,10 @@
       padding: 0px 30px 10px 30px;
       position: relative;
 
+      @include for-phone-only {
+        padding: 0px 0px 10px 20px;
+      }
+
       .data {
         @include flex(row, flex-start, center);
         position: absolute;
