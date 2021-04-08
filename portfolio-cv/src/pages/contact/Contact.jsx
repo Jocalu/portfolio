@@ -110,11 +110,18 @@ export default function Contact() {
 
               />
             </label>
-            <input
+            <button
+              type="button"
+              className="btn btn--blue"
+            >
+              Send message
+            </button>
+
+            {/* <input
               type="submit"
               className="btn btn--blue"
               value="Send message"
-            />
+            /> */}
           </div>
 
           <label htmlFor="message">
