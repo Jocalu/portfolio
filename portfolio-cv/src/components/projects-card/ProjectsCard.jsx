@@ -32,19 +32,34 @@ export default function ProjectsCard({ projects }) {
           <CardActions className="card__actions">
             {project.github !== ''
             && (
-            <a href={project.github} className="media__icon">
+            <a
+              href={project.github}
+              className="media__icon"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHubIcon className="media__icon" />
             </a>
             )}
             {project.url !== ''
             && (
-            <a href={project.url} className="media__icon">
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              className="media__icon"
+            >
               <LanguageIcon className="media__icon" />
             </a>
             )}
             {project.video !== ''
             && (
-            <a href={project.video} className="media__icon">
+            <a
+              href={project.video}
+              target="_blank"
+              rel="noreferrer"
+              className="media__icon"
+            >
               <PlayCircleFilledWhiteOutlinedIcon className="media__icon" />
             </a>
             )}

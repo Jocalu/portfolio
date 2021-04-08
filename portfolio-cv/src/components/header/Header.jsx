@@ -23,10 +23,20 @@ export default function Header() {
         <p className="profile__contact">{information.personal.email}</p>
         <p className="profile__contact">{information.personal.phone}</p>
         <div className="media">
-          <a href={information.personal.linkedin} className="media__icon">
+          <a
+            href={information.personal.linkedin}
+            className="media__icon"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedInIcon />
           </a>
-          <a href={information.personal.github} className="media__icon">
+          <a
+            href={information.personal.github}
+            className="media__icon"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHubIcon className="media__icon" />
           </a>
         </div>

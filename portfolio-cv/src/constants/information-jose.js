@@ -250,7 +250,7 @@ const information = {
       image: 'https://i.postimg.cc/13mysPdV/Captura-de-pantalla-2021-04-07-a-las-9-07-55.png',
       github: 'https://github.com/Jocalu/Moodsic',
       url: '',
-      video: 'video',
+      video: 'https://www.linkedin.com/feed/update/urn:li:activity:6767533377479286784/',
       technology: {
         name: 'React',
         icon: faReact,
@@ -263,7 +263,7 @@ const information = {
       image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
       github: 'https://github.com/Jocalu/MidDay-Project',
       url: 'https://midday-restaurant.web.app/home',
-      video: 'video',
+      video: 'https://vimeo.com/534334719',
       technology: {
         name: 'Angular',
         icon: faAngular,
@@ -275,11 +275,25 @@ const information = {
       image: 'https://i.postimg.cc/Jnd4SY8g/Captura-de-pantalla-2021-04-07-a-las-18-42-28.png',
       github: 'https://github.com/Jocalu/Portfolio',
       url: 'https://midday-restaurant.web.app/home',
+      video: '',
       technology: {
         name: 'React',
         icon: faReact,
       },
     },
+    {
+      name: 'Rock-Paper-Scissors game',
+      description: 'My first programming project. Made with a tutorial, it is a rock-paper-scissors game in Javascript Vanilla',
+      image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
+      github: 'https://github.com/Jocalu/Juego_PPT',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Javascript',
+        icon: faJsSquare,
+      },
+    },
+
   ],
 
 };
