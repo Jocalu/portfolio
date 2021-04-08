@@ -77,7 +77,7 @@
 
         &:hover {
           transform: translateX(-5px);
-          @include shadow(0px 0px 6px 4px $color-primary_1);
+          @include effect();
           transition: all 0.3s;
         }
 

@@ -54,9 +54,18 @@
           }
         }
 
-        progress {
+        .progress {
+          @include flex(row, flex-start, center);
+          margin-top: 3px;
           width: 100%;
-          height: 15px;
+          height: 10px;
+          background-color: $color-primary_2;
+
+          .bar {
+            width: 50%;
+            height: 10px;
+            background-color: $color-blue;
+          }
         }
       }
     }

@@ -40,12 +40,12 @@ export default function Resume() {
                   %
                 </div>
               </label>
-              <progress
-                max="100"
-                value={skill.ability}
-              >
-                {skill.ability}
-              </progress>
+              <div className="progress">
+                <div
+                  className="bar"
+                  style={{ width: `${skill.ability}%` }}
+                />
+              </div>
             </div>
           ))}
         </div>

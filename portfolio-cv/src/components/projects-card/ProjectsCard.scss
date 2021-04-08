@@ -33,6 +33,8 @@
     min-height: 120px;
   }
   .card__actions {
+    background-color: $color-primary_2;
+    height: 45px;
     @include flex(row, space-around, center);
 
     a {
