@@ -78,5 +78,14 @@ export default function MenuMobile({ information }) {
 }
 
 MenuMobile.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    menu: PropTypes.shape({
+      page1: PropTypes.string.isRequired,
+      page2: PropTypes.string.isRequired,
+      page3: PropTypes.string.isRequired,
+      page4: PropTypes.string.isRequired,
+      page5: PropTypes.string.isRequired,
+      page6: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };

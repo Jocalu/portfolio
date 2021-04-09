@@ -99,5 +99,23 @@ export default function AboutMe({ information }) {
   );
 }
 AboutMe.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    personal: PropTypes.shape({
+      profession: PropTypes.string.isRequired,
+      photoURL: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      photoCoverURL: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+    }).isRequired,
+        menu: PropTypes.shape({
+      title1: PropTypes.string.isRequired,
+      title2: PropTypes.string.isRequired,
+      title3: PropTypes.string.isRequired,
+      page6: PropTypes.string.isRequired,
+
+    }).isRequired,
+        resume: PropTypes.shape([{
+      info: PropTypes.string.isRequired,
+    }]).isRequired,
+  }).isRequired,
 };

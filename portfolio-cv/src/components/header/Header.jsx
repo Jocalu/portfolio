@@ -85,5 +85,23 @@ export default function Header({ information }) {
 }
 
 Header.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    personal: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      photoURL: PropTypes.string.isRequired,
+      profession: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
+      linkedin: PropTypes.string.isRequired,
+      github: PropTypes.string.isRequired,
+    }).isRequired,
+    menu: PropTypes.shape({
+      page1: PropTypes.string.isRequired,
+      page2: PropTypes.string.isRequired,
+      page3: PropTypes.string.isRequired,
+      page4: PropTypes.string.isRequired,
+      page5: PropTypes.string.isRequired,
+      page6: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };

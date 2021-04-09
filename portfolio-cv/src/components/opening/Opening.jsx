@@ -17,5 +17,10 @@ export default function Opening({ information }) {
 }
 
 Opening.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    personal: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      profession: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
