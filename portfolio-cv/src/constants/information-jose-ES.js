@@ -53,7 +53,7 @@ const information = {
     {
       place: 'MidDay restaurant',
       position: 'Diseño, maquetación y programación web',
-      date: '04/2021 - Actually',
+      date: '04/2021 - Actualmente',
       description: ['Programación de la app web con Angular.',
         'Diseño propio de toda la web.',
         'Buena relación con el cliente.'],
@@ -61,7 +61,7 @@ const information = {
     },
     {
       place: 'Skylab Coders Academy',
-      position: 'Junior Web Developer',
+      position: 'Desarrollador web Junior',
       date: '01/2021 - 04/2021',
       description: ['Ability to write documented code that is usable in a team environment.',
         'Experience with test-driven development.',
@@ -73,7 +73,7 @@ const information = {
   education: [
     {
       place: 'Skylab Coders Academy',
-      studies: 'Web development',
+      studies: 'Desarrollador web',
       date: '01/2021 - 04/2021',
       description: ['Mejor Bootcamp de programación del mundo según SwitchUp.', 'Más de 1200 horas de programación.', 'Enfocado especialmente en buenas prácticas y unit-testing (Jest, Jasmine).',
         'Conocimientos en programación web: HTML, CSS, Javascript, Typescript, SASS, Angular, React.',
@@ -94,153 +94,140 @@ const information = {
         'Mención especial en Rehabilitación de Edificaciones.'],
     },
   ],
-  softskills: [{
-    name: 'Leadership',
-    ability: 100,
-  },
-  {
-    name: 'Collaboration',
-    ability: 75,
-  },
-  {
-    name: 'Communication',
-    ability: 70,
-  },
-  {
-    name: 'Creativity',
-    ability: 75,
-  },
-  {
-    name: 'Organization',
-    ability: 90,
-  },
-  {
-    name: 'Enthusiasm',
-    ability: 80,
-  },
-  {
-    name: 'Work Ethic',
-    ability: 75,
-  },
-  {
-    name: 'Problem Solving',
-    ability: 100,
-  },
-  {
-    name: 'Critical Thinking',
-    ability: 90,
-  }],
+  softskills: [
+    {
+      name: 'Liderazgo',
+      ability: 100,
+    },
+    {
+      name: 'Colaboración',
+      ability: 75,
+    },
+    {
+      name: 'Comunicación',
+      ability: 70,
+    },
+    {
+      name: 'Creatividad',
+      ability: 75,
+    },
+    {
+      name: 'Organización',
+      ability: 90,
+    },
+    {
+      name: 'Entusiasmo',
+      ability: 80,
+    },
+    {
+      name: 'Iniciativa',
+      ability: 90,
+    },
+    {
+      name: 'Ética de trabajo',
+      ability:
+      75,
+    },
+    {
+      name: 'Resolución de problemas',
+      ability: 100,
+    },
+    {
+      name: 'Pensamiento crítico',
+      ability: 90,
+    }],
   hardskills: [
     {
       name: 'HTML',
       icon: faHtml5,
-      programmingLanguage: true,
     },
     {
       name: 'Javascript',
       icon: faJsSquare,
-      programmingLanguage: true,
     },
     {
       name: 'CSS',
       icon: faCss3Alt,
-      programmingLanguage: true,
     },
     {
       name: 'SCRUM',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Agile',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Unit Testing',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Sass',
       icon: faSass,
-      programmingLanguage: true,
     },
 
     {
       name: 'Node JS',
       icon: faNodeJs,
-      programmingLanguage: true,
     },
     {
       name: 'Flux',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'MongoDB',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Redux',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Typescript',
       icon: '',
-      programmingLanguage: true,
     },
     {
       name: 'Angular',
       icon: faAngular,
-      programmingLanguage: true,
     },
     {
       name: 'Git',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'TDD',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'React',
       icon: faReact,
-      programmingLanguage: true,
     },
     {
       name: 'React Native',
       icon: faReact,
-      programmingLanguage: true,
     },
 
     {
       name: 'Jest',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Jasmine',
       icon: '',
-      programmingLanguage: false,
     },
   ],
 
   recommendations: {
     diana: {
       name: 'Diana Expósito',
-      position: 'Campus Manager at Skylab Academy',
+      position: 'Directora en Skylab Academy',
       description: 'Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca.',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 
     alvaro: {
       name: 'Álvaro Valladares',
-      position: 'Partner at Skylab Academy',
+      position: 'Compañero en Skylab Academy',
       description: 'Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona.',
       photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },

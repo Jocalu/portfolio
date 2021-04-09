@@ -123,6 +123,10 @@ const information = {
     ability: 80,
   },
   {
+    name: 'Initiative',
+    ability: 90,
+  },
+  {
     name: 'Work Ethic',
     ability: 75,
   },
@@ -139,99 +143,80 @@ const information = {
     {
       name: 'HTML',
       icon: faHtml5,
-      programmingLanguage: true,
     },
     {
       name: 'Javascript',
       icon: faJsSquare,
-      programmingLanguage: true,
     },
     {
       name: 'CSS',
       icon: faCss3Alt,
-      programmingLanguage: true,
     },
     {
       name: 'SCRUM',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Agile',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Unit Testing',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Sass',
       icon: faSass,
-      programmingLanguage: true,
     },
 
     {
       name: 'Node JS',
       icon: faNodeJs,
-      programmingLanguage: true,
     },
     {
       name: 'Flux',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'MongoDB',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Redux',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Typescript',
       icon: '',
-      programmingLanguage: true,
     },
     {
       name: 'Angular',
       icon: faAngular,
-      programmingLanguage: true,
     },
     {
       name: 'Git',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'TDD',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'React',
       icon: faReact,
-      programmingLanguage: true,
     },
     {
       name: 'React Native',
       icon: faReact,
-      programmingLanguage: true,
     },
 
     {
       name: 'Jest',
       icon: '',
-      programmingLanguage: false,
     },
     {
       name: 'Jasmine',
       icon: '',
-      programmingLanguage: false,
     },
   ],
 
