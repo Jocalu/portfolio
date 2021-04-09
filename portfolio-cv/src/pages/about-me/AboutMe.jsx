@@ -53,7 +53,7 @@ export default function AboutMe({ information }) {
 
         <div className="buttons">
           <a
-            href="https://filetools6.pdf24.org/client.php?mode=inline&file=joinPdf_988d7cbf0819d1190467487bcec93733_11765397958148308061.pdf&action=getFile"
+            href="https://www.yumpu.com/es/document/read/65478024/jose-carcamo-web-developer-2021"
             className="btn btn--blue"
             target="_blank"
             rel="noreferrer"

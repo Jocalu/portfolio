@@ -6,13 +6,29 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link } from 'react-router-dom';
 
-export default function Header({ information }) {
+export default function Header({ information, setLanguage, language }) {
   return (
     <>
       <div className="language">
-        <button type="button">ES</button>
-        /
-        <button type="button">EN</button>
+        {language === 'EN'
+          ? (
+            <button
+              type="button"
+              onClick={(() => setLanguage('ES'))}
+            >
+              ES
+
+            </button>
+          )
+          : (
+            <button
+              type="button"
+              onClick={(() => setLanguage('EN'))}
+            >
+              EN
+
+            </button>
+          )}
       </div>
       <header
         data-aos="fade-right"
@@ -104,4 +120,6 @@ Header.propTypes = {
       page6: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
+  setLanguage: PropTypes.func.isRequired,
+  language: PropTypes.string.isRequired,
 };

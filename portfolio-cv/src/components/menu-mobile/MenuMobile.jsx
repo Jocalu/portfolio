@@ -4,7 +4,7 @@ import './MenuMobile.scss';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
-export default function MenuMobile({ information }) {
+export default function MenuMobile({ information, setLanguage, language }) {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
@@ -68,9 +68,23 @@ export default function MenuMobile({ information }) {
           {`🔹 ${information.menu.page6}`}
         </MenuItem>
         <MenuItem className="language">
-          <button type="button">⚙️ ES</button>
-          /
-          <button type="button">EN</button>
+          {language === 'EN'
+            ? (
+              <button
+                type="button"
+                onClick={(() => setLanguage('ES'))}
+              >
+                ⚙️ ES
+              </button>
+            )
+            : (
+              <button
+                type="button"
+                onClick={(() => setLanguage('EN'))}
+              >
+                ⚙️ EN
+              </button>
+            )}
         </MenuItem>
       </Menu>
     </section>
@@ -88,4 +102,6 @@ MenuMobile.propTypes = {
       page6: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
+  setLanguage: PropTypes.func.isRequired,
+  language: PropTypes.string.isRequired,
 };

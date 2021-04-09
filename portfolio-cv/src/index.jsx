@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter, Switch, Route,
@@ -16,25 +16,31 @@ import MenuMobile from './components/menu-mobile/MenuMobile';
 import informationEN from './constants/informationEN';
 import informationES from './constants/informationES';
 
-const language = 'EN';
-const information = language === 'ES' ? informationES : informationEN;
+function App() {
+  const [language, setLanguage] = useState('ES');
+  const information = language === 'ES' ? informationES : informationEN;
+
+  return (
+    <React.StrictMode>
+      <BrowserRouter>
+        <MenuMobile information={information} setLanguage={setLanguage} language={language} />
+        <Header information={information} setLanguage={setLanguage} language={language} />
+        <Opening information={information} />
+        <Switch>
+          <Route exact path="/"><AboutMe information={information} /></Route>
+          <Route exact path="/formation"><Formation information={information} /></Route>
+          <Route exact path="/projects"><Projects information={information} /></Route>
+          <Route exact path="/resume"><Resume information={information} /></Route>
+          <Route exact path="/contact"><Contact information={information} /></Route>
+          <Route exact path="/*"><AboutMe information={information} /></Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <MenuMobile information={information} />
-      <Header information={information} />
-      <Opening information={information} />
-      <Switch>
-        <Route exact path="/"><AboutMe information={information} /></Route>
-        <Route exact path="/formation"><Formation information={information} /></Route>
-        <Route exact path="/projects"><Projects information={information} /></Route>
-        <Route exact path="/resume"><Resume information={information} /></Route>
-        <Route exact path="/contact"><Contact information={information} /></Route>
-        <Route exact path="/*"><AboutMe information={information} /></Route>
-      </Switch>
-      <Footer />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root'),
 );
