@@ -71,12 +71,12 @@ export default function Contact() {
             <div className="icon">
               <LinkedInIcon style={{ fontSize: 40 }} />
             </div>
-            <p>Linkedln</p>
+            <p>{information.menu.title4}</p>
           </a>
 
         </div>
 
-        <h3>How can I help you?</h3>
+        <h3>{information.menu.title5}</h3>
 
         <form
           className="formcontrol"
@@ -118,7 +118,7 @@ export default function Contact() {
               type="button"
               className="btn btn--blue"
             >
-              Send message
+              {information.menu.title6}
             </button>
 
             {/* <input

@@ -12,7 +12,7 @@ export default function Formation() {
       data-aos-duration="400"
     >
       <section className="experience">
-        <h3>Experience</h3>
+        <h3>{information.menu.page3}</h3>
         {information.experience.map((job) => (
           <div className="container">
             <div className="data">
@@ -31,7 +31,7 @@ export default function Formation() {
       </section>
 
       <section className="education">
-        <h3>Education</h3>
+        <h3>{information.menu.page4}</h3>
         {information.education.map((study) => (
           <div className="container">
             <div className="data">

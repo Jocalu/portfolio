@@ -43,7 +43,7 @@ export default function AboutMe() {
         </div>
 
         <p className="name">
-          Hi, I'm
+          {information.menu.title1}
           <b>
             <br />
             {information.personal.name}
@@ -59,7 +59,7 @@ export default function AboutMe() {
             rel="noreferrer"
             onClick={handleClick({ vertical: 'top', horizontal: 'right' })}
           >
-            Redirect to CV
+            {information.menu.title2}
           </a>
 
           <Snackbar
@@ -78,7 +78,7 @@ export default function AboutMe() {
             Contact
           </Link> */}
           <a href={`mailto:${information.personal.email}`} className="btn">
-            Contact
+            {information.menu.page6}
           </a>
         </div>
 
@@ -91,7 +91,7 @@ export default function AboutMe() {
             alt={information.personal.name}
           />
         </div>
-        <h3>What I do</h3>
+        <h3>{information.menu.title3}</h3>
         <Services />
       </section>
 

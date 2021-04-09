@@ -45,33 +45,31 @@ export default function Header() {
       <nav>
         <Link to="/about-me" className="link">
           <hr />
-          About Me
+          {information.menu.page1}
           <ChevronRightIcon className="icon" />
         </Link>
 
         <Link to="/resume" className="link">
           <hr />
-          Resume
+          {information.menu.page2}
           <ChevronRightIcon className="icon" />
         </Link>
 
         <Link to="/formation" className="link">
-          <hr />
-          Experience
-          <br />
-          & Education
+          <hr className="short" />
+          {`${information.menu.page3} & ${information.menu.page4}`}
           <ChevronRightIcon className="icon" />
         </Link>
 
         <Link to="/projects" className="link">
           <hr />
-          Projects
+          {information.menu.page5}
           <ChevronRightIcon className="icon" />
         </Link>
 
         <Link to="/contact" className="link">
           <hr />
-          Contact
+          {information.menu.page6}
           <ChevronRightIcon className="icon" />
         </Link>
       </nav>

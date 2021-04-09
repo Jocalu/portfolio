@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './MenuMobile.scss';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import information from '../../constants/information-jose-EN';
 
 export default function MenuMobile() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -32,8 +33,7 @@ export default function MenuMobile() {
           className="link"
           onClick={handleClose}
         >
-          🔹 About Me
-
+          {`🔹 ${information.menu.page1}`}
         </MenuItem>
         <MenuItem
           component="a"
@@ -41,7 +41,7 @@ export default function MenuMobile() {
           className="link"
           onClick={handleClose}
         >
-          🔹 Resume
+          {`🔹 ${information.menu.page2}`}
         </MenuItem>
         <MenuItem
           component="a"
@@ -49,7 +49,7 @@ export default function MenuMobile() {
           className="link"
           onClick={handleClose}
         >
-          🔹 Experience & Education
+          {`🔹 ${information.menu.page3} & ${information.menu.page4}`}
         </MenuItem>
         <MenuItem
           component="a"
@@ -57,7 +57,7 @@ export default function MenuMobile() {
           className="link"
           onClick={handleClose}
         >
-          🔹 Projects
+          {`🔹 ${information.menu.page5}`}
         </MenuItem>
         <MenuItem
           component="a"
@@ -65,7 +65,7 @@ export default function MenuMobile() {
           className="link"
           onClick={handleClose}
         >
-          🔹 Contact
+          {`🔹 ${information.menu.page6}`}
         </MenuItem>
       </Menu>
     </section>

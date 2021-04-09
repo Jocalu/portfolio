@@ -13,6 +13,24 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const information = {
+  menu: {
+    page1: 'About Me',
+    page2: 'Resume',
+    page3: 'Experience',
+    page4: 'Education',
+    page5: 'Projects',
+    page6: 'Contact',
+    title1: 'Hi, I\'m',
+    title2: 'Redirect to CV',
+    title3: 'What I do',
+    title4: 'Linkedln',
+    title5: 'What I do',
+    title6: 'Send message',
+    title7: 'Soft skills',
+    title8: 'Hard skills',
+    title9: 'Recommendations',
+  },
+
   personal: {
     profession: 'Web Developer',
     professionBis: 'Full stack Developer',

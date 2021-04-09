@@ -68,11 +68,19 @@ header {
         transition: all 1s;
       }
 
+      .short {
+        width: 20px;
+      }
+
       &:hover {
         text-decoration: underline;
 
         hr {
           right: 150px;
+        }
+
+        .short {
+          right: 250px;
         }
       }
 
