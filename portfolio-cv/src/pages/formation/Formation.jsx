@@ -1,8 +1,8 @@
 import React from 'react';
-import information from '../../constants/information-jose-EN';
+import PropTypes from 'prop-types';
 import './Formation.scss';
 
-export default function Formation() {
+export default function Formation({ information }) {
   return (
     <main
       className="formation"
@@ -52,3 +52,7 @@ export default function Formation() {
     </main>
   );
 }
+
+Formation.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

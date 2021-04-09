@@ -1,9 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Resume.scss';
 import { Chip, makeStyles } from '@material-ui/core';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import information from '../../constants/information-jose-EN';
 import Recommendations from '../../components/recommendations/Recommendations';
 
 const useStyles = makeStyles((theme) => ({
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Resume() {
+export default function Resume({ information }) {
   const classes = useStyles();
 
   return (
@@ -78,3 +77,7 @@ export default function Resume() {
 
   );
 }
+
+Resume.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

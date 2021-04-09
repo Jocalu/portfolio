@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './AboutMe.scss';
 import Snackbar from '@material-ui/core/Snackbar';
-import information from '../../constants/information-jose-EN';
 import Services from '../../components/services-offered/Services';
 
-export default function AboutMe() {
-  const [state, setState] = React.useState({
+export default function AboutMe({ information }) {
+  const [state, setState] = useState({
     open: false,
     vertical: 'top',
     horizontal: 'right',
@@ -92,9 +92,12 @@ export default function AboutMe() {
           />
         </div>
         <h3>{information.menu.title3}</h3>
-        <Services />
+        <Services information={information} />
       </section>
 
     </main>
   );
 }
+AboutMe.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ProjectsCard from '../../components/projects-card/ProjectsCard';
 import './Projects.scss';
-import information from '../../constants/information-jose-EN';
 
-export default function Projects() {
+export default function Projects({ information }) {
   return (
     <main
       className="projects"
@@ -17,3 +17,7 @@ export default function Projects() {
     </main>
   );
 }
+
+Projects.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

@@ -1,12 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Header.scss';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link } from 'react-router-dom';
-import information from '../../constants/information-jose-EN';
 
-export default function Header() {
+export default function Header({ information }) {
   return (
     <header
       data-aos="fade-right"
@@ -73,8 +73,11 @@ export default function Header() {
           <ChevronRightIcon className="icon" />
         </Link>
       </nav>
-
     </header>
 
   );
 }
+
+Header.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

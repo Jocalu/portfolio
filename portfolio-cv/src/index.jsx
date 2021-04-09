@@ -13,20 +13,30 @@ import Contact from './pages/contact/Contact';
 import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
 import MenuMobile from './components/menu-mobile/MenuMobile';
+import informationES from './constants/information-jose-ES';
+/* import informationES from './constants/information-jose-ES'; */
+
+/* const [, setState] = useState({
+  language: informationEN,
+});
+
+const changeLanguage = () => {
+  setState({ language: informationES });
+}; */
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MenuMobile />
-      <Header />
+      <MenuMobile information={informationES} />
+      <Header information={informationES} />
       <Opening />
       <Switch>
-        <Route path="/" exact component={AboutMe} />
-        <Route path="/formation" exact component={Formation} />
-        <Route path="/projects" exact component={Projects} />
-        <Route path="/resume" exact component={Resume} />
-        <Route path="/contact" exact component={Contact} />
-        <Route path="/*" exact component={AboutMe} />
+        <Route exact path="/"><AboutMe information={informationES} /></Route>
+        <Route exact path="/formation"><Formation information={informationES} /></Route>
+        <Route exact path="/projects"><Projects information={informationES} /></Route>
+        <Route exact path="/resume"><Resume information={informationES} /></Route>
+        <Route exact path="/contact"><Contact information={informationES} /></Route>
+        <Route exact path="/*"><AboutMe information={informationES} /></Route>
       </Switch>
       <Footer />
     </BrowserRouter>

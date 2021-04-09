@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import information from '../../constants/information-jose-EN';
 
-export default function Contact() {
+export default function Contact({ information }) {
   const [data, setData] = useState({
     fullname: '',
     email: '',
@@ -144,3 +144,7 @@ export default function Contact() {
 
   );
 }
+
+Contact.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

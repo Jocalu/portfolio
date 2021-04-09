@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Services.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import information from '../../constants/information-jose-EN';
 
-export default function Services() {
+export default function Services({ information }) {
   return (
     <>
       {information.services.map((service) => (
@@ -20,3 +20,7 @@ export default function Services() {
     </>
   );
 }
+
+Services.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

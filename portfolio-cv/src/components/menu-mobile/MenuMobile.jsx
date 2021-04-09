@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './MenuMobile.scss';
 import { Button, Menu, MenuItem } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import information from '../../constants/information-jose-EN';
 
-export default function MenuMobile() {
+export default function MenuMobile({ information }) {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
@@ -71,3 +71,7 @@ export default function MenuMobile() {
     </section>
   );
 }
+
+MenuMobile.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

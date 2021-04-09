@@ -13,7 +13,7 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-const information = {
+export default {
   menu: {
     page1: 'About Me',
     page2: 'Resume',
@@ -40,7 +40,7 @@ const information = {
     linkedin: 'https://www.linkedin.com/in/jose-carcamo-lucena-web-developer/',
     github: 'https://github.com/Jocalu',
     photoURL: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/profile_photo-removebg-preview.png?alt=media&token=67001054-a95d-4fc5-b5c3-87d432e57605',
-    photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
+    photoCoverURL: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/photo_cover.png?alt=media&token=1a1fac86-11ce-478a-9d8f-e766e8030d54',
   },
 
   resume: {
@@ -299,5 +299,3 @@ const information = {
     },
   ],
 };
-
-export default information;

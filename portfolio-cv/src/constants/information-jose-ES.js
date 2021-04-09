@@ -12,7 +12,7 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-const information = {
+export default {
   menu: {
     page1: 'Sobre Mí',
     page2: 'Resumen',
@@ -22,7 +22,7 @@ const information = {
     page6: 'Contacto',
     title1: 'Hola, soy',
     title2: 'Ver CV',
-    title3: 'Que hago',
+    title3: '¿Qué hago?',
     title4: 'Linkedln',
     title5: '¿Cómo te puedo ayudar?',
     title6: 'Enviar mensaje',
@@ -293,5 +293,3 @@ const information = {
     description: 'Incluye diseño y soluciones de comercio electrónico centradas en la usabilidad, marcas creativas que inyectan personalidad a su negocio y programación personalizada para hacer realidad las ideas en las que necesita ayuda.',
   }],
 };
-
-export default information;
