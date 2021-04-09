@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.scss';
-import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
 import information from '../../constants/information-jose-EN';
 import Services from '../../components/services-offered/Services';
@@ -53,23 +52,22 @@ export default function AboutMe() {
         {information.resume.info.map((info) => <p className="info">{info}</p>)}
 
         <div className="buttons">
-          <Link
-            to="/Users/Jocalu/Desktop/Portfolio/portfolio-cv/src/files/jose-carcamo-web-developer-2021.pdf"
-            type="button"
+          <a
+            href="https://filetools6.pdf24.org/client.php?mode=inline&file=joinPdf_988d7cbf0819d1190467487bcec93733_11765397958148308061.pdf&action=getFile"
             className="btn btn--blue"
             target="_blank"
-            download
+            rel="noreferrer"
             onClick={handleClick({ vertical: 'top', horizontal: 'right' })}
           >
-            Download CV
-          </Link>
+            Redirect to CV
+          </a>
 
           <Snackbar
             anchorOrigin={{ vertical, horizontal }}
             open={open}
             onClose={handleClose}
             TransitionComponent={state.Transition}
-            message="✅ Downloaded successfully"
+            message="✅ Redirected successfully"
             key={vertical + horizontal}
           />
           {/*   <Link
