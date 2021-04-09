@@ -54,5 +54,14 @@ export default function Formation({ information }) {
 }
 
 Formation.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    menu: PropTypes.shape({
+      page3: PropTypes.string.isRequired,
+      page4: PropTypes.string.isRequired,
+    }).isRequired,
+    experience: PropTypes.shape([{
+    }]).isRequired,
+    education: PropTypes.shape([{
+    }]).isRequired,
+  }).isRequired,
 };

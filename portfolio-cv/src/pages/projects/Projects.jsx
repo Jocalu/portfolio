@@ -19,5 +19,7 @@ export default function Projects({ information }) {
 }
 
 Projects.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    projects: PropTypes.shape({}).isRequired,
+  }).isRequired,
 };

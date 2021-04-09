@@ -79,5 +79,17 @@ export default function Resume({ information }) {
 }
 
 Resume.propTypes = {
-  information: PropTypes.shape([{}]).isRequired,
+  information: PropTypes.shape({
+    menu: PropTypes.shape({
+      title7: PropTypes.string.isRequired,
+      title8: PropTypes.string.isRequired,
+      title9: PropTypes.string.isRequired,
+    }).isRequired,
+    recommendations: PropTypes.shape({
+      diana: PropTypes.string.isRequired,
+      alvaro: PropTypes.string.isRequired,
+    }).isRequired,
+    softskills: PropTypes.shape([{}]).isRequired,
+    hardskills: PropTypes.shape([{}]).isRequired,
+  }).isRequired,
 };

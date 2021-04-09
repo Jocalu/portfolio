@@ -53,7 +53,7 @@ export default function AboutMe({ information }) {
 
         <div className="buttons">
           <a
-            href="https://filetools5.pdf24.org/client.php?mode=inline&file=joinPdf_3fff4962821dd4e1c177d968b4d9ebfd_407602462229950867.pdf&action=getFile"
+            href="https://filetools6.pdf24.org/client.php?mode=inline&file=joinPdf_988d7cbf0819d1190467487bcec93733_11765397958148308061.pdf&action=getFile"
             className="btn btn--blue"
             target="_blank"
             rel="noreferrer"
