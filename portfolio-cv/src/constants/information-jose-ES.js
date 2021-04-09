@@ -15,7 +15,7 @@ import {
 const information = {
   menu: {
     page1: 'Sobre Mí',
-    page2: 'Habilidades & recomendaciones',
+    page2: 'Resumen',
     page3: 'Experiencia',
     page4: 'Educación',
     page5: 'Proyectos',
@@ -63,12 +63,12 @@ const information = {
       place: 'Skylab Coders Academy',
       position: 'Desarrollador web Junior',
       date: '01/2021 - 04/2021',
-      description: ['Ability to write documented code that is usable in a team environment.',
-        'Experience with test-driven development.',
-        'Experience with integration patterns and api consumption from the front end.',
-        'Familiarity with Agile development.',
-        'Strong problem-solving skills.',
-        'Resourceful and self-motivated on innovation.'],
+      description: ['Habilidad para escribir código documentado, para mejor entendimiento en un ambiente de trabajo.',
+        'Experiencia en ambientes de prueba y desarrollo',
+        'Experiencia con consumo de apis desde el frontend.',
+        'Familiarizado con el desarrollo Agile.',
+        'Grandes habilidades para la resolución de problemas',
+        'Motivación por la innovación.'],
     }],
   education: [
     {
