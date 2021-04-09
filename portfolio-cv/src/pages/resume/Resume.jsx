@@ -58,7 +58,7 @@ export default function Resume() {
               <Chip
                 key={skill.name}
                 className="chip"
-                icon={skill.icon !== '' ? <FontAwesomeIcon icon={skill.icon} /> : ''}
+                icon={skill.icon !== null ? <FontAwesomeIcon icon={skill?.icon} /> : null}
                 label={skill.name}
                 clickable
                 color="primary"

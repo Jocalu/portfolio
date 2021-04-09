@@ -49,7 +49,7 @@ export default function AboutMe() {
             {information.personal.name}
           </b>
         </p>
-        {information.resume.info.map((info) => <p className="info">{info}</p>)}
+        {information.resume.info.map((info) => <p key={info} className="info">{info}</p>)}
 
         <div className="buttons">
           <a

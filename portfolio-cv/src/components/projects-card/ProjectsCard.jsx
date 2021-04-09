@@ -15,7 +15,7 @@ export default function ProjectsCard({ projects }) {
   return (
     <>
       {projects.map((project) => (
-        <Card className="card">
+        <Card className="card" key={project.name}>
           <CardActionArea>
             <CardMedia
               component="img"

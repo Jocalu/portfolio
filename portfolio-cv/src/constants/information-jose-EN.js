@@ -154,15 +154,15 @@ const information = {
     },
     {
       name: 'SCRUM',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Agile',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Unit Testing',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Sass',
@@ -175,19 +175,19 @@ const information = {
     },
     {
       name: 'Flux',
-      icon: '',
+      icon: null,
     },
     {
       name: 'MongoDB',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Redux',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Typescript',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Angular',
@@ -195,11 +195,11 @@ const information = {
     },
     {
       name: 'Git',
-      icon: '',
+      icon: null,
     },
     {
       name: 'TDD',
-      icon: '',
+      icon: null,
     },
     {
       name: 'React',
@@ -212,11 +212,11 @@ const information = {
 
     {
       name: 'Jest',
-      icon: '',
+      icon: null,
     },
     {
       name: 'Jasmine',
-      icon: '',
+      icon: null,
     },
   ],
 

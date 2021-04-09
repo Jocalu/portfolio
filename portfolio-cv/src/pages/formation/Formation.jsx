@@ -14,14 +14,14 @@ export default function Formation() {
       <section className="experience">
         <h3>{information.menu.page3}</h3>
         {information.experience.map((job) => (
-          <div className="container">
+          <div className="container" key={job.place}>
             <div className="data">
               <span className="date">{job.date}</span>
               <p className="place">{job.place}</p>
             </div>
             <h4 className="position">{job.position}</h4>
             {job.description.map((p) => (
-              <p className="description">
+              <p className="description" key={p.description}>
                 🔹
                 {p}
               </p>
@@ -33,14 +33,14 @@ export default function Formation() {
       <section className="education">
         <h3>{information.menu.page4}</h3>
         {information.education.map((study) => (
-          <div className="container">
+          <div className="container" key={study.studies}>
             <div className="data">
               <span className="date">{study.date}</span>
               <p className="place">{study.place}</p>
             </div>
             <h4 className="position">{study.studies}</h4>
             {study.description.map((p) => (
-              <p className="description">
+              <p className="description" key={p.description}>
                 🔹
                 {p}
               </p>
