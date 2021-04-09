@@ -1,8 +1,8 @@
 import React from 'react';
-import information from '../../constants/information-jose-EN';
+import PropTypes from 'prop-types';
 import './Opening.scss';
 
-export default function Opening() {
+export default function Opening({ information }) {
   return (
     <section className="opening">
       <div className="title">
@@ -15,3 +15,7 @@ export default function Opening() {
     </section>
   );
 }
+
+Opening.propTypes = {
+  information: PropTypes.shape([{}]).isRequired,
+};

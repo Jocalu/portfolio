@@ -67,6 +67,11 @@ export default function MenuMobile({ information }) {
         >
           {`🔹 ${information.menu.page6}`}
         </MenuItem>
+        <MenuItem className="language">
+          <button type="button">⚙️ ES</button>
+          /
+          <button type="button">EN</button>
+        </MenuItem>
       </Menu>
     </section>
   );

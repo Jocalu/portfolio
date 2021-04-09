@@ -3,7 +3,7 @@ import './Footer.scss';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PhoneIcon from '@material-ui/icons/Phone';
-import information from '../../constants/information-jose-EN';
+import information from '../../constants/informationEN';
 
 export default function Footer() {
   return (

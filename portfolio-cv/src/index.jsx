@@ -13,30 +13,25 @@ import Contact from './pages/contact/Contact';
 import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
 import MenuMobile from './components/menu-mobile/MenuMobile';
-import informationES from './constants/information-jose-ES';
-/* import informationES from './constants/information-jose-ES'; */
+import informationEN from './constants/informationEN';
+import informationES from './constants/informationES';
 
-/* const [, setState] = useState({
-  language: informationEN,
-});
-
-const changeLanguage = () => {
-  setState({ language: informationES });
-}; */
+const language = 'EN';
+const information = language === 'ES' ? informationES : informationEN;
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MenuMobile information={informationES} />
-      <Header information={informationES} />
-      <Opening />
+      <MenuMobile information={information} />
+      <Header information={information} />
+      <Opening information={information} />
       <Switch>
-        <Route exact path="/"><AboutMe information={informationES} /></Route>
-        <Route exact path="/formation"><Formation information={informationES} /></Route>
-        <Route exact path="/projects"><Projects information={informationES} /></Route>
-        <Route exact path="/resume"><Resume information={informationES} /></Route>
-        <Route exact path="/contact"><Contact information={informationES} /></Route>
-        <Route exact path="/*"><AboutMe information={informationES} /></Route>
+        <Route exact path="/"><AboutMe information={information} /></Route>
+        <Route exact path="/formation"><Formation information={information} /></Route>
+        <Route exact path="/projects"><Projects information={information} /></Route>
+        <Route exact path="/resume"><Resume information={information} /></Route>
+        <Route exact path="/contact"><Contact information={information} /></Route>
+        <Route exact path="/*"><AboutMe information={information} /></Route>
       </Switch>
       <Footer />
     </BrowserRouter>

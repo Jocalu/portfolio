@@ -23,6 +23,7 @@
     }
   }
 }
+
 .MuiMenu-list {
   background-color: $color-primary_5;
   color: $color-white-hard;
@@ -30,4 +31,8 @@
 .MuiMenuItem-root {
   font-family: $font-secondary !important;
   font-size: 20px !important;
+}
+
+.language {
+  color: $color-grey !important;
 }
