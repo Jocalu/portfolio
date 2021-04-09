@@ -107,14 +107,13 @@ AboutMe.propTypes = {
       photoCoverURL: PropTypes.string.isRequired,
       email: PropTypes.string.isRequired,
     }).isRequired,
-        menu: PropTypes.shape({
+    menu: PropTypes.shape({
       title1: PropTypes.string.isRequired,
       title2: PropTypes.string.isRequired,
       title3: PropTypes.string.isRequired,
       page6: PropTypes.string.isRequired,
-
     }).isRequired,
-        resume: PropTypes.shape([{
+    resume: PropTypes.shape([{
       info: PropTypes.string.isRequired,
     }]).isRequired,
   }).isRequired,
