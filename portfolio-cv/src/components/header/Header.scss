@@ -2,6 +2,21 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
 
+.language {
+  color: $color-grey;
+  font-family: $font-primary;
+  position: fixed;
+  z-index: 2;
+  top: 0vh;
+  right: 1vw;
+
+  button {
+    all: unset;
+    cursor: pointer;
+    margin: 5px;
+  }
+}
+
 header {
   @include shadow(0px 0px 9px 8px $color-primary_5);
   position: absolute;
