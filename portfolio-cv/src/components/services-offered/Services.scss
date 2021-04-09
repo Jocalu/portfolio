@@ -15,14 +15,18 @@
   .title {
     @include flex(row, flex-start, center);
 
-    .icon {
+    .icon-container {
       @include flexcenter();
       color: $color-blue;
       background-color: $color-primary_3;
-      min-width: 50px;
-      height: 50px;
+      min-width: 40px;
+      height: 40px;
       border-radius: 6px;
       margin-right: 20px;
+
+      .icon {
+        font-size: 20px;
+      }
     }
 
     h4 {
@@ -33,7 +37,7 @@
 
   p {
     @include fontregular(14px, $color-grey);
-    text-indent: 70px;
+    text-indent: 60px;
     letter-spacing: 1px;
     text-align: justify;
   }

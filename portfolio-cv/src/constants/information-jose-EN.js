@@ -239,14 +239,14 @@ const information = {
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
-      description: 'Jose is leadership, transparency, focus, work, planning, camaraderie and above all TRUST. Give him a challenge and you will motivate him. You will find the solution and also involve the team and align it so that the experience is the best of learning. He is a facilitator with a track record as a developer that must be followed closely.',
+      description: 'Jose is leadership, transparency, focus, work, planning, camaraderie and above all TRUST. Give him a challenge and you will motivate him. He will find the solution and also involve the team and align it so that everyone reaches their full potential. He is a facilitator, with an excellent track record as a developer. Must be followed closely!',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 
     alvaro: {
       name: 'Álvaro Valladares',
       position: 'Partner at Skylab Academy',
-      description: 'Programming enthusiast that infects his environment. In the time that I was able to work with him, I never saw him give up on a problem, he is a decisive person who knows how to work as a team and goes a step beyond mere work, getting involved with his environment. Always learning, curious in nature. It doesn\'t take long to work alongside him to realize that he\'s passionate about programming.',
+      description: 'His enthusiasm programmning is contagious. In the time that I was able to work with him, I never saw him give up on a problem, he is team worker and goes a step beyond mere work, getting involved with his environment. Always learning, curious in nature. It doesn\'t take long to work alongside him to realize that he\'s passionate about programming.',
       photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },
   },
@@ -279,7 +279,7 @@ const information = {
     },
     {
       name: 'Porfolio',
-      description: 'This same portfolio. Made with react, Typescript and using react material',
+      description: 'This same portfolio. Made with React, Typescript and using react material',
       image: 'https://i.postimg.cc/Jnd4SY8g/Captura-de-pantalla-2021-04-07-a-las-18-42-28.png',
       github: 'https://github.com/Jocalu/Portfolio',
       url: 'https://portfolio-jose-carcamo.web.app/',

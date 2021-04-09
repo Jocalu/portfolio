@@ -297,14 +297,14 @@ const information = {
     },
   ],
   services: [{
-    name: 'Ecommerce',
+    name: 'Comercio electrónico',
     icon: faShoppingCart,
-    description: 'As a website operator, you are therefore permanently faced with the challenge of monitoring the market and generating unique content with added value for the user on the ongoing new product pages. In doing so, you create competitive advantages for yourself while remaining visible in the search engines and for the user.',
+    description: 'Como operador de un sitio web, se enfrenta permanentemente al desafío de monitorear el mercado y generar contenido único con valor agregado para el usuario. Al hacerlo, crea ventajas competitivas y permanece visible en los motores de búsqueda para el usuario.',
   },
   {
-    name: 'Web design',
+    name: 'Diseño web',
     icon: faLaptopCode,
-    description: 'These include websites and eCommerce solutions focused on usability and responsive design, creative branding solutions that inject personality into your business, and custom programming for ideas that you need help bringing to fruition.',
+    description: 'Incluye diseño y soluciones de comercio electrónico centradas en la usabilidad, marcas creativas que inyectan personalidad a su negocio y programación personalizada para hacer realidad las ideas en las que necesita ayuda.',
   }],
 };
 
