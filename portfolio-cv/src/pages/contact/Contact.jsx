@@ -36,7 +36,7 @@ export default function Contact() {
     >
 
       <section className="contact__info">
-        <h1>Contact</h1>
+        <h1>{information.menu.page6}</h1>
         <hr className="line" />
 
         <div className="contact__target">
