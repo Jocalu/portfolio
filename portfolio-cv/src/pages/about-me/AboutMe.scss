@@ -3,9 +3,9 @@
 @import "../../../styles/fonts";
 
 .aboutme {
-  @include flex(row, flex-start, flex-start);
-  width: 1120px;
-  height: 900px;
+  @include flex(row, center, flex-start);
+  width: 78vw;
+  height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
@@ -90,8 +90,8 @@
       letter-spacing: 1px;
       font-family: $font-secondary;
       position: absolute;
-      right: -1080px;
-      top: -150px;
+      right: 0vw;
+      top: 0vh;
 
       @include for-phone-only {
         display: none;
@@ -111,6 +111,7 @@
   .image {
     width: 100%;
     margin-bottom: 20px;
+    max-width: 600px;
 
     img {
       width: 90%;

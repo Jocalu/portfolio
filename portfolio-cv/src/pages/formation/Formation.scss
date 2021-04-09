@@ -3,9 +3,9 @@
 @import "../../../styles/fonts";
 
 .formation {
-  @include flex(row, flex-start, flex-start);
-  width: 1120px;
-  height: 900px;
+  @include flex(row, center, flex-start);
+  width: 78vw;
+  height: 98vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;

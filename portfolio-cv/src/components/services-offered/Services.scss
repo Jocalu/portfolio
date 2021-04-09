@@ -6,6 +6,7 @@
   @include flex(column, center, flex-start);
   margin-bottom: 10px;
   width: 100%;
+  padding-right: 50px;
 
   .title {
     @include flex(row, flex-start, center);

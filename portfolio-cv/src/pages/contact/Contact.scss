@@ -3,9 +3,9 @@
 @import "../../../styles/fonts";
 
 .contact {
-  @include flex(column, flex-start, flex-start);
+  @include flex(column, flex-start, center);
   margin: 10px;
-  width: 100vw;
+  width: 78vw;
   height: 98vh;
   margin-left: 320px;
   position: fixed;

@@ -3,7 +3,7 @@ import './Resume.scss';
 import { Chip, makeStyles } from '@material-ui/core';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import information from '../../constants/information-jose';
+import information from '../../constants/information-jose-EN';
 import Recommendations from '../../components/recommendations/Recommendations';
 
 const useStyles = makeStyles((theme) => ({

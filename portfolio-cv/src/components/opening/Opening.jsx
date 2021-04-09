@@ -1,5 +1,5 @@
 import React from 'react';
-import information from '../../constants/information-jose';
+import information from '../../constants/information-jose-EN';
 import './Opening.scss';
 
 export default function Opening() {

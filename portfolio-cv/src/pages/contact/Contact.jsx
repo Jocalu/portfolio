@@ -3,7 +3,7 @@ import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import information from '../../constants/information-jose';
+import information from '../../constants/information-jose-EN';
 
 export default function Contact() {
   const [data, setData] = useState({

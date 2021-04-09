@@ -1,5 +1,5 @@
 import React from 'react';
-import information from '../../constants/information-jose';
+import information from '../../constants/information-jose-EN';
 import './Formation.scss';
 
 export default function Formation() {

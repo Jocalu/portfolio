@@ -2,14 +2,14 @@ import React from 'react';
 import './AboutMe.scss';
 import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
-import information from '../../constants/information-jose';
+import information from '../../constants/information-jose-EN';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
   const [state, setState] = React.useState({
     open: false,
-    vertical: 'bottom',
-    horizontal: 'left',
+    vertical: 'top',
+    horizontal: 'right',
   });
 
   const { vertical, horizontal, open } = state;
@@ -59,7 +59,7 @@ export default function AboutMe() {
             className="btn btn--blue"
             target="_blank"
             download
-            onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}
+            onClick={handleClick({ vertical: 'top', horizontal: 'right' })}
           >
             Download CV
           </Link>
