@@ -17,7 +17,7 @@ import informationEN from './constants/informationEN';
 import informationES from './constants/informationES';
 
 function App() {
-  const [language, setLanguage] = useState('ES');
+  const [language, setLanguage] = useState('EN');
   const information = language === 'ES' ? informationES : informationEN;
 
   return (
