@@ -25,22 +25,21 @@ const information = {
     photoCoverURL: 'https://i.postimg.cc/XqnnZYgf/photo-cover.png',
     icon: 'https://i.postimg.cc/T25QTbtK/jc-black.png',
   },
-
   resume: {
     info: [
       'Passionate about technology, I have decided to enter the world of programming and web development. And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
       'What can you find in me? A leader, a person excited about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a hight degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
-
   experience: [
     {
       place: 'MidDay restaurant',
-      position: 'Web design and programming',
+      position: 'Diseño, maquetación y programación web',
       date: '04/2021 - Actually',
-      description: ['Web app developed with Angular.',
-        'Own design of the entire web.',
-        'Good relationship with the client.'],
+      description: ['Programación de la app web con Angular.',
+        'Diseño propio de toda la web.',
+        'Buena relación con el cliente.'],
+
     },
     {
       place: 'Skylab Coders Academy',
@@ -53,32 +52,30 @@ const information = {
         'Strong problem-solving skills.',
         'Resourceful and self-motivated on innovation.'],
     }],
-
   education: [
     {
       place: 'Skylab Coders Academy',
       studies: 'Web development',
       date: '01/2021 - 04/2021',
-      description: ['Best programming bootcamp in the world according to SwitchUp.', 'More than 1200 hours of programming.', 'Especially focused on good practices and unit-testing (Jest, Jasmine).',
-        'Knowledge of web programming: HTML, CSS, Javascript, Typescript, SASS, Angular, React.',
-        'Using Version Control Tools: Git'],
+      description: ['Mejor Bootcamp de programación del mundo según SwitchUp.', 'Más de 1200 horas de programación.', 'Enfocado especialmente en buenas prácticas y unit-testing (Jest, Jasmine).',
+        'Conocimientos en programación web: HTML, CSS, Javascript, Typescript, SASS, Angular, React.',
+        'Utilización de Herramientas de Control de versiones: Git'],
     },
     {
       place: 'EHTB',
-      studies: 'CFGS in kitchen management',
+      studies: 'Grado superior en Dirección de cocina',
       date: '09/2013 - 09/2015',
-      description: ['Average grade of 9.0 - Graduated with honors',
-        'Responsible for preparing menus in the restaurant of the EHTB school during the course of the CFGS.'],
+      description: ['Nota media de 9,0 - Graduado con honores',
+        'Responsable en elaboración de menús en el restaurante de la escuela EHTB durante el curso del Ciclo Formativo.'],
     },
     {
       place: 'EPSEB',
-      studies: 'Degree in Building Engineering',
+      studies: 'Grado en Ingeniería de edificación',
       date: '09/2005 - 09/2010',
-      description: ['Average grade of 7.0',
-        'Special mention in Building Rehabilitation.'],
+      description: ['Nota media de 7,0.',
+        'Mención especial en Rehabilitación de Edificaciones.'],
     },
   ],
-
   softskills: [{
     name: 'Leadership',
     ability: 100,
@@ -115,7 +112,6 @@ const information = {
     name: 'Critical Thinking',
     ability: 90,
   }],
-
   hardskills: [
     {
       name: 'HTML',
@@ -241,18 +237,17 @@ const information = {
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
-      description: 'Jose is leadership, transparency, focus, work, planning, camaraderie and above all TRUST. Give him a challenge and you will motivate him. You will find the solution and also involve the team and align it so that the experience is the best of learning. He is a facilitator with a track record as a developer that must be followed closely.',
+      description: 'Jose es liderazgo, transparencia, foco, trabajo, planificación, compañerismo y sobre todo CONFIANZA. Dale un reto y le motivarás. Encontrará la solución y además hará partícipe al equipo y lo alineará para que la experiencia sea el mejor de los aprendizajes. Es un facilitador con una trayectoría como developer que hay que seguir de cerca.',
       photoURL: 'https://i.postimg.cc/fTxYJ9Zr/Diana.jpg',
     },
 
     alvaro: {
       name: 'Álvaro Valladares',
       position: 'Partner at Skylab Academy',
-      description: 'Programming enthusiast that infects his environment. In the time that I was able to work with him, I never saw him give up on a problem, he is a decisive person who knows how to work as a team and goes a step beyond mere work, getting involved with his environment. Always learning, curious in nature. It doesn\'t take long to work alongside him to realize that he\'s passionate about programming.',
+      description: 'Entusiasta de la programación que contagia a su entorno. En el tiempo que pude trabajar con él nunca le vi rendirse ante un problema, es una persona resolutiva que sabe trabajar en equipo y va un paso más allá del mero trabajo, implicándose con su entorno. Siempre aprendiendo, de naturaleza curiosa. No hace falta trabajar mucho tiempo a su lado para darse cuenta que la programación le apasiona.',
       photoURL: 'https://i.postimg.cc/CxwJYVXX/alvaro.jpg',
     },
   },
-
   projects: [
     {
       name: 'Moodsic',
@@ -304,18 +299,16 @@ const information = {
       },
     },
   ],
-  services: [
-    {
-      name: 'Ecommerce',
-      icon: faShoppingCart,
-      description: 'As a website operator, you are therefore permanently faced with the challenge of monitoring the market and generating unique content with added value for the user on the ongoing new product pages. In doing so, you create competitive advantages for yourself while remaining visible in the search engines and for the user.',
-    },
-    {
-      name: 'Web design',
-      icon: faLaptopCode,
-      description: 'These include websites and eCommerce solutions focused on usability and responsive design, creative branding solutions that inject personality into your business, and custom programming for ideas that you need help bringing to fruition.',
-    },
-  ],
+  services: [{
+    name: 'Ecommerce',
+    icon: faShoppingCart,
+    description: 'As a website operator, you are therefore permanently faced with the challenge of monitoring the market and generating unique content with added value for the user on the ongoing new product pages. In doing so, you create competitive advantages for yourself while remaining visible in the search engines and for the user.',
+  },
+  {
+    name: 'Web design',
+    icon: faLaptopCode,
+    description: 'These include websites and eCommerce solutions focused on usability and responsive design, creative branding solutions that inject personality into your business, and custom programming for ideas that you need help bringing to fruition.',
+  }],
 };
 
 export default information;

@@ -2,10 +2,20 @@ import React from 'react';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import './Services.scss';
+import '../../constants/information-jose-EN';
 
 export default function Services() {
   return (
     <>
+      {/*  {information.services.map((service) => (
+        <div key={service.name} className="services__description">
+          <div className="title">
+            <div className="icon">{service.icon}</div>
+            <h4>{service.name}</h4>
+          </div>
+          <p>{service.description}</p>
+        </div>
+      ))} */}
       <div className="services__description">
         <div className="title">
           <div className="icon">
