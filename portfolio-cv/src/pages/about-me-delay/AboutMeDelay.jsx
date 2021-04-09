@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../about-me/AboutMe.scss';
 import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
@@ -6,7 +6,7 @@ import information from '../../constants/information-jose';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     open: false,
     vertical: 'bottom',
     horizontal: 'left',
@@ -28,7 +28,8 @@ export default function AboutMe() {
       data-aos="fade-left"
       data-aos-offset="0"
       data-aos-easing="ease-in-sine"
-      data-aos-duration="400"
+      data-aos-duration="1200"
+      data-aos-delay="2500"
     >
       <section className="aboutme__info">
 
@@ -71,6 +72,7 @@ export default function AboutMe() {
             message="✅ Downloaded successfully"
             key={vertical + horizontal}
           />
+
           <Link to="/contact" type="button" className="btn">
             Contact
           </Link>

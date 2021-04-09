@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useState } from 'react';
 import './AboutMe.scss';
 import { Link } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
@@ -6,7 +7,7 @@ import information from '../../constants/information-jose';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     open: false,
     vertical: 'bottom',
     horizontal: 'left',
@@ -22,13 +23,20 @@ export default function AboutMe() {
     setState({ ...state, open: false });
   };
 
+  const [count, setCount] = useState('');
+
+  const changeTime = () => {
+    setCount(localStorage.setItem('count', '1'));
+  };
+
   return (
     <main
       className="aboutme"
       data-aos="fade-left"
       data-aos-offset="0"
       data-aos-easing="ease-in-sine"
-      data-aos-duration="400"
+      data-aos-duration={localStorage.getItem('count', count) !== '1' ? '1200' : '400'}
+      data-aos-delay={localStorage.getItem('count', count) !== '1' ? '2500' : '0'}
     >
       <section className="aboutme__info">
 
@@ -53,6 +61,8 @@ export default function AboutMe() {
         {information.resume.info.map((info) => <p className="info">{info}</p>)}
 
         <div className="buttons">
+
+          <button onClick={changeTime} className="btn" type="button">State</button>
           <Link
             to="/Users/Jocalu/Desktop/Portfolio/portfolio-cv/src/files/jose-carcamo-web-developer-2021.pdf"
             type="button"
