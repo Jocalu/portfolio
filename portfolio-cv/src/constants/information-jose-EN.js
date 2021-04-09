@@ -25,7 +25,7 @@ const information = {
     title2: 'Redirect to CV',
     title3: 'What I do',
     title4: 'Linkedln',
-    title5: 'What I do',
+    title5: 'How can I help you?',
     title6: 'Send message',
     title7: 'Soft skills',
     title8: 'Hard skills',
@@ -34,7 +34,6 @@ const information = {
 
   personal: {
     profession: 'Web Developer',
-    professionBis: 'Full stack Developer',
     name: 'Jose Cárcamo',
     phone: '+34 620-664-432',
     email: 'jocalu87@gmail.com',
@@ -47,7 +46,8 @@ const information = {
 
   resume: {
     info: [
-      'Passionate about technology, I have decided to enter the world of programming and web development. And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
+      'Passionate about technology, I have decided to enter the world of programming and web development.',
+      'And I love it! Each project is a new adventure and each problem along the way is a challenge to overcome.',
       'What can you find in me? A leader, a person excited about what he does, who does not lose his temper in any situation. Willing to help others, patient, understanding. In my work I have always tried to convey the passion I feel for the profession and a hight degree of commitment and perfectionism to always achieve the best result.',
       'If you want to chat with me about how I could help, collaborate or simply request information about me, please contact me, I will be happy to assist you.'],
   },
@@ -236,27 +236,6 @@ const information = {
   ],
 
   recommendations: {
-    gilberto: {
-      name: 'Gilberto Cao',
-      position: 'Web programming teacher at Skylab Academy',
-      description: 'The best student I have ever had. It is applied, organized and designs like God.',
-      photoURl: 'https://avatars.githubusercontent.com/u/10716392?s=460&u=1a4b8066bc0abf6ec89b8b394f7a7d8d9b6f5c3a&v=4',
-    },
-
-    lluis: {
-      name: 'Lluis Quintana',
-      position: 'Partner at Skylab Academy',
-      description: 'He is a very diligent student. When I didn\'t achieve a goal, Jose helped me. He taught me everything I know.',
-      photoURL: 'https://i.postimg.cc/yYFwn1pM/Lluis.jpg',
-    },
-
-    laia: {
-      name: 'Laia Solanes',
-      position: 'Partner at Skylab Academy',
-      description: 'Great partner, better person',
-      photoURL: 'https://i.postimg.cc/y8s2bMwk/Laia.jpg',
-    },
-
     diana: {
       name: 'Diana Expósito',
       position: 'Campus Manager at Skylab Academy',
