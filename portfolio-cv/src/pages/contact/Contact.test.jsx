@@ -1,14 +1,14 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import Recommendations from './Recommendations';
+import Contact from './Contact';
 import information from '../../constants/informationEN';
 
-describe('Given a Recommendations component', () => {
+describe('Given a Contact component', () => {
   let container = null;
 
   beforeEach(() => {
-    container = document.createElement('recommendations');
+    container = document.createElement('contact');
     document.body.appendChild(container);
   });
 
@@ -18,14 +18,13 @@ describe('Given a Recommendations component', () => {
     container = null;
   });
   describe('When is invoked', () => {
-    test('Then should rend a projects-card component', () => {
-      const person = information.recommendations.diana;
+    test('Then should rend a contact component', () => {
       act(() => {
-        render(<Recommendations person={person} />, container);
+        render(<Contact information={information} />, container);
       });
-      const recommendations = container.querySelector('recommendations');
+      const contact = container.querySelector('contact');
 
-      expect(recommendations).toBeDefined();
+      expect(contact).toBeDefined();
     });
   });
 });
