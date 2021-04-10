@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './AboutMe.scss';
+import { Link } from 'react-router-dom';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe({ information }) {
@@ -44,12 +45,12 @@ export default function AboutMe({ information }) {
             {information.menu.title2}
           </a>
 
-          <a
-            href={`mailto:${information.personal.email}`}
+          <Link
+            to="/contact"
             className="btn"
           >
             {information.menu.page6}
-          </a>
+          </Link>
         </div>
 
       </section>

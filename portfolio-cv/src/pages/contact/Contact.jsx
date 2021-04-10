@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable no-alert */
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Contact.scss';
@@ -7,56 +6,21 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import emailjs from 'emailjs-com';
+import emailjsConfig from '../../../env';
 
 export default function Contact({ information }) {
-/*   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const sendEmail = (event) => {
+    event.preventDefault();
 
-  const [state, setState] = useState({ open: false });
-
-  const handleChanges = (setter, value) => {
-    setter(value);
-  }; */
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('service_gci0mg3', 'template_2dxrqv8', e.target,
-      'user_gIc7YvyW7eWJK7BdpyxWl')
+    emailjs.sendForm(emailjsConfig.serviceID, emailjsConfig.templateID, event.target,
+      emailjsConfig.userID)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-    e.target.reset();
-  }
-
-  /*
-  const handleClick = () => () => {
-    setState({ open: true });
-  }; */
-
-  /*  const sendData = () => {
-    const data = {
-      name,
-      email,
-      subject,
-      message,
-    };
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
-    return data;
-  }; */
-
-  /*   const { open } = state;
-
-  const handleClose = () => {
-    setState({ ...state, open: false });
-  }; */
+    event.target.reset();
+  };
 
   return (
     <main
@@ -122,8 +86,6 @@ export default function Contact({ information }) {
                 type="text"
                 name="name"
                 placeholder={information.menu.input1}
-            /*     onChange={((event) => handleChanges(setName, event.target.value))}
-                value={name} */
               />
             </label>
 
@@ -132,9 +94,6 @@ export default function Contact({ information }) {
                 type="email"
                 name="email"
                 placeholder={information.menu.input2}
-     /*            onChange={((event) => handleChanges(setEmail, event.target.value))}
-                value={email} */
-
               />
             </label>
 
@@ -143,9 +102,6 @@ export default function Contact({ information }) {
                 type="text"
                 name="subject"
                 placeholder={information.menu.input3}
-           /*      onChange={((event) => handleChanges(setSubject, event.target.value))}
-                value={subject} */
-
               />
             </label>
             <input
@@ -153,13 +109,6 @@ export default function Contact({ information }) {
               className="btn btn--blue"
               value={information.menu.title6}
             />
-
-            {/*     <Snackbar
-              open={open}
-              onClose={handleClose}
-              TransitionComponent={state.Transition}
-              message={`✅ ${information.menu.message}`}
-            /> */}
           </div>
 
           <label htmlFor="message">
@@ -169,8 +118,6 @@ export default function Contact({ information }) {
               cols="30"
               rows="10"
               placeholder={information.menu.input4}
-          /*     onChange={((event) => handleChanges(setMessage, event.target.value))}
-              value={message} */
             />
           </label>
         </form>
