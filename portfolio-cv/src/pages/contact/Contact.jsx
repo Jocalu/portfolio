@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Contact.scss';
@@ -7,34 +8,37 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Snackbar from '@material-ui/core/Snackbar';
 
 export default function Contact({ information }) {
-  const [data, setData] = useState({
-    fullname: '',
-    email: '',
-    subject: '',
-    message: '',
-    send: true,
-  });
+  const [fullname, setFullname] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleChanges = (event) => {
-    event.preventDefault();
-    setData({
-      ...data,
-      [event.target.fullname]: event.target.value,
-      send: false,
-    });
+  const [state, setState] = useState({ open: false });
+
+  const handleChanges = (setter, value) => {
+    setter(value);
+  };
+  /*
+  const handleClick = () => () => {
+    setState({ open: true });
+  }; */
+
+  const sendData = () => {
+    const data = {
+      fullname,
+      email,
+      subject,
+      message,
+    };
+    setFullname('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+    console.log(data);
+    return data;
   };
 
-  const [state, setState] = useState({
-    open: false,
-    vertical: 'top',
-    horizontal: 'right',
-  });
-
-  const { vertical, horizontal, open } = state;
-
-  const handleClick = (newState) => () => {
-    setState({ open: true, ...newState });
-  };
+  const { open } = state;
 
   const handleClose = () => {
     setState({ ...state, open: false });
@@ -103,7 +107,8 @@ export default function Contact({ information }) {
                 type="text"
                 name="fullname"
                 placeholder={information.menu.input1}
-                onChange={handleChanges}
+                onChange={((event) => handleChanges(setFullname, event.target.value))}
+                value={fullname}
               />
             </label>
 
@@ -112,7 +117,9 @@ export default function Contact({ information }) {
                 type="email"
                 name="email"
                 placeholder={information.menu.input2}
-                onChange={handleChanges}
+                onChange={((event) => handleChanges(setEmail, event.target.value))}
+                value={email}
+
               />
             </label>
 
@@ -121,24 +128,24 @@ export default function Contact({ information }) {
                 type="text"
                 name="subject"
                 placeholder={information.menu.input3}
-                onChange={handleChanges}
+                onChange={((event) => handleChanges(setSubject, event.target.value))}
+                value={subject}
+
               />
             </label>
             <button
               type="button"
               className="btn btn--blue"
-              onClick={(() => setData({ ...data, send: true }), handleClick({ vertical: 'top', horizontal: 'right' }))}
+              onClick={(() => sendData()/* , handleClick() */)}
             >
               {information.menu.title6}
             </button>
 
             <Snackbar
-              anchorOrigin={{ vertical, horizontal }}
               open={open}
               onClose={handleClose}
               TransitionComponent={state.Transition}
               message={`✅ ${information.menu.message}`}
-              key={vertical + horizontal}
             />
           </div>
 
@@ -149,7 +156,8 @@ export default function Contact({ information }) {
               cols="30"
               rows="10"
               placeholder={information.menu.input4}
-              onChange={handleChanges}
+              onChange={((event) => handleChanges(setMessage, event.target.value))}
+              value={message}
             />
           </label>
         </form>

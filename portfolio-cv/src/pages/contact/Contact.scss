@@ -102,6 +102,7 @@
 
       .inputs {
         @include flex(column, center, center);
+        position: relative;
 
         .btn--blue {
           width: 180px;
@@ -119,8 +120,8 @@
           letter-spacing: 1px;
           font-family: $font-secondary;
           position: absolute;
-          right: 0vw;
-          top: 0vh;
+          right: -38vw;
+          top: -93vh;
 
           @include for-phone-only {
             display: none;
