@@ -5,7 +5,7 @@
 .resume {
   @include flex(row, center, flex-start);
   width: 78vw;
-  height: 98vh;
+  height: 100vh;
   margin-left: 320px;
   position: fixed;
   overflow: hidden;
@@ -38,7 +38,7 @@
 
     .soft-skills {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       .skills-bars {
         @include flex(column, center, flex-start);
