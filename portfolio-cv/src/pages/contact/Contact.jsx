@@ -1,14 +1,14 @@
-/* eslint-disable no-console */
-import React, { useState } from 'react';
+/* eslint-disable no-alert */
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Snackbar from '@material-ui/core/Snackbar';
+import emailjs from 'emailjs-com';
 
 export default function Contact({ information }) {
-  const [fullname, setFullname] = useState('');
+/*   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -17,32 +17,44 @@ export default function Contact({ information }) {
 
   const handleChanges = (setter, value) => {
     setter(value);
-  };
+  }; */
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6q2hd0i', 'template_gdcs25t', e.target, 'user_miR1HQzyL9onqaFitCalD')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  }
+
   /*
   const handleClick = () => () => {
     setState({ open: true });
   }; */
 
-  const sendData = () => {
+  /*  const sendData = () => {
     const data = {
-      fullname,
+      name,
       email,
       subject,
       message,
     };
-    setFullname('');
+    setName('');
     setEmail('');
     setSubject('');
     setMessage('');
-    console.log(data);
     return data;
-  };
+  }; */
 
-  const { open } = state;
+  /*   const { open } = state;
 
   const handleClose = () => {
     setState({ ...state, open: false });
-  };
+  }; */
 
   return (
     <main
@@ -97,18 +109,19 @@ export default function Contact({ information }) {
         <h3>{information.menu.title5}</h3>
 
         <form
+          onSubmit={sendEmail}
           className="formcontrol"
         >
 
           <div className="inputs">
 
-            <label htmlFor="fullname">
+            <label htmlFor="name">
               <input
                 type="text"
-                name="fullname"
+                name="name"
                 placeholder={information.menu.input1}
-                onChange={((event) => handleChanges(setFullname, event.target.value))}
-                value={fullname}
+            /*     onChange={((event) => handleChanges(setName, event.target.value))}
+                value={name} */
               />
             </label>
 
@@ -117,8 +130,8 @@ export default function Contact({ information }) {
                 type="email"
                 name="email"
                 placeholder={information.menu.input2}
-                onChange={((event) => handleChanges(setEmail, event.target.value))}
-                value={email}
+     /*            onChange={((event) => handleChanges(setEmail, event.target.value))}
+                value={email} */
 
               />
             </label>
@@ -128,25 +141,23 @@ export default function Contact({ information }) {
                 type="text"
                 name="subject"
                 placeholder={information.menu.input3}
-                onChange={((event) => handleChanges(setSubject, event.target.value))}
-                value={subject}
+           /*      onChange={((event) => handleChanges(setSubject, event.target.value))}
+                value={subject} */
 
               />
             </label>
-            <button
-              type="button"
+            <input
+              type="submit"
               className="btn btn--blue"
-              onClick={(() => sendData()/* , handleClick() */)}
-            >
-              {information.menu.title6}
-            </button>
+              value={information.menu.title6}
+            />
 
-            <Snackbar
+            {/*     <Snackbar
               open={open}
               onClose={handleClose}
               TransitionComponent={state.Transition}
               message={`✅ ${information.menu.message}`}
-            />
+            /> */}
           </div>
 
           <label htmlFor="message">
@@ -156,8 +167,8 @@ export default function Contact({ information }) {
               cols="30"
               rows="10"
               placeholder={information.menu.input4}
-              onChange={((event) => handleChanges(setMessage, event.target.value))}
-              value={message}
+          /*     onChange={((event) => handleChanges(setMessage, event.target.value))}
+              value={message} */
             />
           </label>
         </form>

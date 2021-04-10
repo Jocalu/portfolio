@@ -129,8 +129,7 @@ export default {
     },
     {
       name: 'Ética de trabajo',
-      ability:
-      75,
+      ability: 75,
     },
     {
       name: 'Resolución de problemas',
