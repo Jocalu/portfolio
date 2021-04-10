@@ -30,6 +30,10 @@ export default {
     title7: 'Soft skills',
     title8: 'Hard skills',
     title9: 'Recommendations',
+    input1: 'Full Name',
+    input2: 'Email Address',
+    input3: 'Subject',
+    input4: 'Message',
   },
 
   personal: {

@@ -12,7 +12,7 @@ export default function Projects({ information }) {
       data-aos-easing="ease-in-sine"
       data-aos-duration="400"
     >
-      <h3>Projects</h3>
+      <h3>{information.menu.page5}</h3>
       <ProjectsCard projects={information.projects} />
     </main>
   );
@@ -21,5 +21,8 @@ export default function Projects({ information }) {
 Projects.propTypes = {
   information: PropTypes.shape({
     projects: PropTypes.shape({}).isRequired,
+    menu: PropTypes.shape({
+      page5: PropTypes.string.isRequired,
+    }).isRequired,
   }).isRequired,
 };

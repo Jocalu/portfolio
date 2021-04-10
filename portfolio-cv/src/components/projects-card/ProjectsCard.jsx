@@ -63,8 +63,8 @@ export default function ProjectsCard({ projects }) {
               <PlayCircleFilledWhiteOutlinedIcon className="media__icon" />
             </a>
             )}
-            <FontAwesomeIcon className="media__icon technology" icon={project.technology.icon} />
           </CardActions>
+          <FontAwesomeIcon className="media__icon technology" icon={project.technology.icon} />
         </Card>
       ))}
     </>

@@ -11,19 +11,16 @@ export default function Contact({ information }) {
     email: '',
     subject: '',
     message: '',
-    send: false,
+    send: true,
   });
 
   const handleChanges = (event) => {
+    event.preventDefault();
     setData({
       ...data,
       [event.target.fullname]: event.target.value,
-      send: true,
+      send: false,
     });
-  };
-
-  const sendData = (event) => {
-    event.preventDefault();
   };
 
   return (
@@ -80,7 +77,6 @@ export default function Contact({ information }) {
 
         <form
           className="formcontrol"
-          onSubmit={sendData}
         >
 
           <div className="inputs">
@@ -89,9 +85,8 @@ export default function Contact({ information }) {
               <input
                 type="text"
                 name="fullname"
-                placeholder="Full Name"
+                placeholder={information.menu.input1}
                 onChange={handleChanges}
-
               />
             </label>
 
@@ -99,9 +94,8 @@ export default function Contact({ information }) {
               <input
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder={information.menu.input2}
                 onChange={handleChanges}
-
               />
             </label>
 
@@ -109,23 +103,17 @@ export default function Contact({ information }) {
               <input
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder={information.menu.input3}
                 onChange={handleChanges}
-
               />
             </label>
             <button
               type="button"
               className="btn btn--blue"
+              onClick={(() => setData({ ...data, send: true }))}
             >
               {information.menu.title6}
             </button>
-
-            {/* <input
-              type="submit"
-              className="btn btn--blue"
-              value="Send message"
-            /> */}
           </div>
 
           <label htmlFor="message">
@@ -134,7 +122,7 @@ export default function Contact({ information }) {
               id="message"
               cols="30"
               rows="10"
-              placeholder="Message"
+              placeholder={information.menu.input4}
               onChange={handleChanges}
             />
           </label>
@@ -164,6 +152,10 @@ Contact.propTypes = {
       title5: PropTypes.string.isRequired,
       title6: PropTypes.string.isRequired,
       page6: PropTypes.string.isRequired,
+      input1: PropTypes.string.isRequired,
+      input2: PropTypes.string.isRequired,
+      input3: PropTypes.string.isRequired,
+      input4: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };

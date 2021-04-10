@@ -29,6 +29,10 @@ export default {
     title7: 'Habilidades',
     title8: 'Conocimientos',
     title9: 'Recomendaciones',
+    input1: 'Nombre completo',
+    input2: 'Dirección de email',
+    input3: 'Asunto',
+    input4: 'Mensaje',
   },
 
   personal: {
@@ -247,7 +251,7 @@ export default {
     },
     {
       name: 'MidDay Restaurant',
-      description: 'MidDay es una aplicación que permite la gestión de reservas de menús de mediodía en restaurantes. Además permite al usuario crear una base de datos propia para cada restaurante, desde donde gestionar sus platos y menus.',
+      description: 'MidDay es una aplicación que permite la gestión de reservas de menús de mediodía en restaurantes. Además permite al usuario crear una base de datos propia para cada restaurante, desde donde gestionar sus platos y menús.',
       image: 'https://i.postimg.cc/DfGvcxs0/Captura-de-pantalla-2021-04-07-a-las-9-08-13.png',
       github: 'https://github.com/Jocalu/MidDay-Project',
       url: 'https://midday-restaurant.web.app/home',
