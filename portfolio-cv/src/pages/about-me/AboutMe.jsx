@@ -75,7 +75,7 @@ export default function AboutMe({ information }) {
             type="button"
             className="btn"
           >
-            Contact
+            {information.menu.page6}
           </Link> */}
           <a href={`mailto:${information.personal.email}`} className="btn">
             {information.menu.page6}
@@ -113,8 +113,6 @@ AboutMe.propTypes = {
       title3: PropTypes.string.isRequired,
       page6: PropTypes.string.isRequired,
     }).isRequired,
-    resume: PropTypes.shape([{
-      info: PropTypes.string.isRequired,
-    }]).isRequired,
+    resume: PropTypes.shape({ info: PropTypes.arrayOf.isRequired }).isRequired,
   }).isRequired,
 };

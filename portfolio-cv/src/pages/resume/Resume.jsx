@@ -86,10 +86,10 @@ Resume.propTypes = {
       title9: PropTypes.string.isRequired,
     }).isRequired,
     recommendations: PropTypes.shape({
-      diana: PropTypes.string.isRequired,
-      alvaro: PropTypes.string.isRequired,
+      diana: PropTypes.shape({}).isRequired,
+      alvaro: PropTypes.shape({}).isRequired,
     }).isRequired,
-    softskills: PropTypes.shape([{}]).isRequired,
-    hardskills: PropTypes.shape([{}]).isRequired,
+    softskills: PropTypes.arrayOf(PropTypes.object).isRequired,
+    hardskills: PropTypes.arrayOf(PropTypes.object).isRequired,
   }).isRequired,
 };

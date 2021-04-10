@@ -23,10 +23,6 @@ export default function Services({ information }) {
 
 Services.propTypes = {
   information: PropTypes.shape({
-    services: PropTypes.shape([{
-      name: PropTypes.string.isRequired,
-      icon: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-    }]).isRequired,
+    services: PropTypes.arrayOf(PropTypes.object).isRequired,
   }).isRequired,
 };

@@ -72,16 +72,5 @@ export default function ProjectsCard({ projects }) {
 }
 
 ProjectsCard.propTypes = {
-  projects: PropTypes.shape([{
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    github: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    video: PropTypes.string.isRequired,
-    technology: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      icon: PropTypes.string.isRequired,
-    }).isRequired,
-  }]).isRequired,
-};
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+}.isRequired;
