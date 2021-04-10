@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-alert */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -22,7 +23,8 @@ export default function Contact({ information }) {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_6q2hd0i', 'template_gdcs25t', e.target, 'user_miR1HQzyL9onqaFitCalD')
+    emailjs.sendForm('service_gci0mg3', 'template_2dxrqv8', e.target,
+      'user_gIc7YvyW7eWJK7BdpyxWl')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
