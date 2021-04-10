@@ -104,13 +104,14 @@
         @include flex(column, center, center);
 
         .btn--blue {
-          width: 170px;
+          width: 180px;
           align-self: flex-start;
-          margin: 30px 0 0 10px;
+          margin: 10px 0 0 10px;
 
           @include for-phone-only {
             position: absolute;
             top: 770px;
+            margin: 30px 0 0 10px;
           }
         }
       }
