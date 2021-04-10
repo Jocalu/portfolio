@@ -34,6 +34,7 @@ export default {
     input2: 'Email Address',
     input3: 'Subject',
     input4: 'Message',
+    message: 'Send successfully',
   },
 
   personal: {

@@ -1,26 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './AboutMe.scss';
-import Snackbar from '@material-ui/core/Snackbar';
 import Services from '../../components/services-offered/Services';
 
 export default function AboutMe({ information }) {
-  const [state, setState] = useState({
-    open: false,
-    vertical: 'top',
-    horizontal: 'right',
-  });
-
-  const { vertical, horizontal, open } = state;
-
-  const handleClick = (newState) => () => {
-    setState({ open: true, ...newState });
-  };
-
-  const handleClose = () => {
-    setState({ ...state, open: false });
-  };
-
   return (
     <main
       className="aboutme"
@@ -57,19 +40,10 @@ export default function AboutMe({ information }) {
             className="btn btn--blue"
             target="_blank"
             rel="noreferrer"
-            onClick={handleClick({ vertical: 'top', horizontal: 'right' })}
           >
             {information.menu.title2}
           </a>
 
-          <Snackbar
-            anchorOrigin={{ vertical, horizontal }}
-            open={open}
-            onClose={handleClose}
-            TransitionComponent={state.Transition}
-            message="✅ Redirected successfully"
-            key={vertical + horizontal}
-          />
           {/*   <Link
             to="/contact"
             type="button"

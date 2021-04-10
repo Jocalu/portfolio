@@ -33,6 +33,7 @@ export default {
     input2: 'Dirección de email',
     input3: 'Asunto',
     input4: 'Mensaje',
+    message: 'Enviado correctamente',
   },
 
   personal: {

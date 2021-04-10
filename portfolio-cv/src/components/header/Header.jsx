@@ -13,6 +13,7 @@ export default function Header({ information, setLanguage, language }) {
         {language === 'EN'
           ? (
             <button
+              id="button"
               type="button"
               onClick={(() => setLanguage('ES'))}
             >

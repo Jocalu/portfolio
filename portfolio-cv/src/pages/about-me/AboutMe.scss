@@ -84,19 +84,6 @@
         }
       }
     }
-
-    .MuiSnackbarContent-root {
-      background-color: $color-blue;
-      letter-spacing: 1px;
-      font-family: $font-secondary;
-      position: absolute;
-      right: 0vw;
-      top: 0vh;
-
-      @include for-phone-only {
-        display: none;
-      }
-    }
   }
 }
 

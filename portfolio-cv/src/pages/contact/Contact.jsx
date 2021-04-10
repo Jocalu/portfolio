@@ -4,6 +4,7 @@ import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Snackbar from '@material-ui/core/Snackbar';
 
 export default function Contact({ information }) {
   const [data, setData] = useState({
@@ -21,6 +22,22 @@ export default function Contact({ information }) {
       [event.target.fullname]: event.target.value,
       send: false,
     });
+  };
+
+  const [state, setState] = useState({
+    open: false,
+    vertical: 'top',
+    horizontal: 'right',
+  });
+
+  const { vertical, horizontal, open } = state;
+
+  const handleClick = (newState) => () => {
+    setState({ open: true, ...newState });
+  };
+
+  const handleClose = () => {
+    setState({ ...state, open: false });
   };
 
   return (
@@ -110,10 +127,19 @@ export default function Contact({ information }) {
             <button
               type="button"
               className="btn btn--blue"
-              onClick={(() => setData({ ...data, send: true }))}
+              onClick={(() => setData({ ...data, send: true }), handleClick({ vertical: 'top', horizontal: 'right' }))}
             >
               {information.menu.title6}
             </button>
+
+            <Snackbar
+              anchorOrigin={{ vertical, horizontal }}
+              open={open}
+              onClose={handleClose}
+              TransitionComponent={state.Transition}
+              message={`✅ ${information.menu.message}`}
+              key={vertical + horizontal}
+            />
           </div>
 
           <label htmlFor="message">
@@ -156,6 +182,7 @@ Contact.propTypes = {
       input2: PropTypes.string.isRequired,
       input3: PropTypes.string.isRequired,
       input4: PropTypes.string.isRequired,
+      message: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };
