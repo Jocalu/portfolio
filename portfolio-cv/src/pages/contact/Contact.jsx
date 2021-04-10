@@ -104,11 +104,13 @@ export default function Contact({ information }) {
                 placeholder={information.menu.input3}
               />
             </label>
-            <input
+            <button
               type="submit"
               className="btn btn--blue"
-              value={information.menu.title6}
-            />
+            >
+              {information.menu.title6}
+
+            </button>
           </div>
 
           <label htmlFor="message">
