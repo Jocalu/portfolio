@@ -44,14 +44,10 @@ export default function AboutMe({ information }) {
             {information.menu.title2}
           </a>
 
-          {/*   <Link
-            to="/contact"
-            type="button"
+          <a
+            href={`mailto:${information.personal.email}`}
             className="btn"
           >
-            {information.menu.page6}
-          </Link> */}
-          <a href={`mailto:${information.personal.email}`} className="btn">
             {information.menu.page6}
           </a>
         </div>

@@ -59,14 +59,14 @@ export default function MenuMobile({ information, setLanguage, language }) {
         >
           {`🔹 ${information.menu.page5}`}
         </MenuItem>
-        <MenuItem
+        {/*      <MenuItem
           component="a"
           href="/contact"
           className="link"
           onClick={handleClose}
         >
           {`🔹 ${information.menu.page6}`}
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem className="language">
           {language === 'EN'
             ? (

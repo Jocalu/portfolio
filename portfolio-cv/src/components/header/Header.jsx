@@ -18,7 +18,6 @@ export default function Header({ information, setLanguage, language }) {
               onClick={(() => setLanguage('ES'))}
             >
               ES
-
             </button>
           )
           : (
@@ -27,7 +26,6 @@ export default function Header({ information, setLanguage, language }) {
               onClick={(() => setLanguage('EN'))}
             >
               EN
-
             </button>
           )}
       </div>
@@ -90,11 +88,11 @@ export default function Header({ information, setLanguage, language }) {
             <ChevronRightIcon className="icon" />
           </Link>
 
-          <Link to="/contact" className="link">
+          {/*        <Link to="/contact" className="link">
             <hr />
             {information.menu.page6}
             <ChevronRightIcon className="icon" />
-          </Link>
+          </Link> */}
         </nav>
       </header>
     </>
