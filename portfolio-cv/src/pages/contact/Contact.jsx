@@ -6,7 +6,7 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlined from '@material-ui/icons/MailOutlined';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import emailjs from 'emailjs-com';
-import emailjsConfig from '../../../environment';
+import emailjsConfig from '../../environment';
 
 export default function Contact({ information }) {
   const sendEmail = (event) => {
