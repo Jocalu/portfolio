@@ -35,10 +35,10 @@ export default {
     input4: 'Mensaje',
     message1s: 'Enviado correctamente',
     message2: 'Error al enviar',
-    formMessage1: 'Máximo 40 carácteres y sólo letras',
+    formMessage1: 'Debe contener de 1 a 40 carácteres y sólo letras',
     formMessage2: 'Email no válido',
-    formMessage3: 'Máximo 50 carácteres',
-    formMessage4: 'Mximo 250 carácteres',
+    formMessage3: 'Debe contener de 1 a 50 carácteres',
+    formMessage4: 'Debe contener de 1 a 500 carácteres',
   },
 
   personal: {

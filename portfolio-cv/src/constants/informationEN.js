@@ -34,12 +34,12 @@ export default {
     input2: 'Email Address',
     input3: 'Subject',
     input4: 'Message',
-    message: 'Submitted successfully',
+    message1: 'Submitted successfully',
     message2: 'Oops! Something went wrong',
-    formMessage1: 'Maximum of 40 characters and only letters',
+    formMessage1: 'Must contain 1 to  40 characters and only letters',
     formMessage2: 'Invalid email',
-    formMessage3: 'Maximum of 50 characters',
-    formMessage4: 'Maximum of 250 characters',
+    formMessage3: 'Must contain 1 to 50 characters',
+    formMessage4: 'Must contain 1 to 500 characters',
   },
 
   personal: {

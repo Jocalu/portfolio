@@ -17,6 +17,11 @@
     @include flex(column, center, center);
     position: relative;
 
+    .btn:disabled {
+      background-color: $color-grey;
+      opacity: 0.4;
+    }
+
     .btn--green,
     .btn--red,
     .btn--blue {
@@ -26,7 +31,8 @@
 
       @include for-phone-only {
         position: absolute;
-        top: 450px;
+        top: 540px;
+        z-index: 1;
         width: 350px;
       }
     }

@@ -24,14 +24,18 @@ export default function Form({ information }) {
         setSend('error');
         setTimeout(() => { setSend(''); }, 2000);
       });
-    event.target.reset();
+
+    name.inputField = '';
+    email.inputField = '';
+    subject.inputField = '';
+    message.inputField = '';
   };
 
-  const expressions = {
+  const regex = {
     name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     subject: /^[\s\S]{1,50}$/,
-    message: /^[\s\S]{0,250}$/,
+    message: /^[\s\S]{1,500}$/,
   };
 
   return (
@@ -50,7 +54,7 @@ export default function Form({ information }) {
           name="name"
           placeholder={information.menu.input1}
           errorMessage={information.menu.formMessage1}
-          expressions={expressions.name}
+          regex={regex.name}
         />
         <Input
           format="input"
@@ -60,6 +64,7 @@ export default function Form({ information }) {
           name="name"
           placeholder={information.menu.input2}
           errorMessage={information.menu.formMessage2}
+          regex={regex.email}
         />
         <Input
           format="input"
@@ -69,6 +74,7 @@ export default function Form({ information }) {
           name="name"
           placeholder={information.menu.input3}
           errorMessage={information.menu.formMessage3}
+          regex={regex.subject}
         />
 
         <button
@@ -89,9 +95,9 @@ export default function Form({ information }) {
         name="name"
         placeholder={information.menu.input4}
         errorMessage={information.menu.formMessage4}
+        regex={regex.message}
       />
     </form>
-
   );
 }
 
