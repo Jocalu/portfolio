@@ -1,3 +1,39 @@
 @import "../../../styles/colors";
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
+
+.textarea,
+.input {
+  position: relative;
+  margin-bottom: 10px;
+
+  textarea {
+    min-height: 240px;
+    min-width: 470px;
+    resize: none;
+
+    @include for-phone-only {
+      min-width: 350px;
+    }
+  }
+
+  .input--false,
+  .textarea--false {
+    border: 2px solid $color-red;
+  }
+
+  .unchecked,
+  .true {
+    display: none;
+  }
+
+  .false {
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    font-family: $font-primary;
+    color: $color-red;
+    left: 10px;
+    bottom: -10px;
+  }
+}

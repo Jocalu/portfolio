@@ -36,6 +36,10 @@ export default {
     input4: 'Message',
     message: 'Submitted successfully',
     message2: 'Oops! Something went wrong',
+    formMessage1: 'Maximum of 40 characters and only letters',
+    formMessage2: 'Invalid email',
+    formMessage3: 'Maximum of 50 characters',
+    formMessage4: 'Maximum of 250 characters',
   },
 
   personal: {

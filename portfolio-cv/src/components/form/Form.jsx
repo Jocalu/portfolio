@@ -7,10 +7,10 @@ import Input from '../input/Input';
 
 export default function Form({ information }) {
   const [send, setSend] = useState('');
-  const [name, setName] = useState({ inputField: '', valid: null });
-  const [email, setEmail] = useState({ inputField: '', valid: null });
-  const [subject, setSubject] = useState({ inputField: '', valid: null });
-  const [message, setMessage] = useState({ inputField: '', valid: null });
+  const [name, setName] = useState({ inputField: '', valid: 'unchecked' });
+  const [email, setEmail] = useState({ inputField: '', valid: 'unchecked' });
+  const [subject, setSubject] = useState({ inputField: '', valid: 'unchecked' });
+  const [message, setMessage] = useState({ inputField: '', valid: 'unchecked' });
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -43,65 +43,33 @@ export default function Form({ information }) {
       <div className="inputs">
 
         <Input
+          format="input"
           state={name}
           setState={setName}
           type="text"
           name="name"
           placeholder={information.menu.input1}
-          errorMessage="El nombre debe contener máximo 40 carácteres y sólo puede contener letras"
+          errorMessage={information.menu.formMessage1}
           expressions={expressions.name}
         />
         <Input
+          format="input"
           state={email}
           setState={setEmail}
           type="text"
           name="name"
-          placeholder={information.menu.input1}
-          errorMessage="El nombre debe contener máximo 40 carácteres y sólo puede contener letras"
+          placeholder={information.menu.input2}
+          errorMessage={information.menu.formMessage2}
         />
         <Input
+          format="input"
           state={subject}
           setState={setSubject}
           type="text"
           name="name"
-          placeholder={information.menu.input1}
-          errorMessage="El nombre debe contener máximo 40 carácteres y sólo puede contener letras"
+          placeholder={information.menu.input3}
+          errorMessage={information.menu.formMessage3}
         />
-        <Input
-          state={message}
-          setState={setMessage}
-          type="text"
-          name="name"
-          placeholder={information.menu.input1}
-          errorMessage="El nombre debe contener máximo 40 carácteres y sólo puede contener letras"
-        />
-
-        <label htmlFor="name">
-          <input
-            type="text"
-            name="name"
-            placeholder={information.menu.input1}
-            errorMessage="El nombre debe contener máximo 40 carácteres y sólo puede contener letras"
-          />
-        </label>
-
-        <label htmlFor="email-address">
-          <input
-            type="email"
-            name="email"
-            placeholder={information.menu.input2}
-            errorMessage="Email no válido"
-          />
-        </label>
-
-        <label htmlFor="subject">
-          <input
-            type="text"
-            name="subject"
-            placeholder={information.menu.input3}
-            errorMessage="Máximo 50 carácteres"
-          />
-        </label>
 
         <button
           type="submit"
@@ -109,20 +77,19 @@ export default function Form({ information }) {
             : send === 'send' ? 'btn btn--green' : 'btn btn--red'}
         >
           {send === '' ? information.menu.title6
-            : send === 'send' ? information.menu.message : information.menu.message2}
+            : send === 'send' ? information.menu.message1 : information.menu.message2}
         </button>
       </div>
 
-      <label htmlFor="message">
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder={information.menu.input4}
-          errorMessage="Máximo 250 carácteres"
-        />
-      </label>
+      <Input
+        format="textarea"
+        state={message}
+        setState={setMessage}
+        type="text"
+        name="name"
+        placeholder={information.menu.input4}
+        errorMessage={information.menu.formMessage4}
+      />
     </form>
 
   );
@@ -136,8 +103,12 @@ Form.propTypes = {
       input2: PropTypes.string.isRequired,
       input3: PropTypes.string.isRequired,
       input4: PropTypes.string.isRequired,
-      message: PropTypes.string.isRequired,
+      message1: PropTypes.string.isRequired,
       message2: PropTypes.string.isRequired,
+      formMessage1: PropTypes.string.isRequired,
+      formMessage2: PropTypes.string.isRequired,
+      formMessage3: PropTypes.string.isRequired,
+      formMessage4: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };

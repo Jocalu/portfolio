@@ -39,14 +39,4 @@
       background-color: $color-red;
     }
   }
-
-  textarea {
-    min-height: 240px;
-    min-width: 470px;
-    resize: none;
-
-    @include for-phone-only {
-      min-width: 350px;
-    }
-  }
 }
