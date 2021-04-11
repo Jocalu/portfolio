@@ -39,13 +39,12 @@ export default function Form({ information }) {
   };
 
   return (
+
     <form
       onSubmit={sendEmail}
       className="formcontrol"
     >
-
       <div className="inputs">
-
         <Input
           format="input"
           state={name}
@@ -78,6 +77,12 @@ export default function Form({ information }) {
         />
 
         <button
+          disabled={
+            name.valid !== 'true'
+            || email.valid !== 'true'
+            || subject.valid !== 'true'
+            || message.valid !== 'true'
+}
           type="submit"
           className={send === '' ? 'btn btn--blue'
             : send === 'send' ? 'btn btn--green' : 'btn btn--red'}

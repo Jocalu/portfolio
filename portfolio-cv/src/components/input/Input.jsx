@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import './Input.scss';
 import PropTypes from 'prop-types';
@@ -66,11 +65,11 @@ Input.propTypes = {
   errorMessage: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  regex: PropTypes.string.isRequired,
+  regex: PropTypes.instanceOf(RegExp).isRequired,
   format: PropTypes.string.isRequired,
   state: PropTypes.shape({
     inputField: PropTypes.string.isRequired,
     valid: PropTypes.string.isRequired,
   }).isRequired,
-  setState: PropTypes.shape({}).isRequired,
+  setState: PropTypes.func.isRequired,
 };
