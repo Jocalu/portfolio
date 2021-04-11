@@ -107,13 +107,14 @@
         .btn--green,
         .btn--red,
         .btn--blue {
-          width: 200px;
+          width: 300px;
           align-self: flex-start;
           margin: 10px 0 0 10px;
 
           @include for-phone-only {
             position: absolute;
             top: 450px;
+            width: 350px;
           }
         }
 
@@ -140,7 +141,7 @@
       }
 
       textarea {
-        max-height: 250px;
+        min-height: 240px;
         min-width: 470px;
         resize: none;
 

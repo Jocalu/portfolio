@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
@@ -9,7 +10,7 @@ import emailjs from 'emailjs-com';
 import emailjsConfig from '../../environment';
 
 export default function Contact({ information }) {
-  const [send, setSend] = useState();
+  const [send, setSend] = useState('');
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -17,10 +18,11 @@ export default function Contact({ information }) {
     emailjs.sendForm(emailjsConfig.serviceID, emailjsConfig.templateID, event.target,
       emailjsConfig.userID)
       .then(() => {
-        setSend(true);
-        setTimeout(() => { setSend(false); }, 1500);
-      }, (error) => {
-        setSend(error);
+        setSend('send');
+        setTimeout(() => { setSend(''); }, 2000);
+      }, () => {
+        setSend('error');
+        setTimeout(() => { setSend(''); }, 2000);
       });
     event.target.reset();
   };
@@ -109,9 +111,11 @@ export default function Contact({ information }) {
             </label>
             <button
               type="submit"
-              className={send ? 'btn btn--green' : 'btn btn--blue'}
+              className={send === '' ? 'btn btn--blue'
+                : send === 'send' ? 'btn btn--green' : 'btn btn--red'}
             >
-              {send ? information.menu.message : information.menu.title6}
+              {send === '' ? information.menu.title6
+                : (send === 'send' ? information.menu.message : information.menu.message2)}
 
             </button>
           </div>
