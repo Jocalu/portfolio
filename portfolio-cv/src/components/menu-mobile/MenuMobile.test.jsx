@@ -2,7 +2,9 @@ import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import { BrowserRouter } from 'react-router-dom';
-import { fireEvent } from '@testing-library/react';
+import {
+  fireEvent,
+} from '@testing-library/react';
 import MenuMobile from './MenuMobile';
 import information from '../../constants/informationEN';
 
