@@ -38,19 +38,6 @@
     .btn--red {
       background-color: $color-red;
     }
-
-    .MuiSnackbarContent-root {
-      background-color: $color-blue;
-      letter-spacing: 1px;
-      font-family: $font-secondary;
-      position: absolute;
-      right: -38vw;
-      top: -93vh;
-
-      @include for-phone-only {
-        display: none;
-      }
-    }
   }
 
   textarea {
