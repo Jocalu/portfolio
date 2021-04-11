@@ -21,5 +21,6 @@ module.exports = {
   rules: {
     'react/no-unescaped-entities': 0,
     'react/jsx-props-no-spreading': 0,
+    'no-nested-ternary': 0,
   },
 };
