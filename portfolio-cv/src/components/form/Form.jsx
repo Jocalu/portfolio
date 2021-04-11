@@ -6,11 +6,12 @@ import emailjsConfig from '../../environment';
 import Input from '../input/Input';
 
 export default function Form({ information }) {
+  const unchecked = 'unchecked';
   const [send, setSend] = useState('');
-  const [name, setName] = useState({ inputField: '', valid: 'unchecked' });
-  const [email, setEmail] = useState({ inputField: '', valid: 'unchecked' });
-  const [subject, setSubject] = useState({ inputField: '', valid: 'unchecked' });
-  const [message, setMessage] = useState({ inputField: '', valid: 'unchecked' });
+  const [name, setName] = useState({ inputField: '', valid: unchecked });
+  const [email, setEmail] = useState({ inputField: '', valid: unchecked });
+  const [subject, setSubject] = useState({ inputField: '', valid: unchecked });
+  const [message, setMessage] = useState({ inputField: '', valid: unchecked });
 
   const sendEmail = (event) => {
     event.preventDefault();

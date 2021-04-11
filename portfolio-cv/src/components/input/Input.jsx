@@ -3,7 +3,14 @@ import './Input.scss';
 import PropTypes from 'prop-types';
 
 export default function Input({
-  placeholder, errorMessage, name, type, state, setState, regex, format,
+  placeholder,
+  errorMessage,
+  name,
+  type,
+  state,
+  setState,
+  regex,
+  format,
 }) {
   const onChange = (event) => {
     setState({ ...state, inputField: event.target.value });
