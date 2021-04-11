@@ -34,6 +34,7 @@ export default {
     input3: 'Asunto',
     input4: 'Mensaje',
     message: 'Enviado correctamente',
+    message2: 'Error al enviar',
   },
 
   personal: {

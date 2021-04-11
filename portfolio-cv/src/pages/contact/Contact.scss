@@ -104,8 +104,10 @@
         @include flex(column, center, center);
         position: relative;
 
+        .btn--green,
+        .btn--red,
         .btn--blue {
-          width: 180px;
+          width: 200px;
           align-self: flex-start;
           margin: 10px 0 0 10px;
 
@@ -114,6 +116,15 @@
             top: 450px;
           }
         }
+
+        .btn--green {
+          background-color: $color-green;
+        }
+
+        .btn--red {
+          background-color: $color-red;
+        }
+
         .MuiSnackbarContent-root {
           background-color: $color-blue;
           letter-spacing: 1px;

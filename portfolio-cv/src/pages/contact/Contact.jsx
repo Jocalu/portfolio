@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Contact.scss';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -9,15 +9,18 @@ import emailjs from 'emailjs-com';
 import emailjsConfig from '../../environment';
 
 export default function Contact({ information }) {
+  const [send, setSend] = useState();
+
   const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs.sendForm(emailjsConfig.serviceID, emailjsConfig.templateID, event.target,
       emailjsConfig.userID)
-      .then((result) => {
-        console.log(result.text);
+      .then(() => {
+        setSend(true);
+        setTimeout(() => { setSend(false); }, 1500);
       }, (error) => {
-        console.log(error.text);
+        setSend(error);
       });
     event.target.reset();
   };
@@ -106,9 +109,9 @@ export default function Contact({ information }) {
             </label>
             <button
               type="submit"
-              className="btn btn--blue"
+              className={send ? 'btn btn--green' : 'btn btn--blue'}
             >
-              {information.menu.title6}
+              {send ? information.menu.message : information.menu.title6}
 
             </button>
           </div>
@@ -153,6 +156,7 @@ Contact.propTypes = {
       input3: PropTypes.string.isRequired,
       input4: PropTypes.string.isRequired,
       message: PropTypes.string.isRequired,
+      message2: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };
