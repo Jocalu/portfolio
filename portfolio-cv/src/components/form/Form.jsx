@@ -59,8 +59,7 @@ export default function Form({ information }) {
             : send === 'send' ? 'btn btn--green' : 'btn btn--red'}
         >
           {send === '' ? information.menu.title6
-            : (send === 'send' ? information.menu.message : information.menu.message2)}
-
+            : send === 'send' ? information.menu.message : information.menu.message2}
         </button>
       </div>
 

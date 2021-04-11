@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
+import { BrowserRouter } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import information from '../../constants/informationEN';
 
@@ -20,7 +21,11 @@ describe('Given a AboutMe component', () => {
   describe('When is invoked', () => {
     test('Then should rend a about-me component', () => {
       act(() => {
-        render(<AboutMe information={information} />, container);
+        render(
+          <BrowserRouter>
+            <AboutMe information={information} />
+          </BrowserRouter>, container,
+        );
       });
       const aboutMe = container.querySelector('about-me');
 

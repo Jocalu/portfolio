@@ -1,5 +1,5 @@
-/* import ReactDOM from 'react-dom';
-import App from './index';
+import ReactDOM from 'react-dom';
+import renderToDOM from './index';
 
 describe('test ReactDOM.render', () => {
   const originalRender = ReactDOM.render;
@@ -13,8 +13,7 @@ describe('test ReactDOM.render', () => {
     ReactDOM.render = originalRender;
   });
   it('should call ReactDOM.render', () => {
-    App();
+    renderToDOM();
     expect(ReactDOM.render).toHaveBeenCalled();
   });
 });
- */

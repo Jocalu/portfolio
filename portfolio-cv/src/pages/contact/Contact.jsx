@@ -61,7 +61,6 @@ export default function Contact({ information }) {
         <Form information={information} />
       </section>
     </main>
-
   );
 }
 
