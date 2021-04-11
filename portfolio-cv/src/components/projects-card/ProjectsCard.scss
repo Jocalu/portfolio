@@ -10,6 +10,10 @@
   max-height: 335px;
   position: relative;
 
+  @include for-phone-only {
+    min-height: 340px;
+  }
+
   &:hover {
     @include effect();
   }
