@@ -1,15 +1,13 @@
 import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
+import { unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
+import { fireEvent, render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import {
-  fireEvent,
-} from '@testing-library/react';
-import MenuMobile from './MenuMobile';
+import Form from './Form';
 import information from '../../constants/informationEN';
-import App from '../../App';
+import '@testing-library/jest-dom/extend-expect';
 
-describe('Given a MenuMobile component', () => {
+describe('Given a Form component', () => {
   let container = null;
 
   beforeEach(() => {
@@ -23,23 +21,20 @@ describe('Given a MenuMobile component', () => {
     container = null;
   });
   describe('When is invoked', () => {
-    test('Then should rend a menu-mobile component', () => {
-      const setLanguage = jest.fn();
-      const language = '';
+    test('Then should rend a div with inputs class', () => {
       act(() => {
         render(
           <BrowserRouter>
-            <MenuMobile
+            <Form
               information={information}
-              setLanguage={setLanguage}
-              language={language}
+
             />
           </BrowserRouter>, container,
         );
       });
-      const menuMobile = container.querySelector('menu-mobile');
+      const divForm = container.querySelector('.inputs');
 
-      expect(menuMobile).toBeDefined();
+      expect(divForm).toBeDefined();
     });
   });
 });

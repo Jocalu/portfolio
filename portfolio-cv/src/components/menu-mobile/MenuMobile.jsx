@@ -17,7 +17,11 @@ export default function MenuMobile({ information, setLanguage, language }) {
 
   return (
     <section className="menu-mobile">
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+      <Button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        onClick={handleClick}
+      >
         <MoreVertIcon className="menu__icon" />
       </Button>
       <Menu

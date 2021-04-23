@@ -8,7 +8,7 @@ describe('Given a ProjectsCard component', () => {
   let container = null;
 
   beforeEach(() => {
-    container = document.createElement('projects-card');
+    container = document.createElement('div');
     document.body.appendChild(container);
   });
 
@@ -18,14 +18,14 @@ describe('Given a ProjectsCard component', () => {
     container = null;
   });
   describe('When is invoked', () => {
-    test('Then should rend a projects-card component', () => {
+    test('Then should rend an element with card class', () => {
       const { projects } = information;
       act(() => {
         render(<ProjectsCard projects={projects} />, container);
       });
-      const projectsCard = container.querySelector('projects-card');
+      const cardElement = container.querySelector('.card');
 
-      expect(projectsCard).toBeDefined();
+      expect(cardElement).toBeDefined();
     });
   });
 });

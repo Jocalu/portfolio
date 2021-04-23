@@ -11,7 +11,7 @@ describe('Given a Header component', () => {
   let container = null;
 
   beforeEach(() => {
-    container = document.createElement('header');
+    container = document.createElement('div');
     document.body.appendChild(container);
   });
 
@@ -21,7 +21,7 @@ describe('Given a Header component', () => {
     container = null;
   });
   describe('When is invoked', () => {
-    test('Then should rend a header component', () => {
+    test('Then should rend a div with profile class', () => {
       const setLanguage = jest.fn();
       const language = '';
       act(() => {
@@ -35,9 +35,9 @@ describe('Given a Header component', () => {
           </BrowserRouter>, container,
         );
       });
-      const header = container.querySelector('header');
+      const divProfile = container.querySelector('.profile');
 
-      expect(header).toBeDefined();
+      expect(divProfile).toBeDefined();
     });
     describe('When button is clicked', () => {
       test('Then should call setLanguage function with EN language', () => {
