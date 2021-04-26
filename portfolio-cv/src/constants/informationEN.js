@@ -6,6 +6,7 @@ import {
   faHtml5,
   faCss3Alt,
   faNodeJs,
+  faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
@@ -272,7 +273,7 @@ export default {
       },
     },
     {
-      name: 'Porfolio',
+      name: 'Portfolio',
       description: 'This same portfolio. Made with React, Typescript and using react material',
       image: 'https://i.postimg.cc/Jnd4SY8g/Captura-de-pantalla-2021-04-07-a-las-18-42-28.png',
       github: 'https://github.com/Jocalu/Portfolio',
@@ -293,6 +294,18 @@ export default {
       technology: {
         name: 'Javascript',
         icon: faJsSquare,
+      },
+    },
+    {
+      name: 'To Do List',
+      description: 'A list of tasks where you can add, delete, mark or search for tasks. Made with Vue and typescript.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/ToDo-Vue.png?alt=media&token=93a35970-ac4d-4201-bccd-a5c8866e987a',
+      github: 'https://github.com/Jocalu/ToDo-Vue-TS',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Vue',
+        icon: faVuejs,
       },
     },
   ],

@@ -6,6 +6,7 @@ import {
   faHtml5,
   faCss3Alt,
   faNodeJs,
+  faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faShoppingCart,
@@ -288,6 +289,18 @@ export default {
       technology: {
         name: 'Javascript',
         icon: faJsSquare,
+      },
+    },
+    {
+      name: 'Listado "To Do"',
+      description: 'Un listado de tareas donde puedes añadir, borrar, marcar o buscar tareas. Hecho con Vue y typescript.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/ToDo-Vue.png?alt=media&token=93a35970-ac4d-4201-bccd-a5c8866e987a',
+      github: 'https://github.com/Jocalu/ToDo-Vue-TS',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Vue',
+        icon: faVuejs,
       },
     },
   ],
