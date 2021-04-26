@@ -280,18 +280,6 @@ export default {
       },
     },
     {
-      name: 'Juego Piedra, Papel y Tijeras',
-      description: 'Mi primer proyecto de programación, el empuje que necesitaba para estudiar programación. Hecho un tutorial, es un juego de piedra, papel, tijeras hecho con Javascript Vanilla',
-      image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
-      github: 'https://github.com/Jocalu/Juego_PPT',
-      url: '',
-      video: '',
-      technology: {
-        name: 'Javascript',
-        icon: faJsSquare,
-      },
-    },
-    {
       name: 'Listado "To Do"',
       description: 'Un listado de tareas donde puedes añadir, borrar, marcar o buscar tareas. Hecho con Vue y typescript.',
       image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/ToDo-Vue.png?alt=media&token=93a35970-ac4d-4201-bccd-a5c8866e987a',
@@ -301,6 +289,30 @@ export default {
       technology: {
         name: 'Vue',
         icon: faVuejs,
+      },
+    },
+    {
+      name: 'CRUD Usuarios',
+      description: 'Típico CRUD (create, read, update, delete). Realizado en React Native con DB en Firebase.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/CRUD-react-native.png?alt=media&token=97824035-f523-48f1-9fde-ba998a373de1',
+      github: 'https://github.com/Jocalu/CRUD-react-native',
+      url: '',
+      video: '',
+      technology: {
+        name: 'React Native',
+        icon: faReact,
+      },
+    },
+    {
+      name: 'Juego Piedra, Papel y Tijeras',
+      description: 'Mi primer proyecto de programación, el empuje que necesitaba para estudiar programación. Hecho un tutorial, es un juego de piedra, papel, tijeras hecho con Javascript Vanilla',
+      image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
+      github: 'https://github.com/Jocalu/Juego_PPT',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Javascript',
+        icon: faJsSquare,
       },
     },
   ],
