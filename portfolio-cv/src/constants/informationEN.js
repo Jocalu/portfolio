@@ -228,6 +228,10 @@ export default {
       name: 'Jasmine',
       icon: null,
     },
+    {
+      name: 'Vue',
+      icon: faVuejs,
+    },
   ],
 
   recommendations: {
@@ -285,18 +289,6 @@ export default {
       },
     },
     {
-      name: 'Users CRUD',
-      description: 'CRUD (create, read, update, delete). Done in React Native with Firebase DB.',
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/CRUD-react-native.png?alt=media&token=97824035-f523-48f1-9fde-ba998a373de1',
-      github: 'https://github.com/Jocalu/CRUD-react-native',
-      url: '',
-      video: 'https://vimeo.com/541541606',
-      technology: {
-        name: 'React Native',
-        icon: faReact,
-      },
-    },
-    {
       name: 'To Do List',
       description: 'A list of tasks where you can add, delete, mark or search for tasks. Made with Vue and typescript.',
       image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/ToDo-Vue.png?alt=media&token=93a35970-ac4d-4201-bccd-a5c8866e987a',
@@ -306,6 +298,18 @@ export default {
       technology: {
         name: 'Vue',
         icon: faVuejs,
+      },
+    },
+    {
+      name: 'Users CRUD',
+      description: 'CRUD (create, read, update, delete). Done in React Native with Firebase DB.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/CRUD-react-native.png?alt=media&token=97824035-f523-48f1-9fde-ba998a373de1',
+      github: 'https://github.com/Jocalu/CRUD-react-native',
+      url: '',
+      video: 'https://vimeo.com/541541606',
+      technology: {
+        name: 'React Native',
+        icon: faReact,
       },
     },
     {

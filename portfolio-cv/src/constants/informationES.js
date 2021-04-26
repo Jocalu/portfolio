@@ -224,6 +224,10 @@ export default {
       name: 'Jasmine',
       icon: null,
     },
+    {
+      name: 'Vue',
+      icon: faVuejs,
+    },
   ],
 
   recommendations: {
