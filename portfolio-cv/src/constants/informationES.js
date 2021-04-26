@@ -290,6 +290,18 @@ export default {
         icon: faJsSquare,
       },
     },
+    {
+      name: 'Juego Piedra, Papel y Tijeras',
+      description: 'Mi primer proyecto de programación, el empuje que necesitaba para estudiar programación. Hecho un tutorial, es un juego de piedra, papel, tijeras hecho con Javascript Vanilla',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/ToDo-Vue.png?alt=media&token=93a35970-ac4d-4201-bccd-a5c8866e987a',
+      github: 'https://github.com/Jocalu/ToDo-Vue-TS',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Vue',
+        icon: faJsSquare,
+      },
+    },
   ],
   services: [{
     name: 'Comercio electrónico',
