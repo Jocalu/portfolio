@@ -279,7 +279,7 @@ export default {
       },
     },
     {
-      name: 'Rock-Paper-Scissors game',
+      name: 'Juego Piedra, Papel y Tijeras',
       description: 'Mi primer proyecto de programación, el empuje que necesitaba para estudiar programación. Hecho un tutorial, es un juego de piedra, papel, tijeras hecho con Javascript Vanilla',
       image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
       github: 'https://github.com/Jocalu/Juego_PPT',
