@@ -285,15 +285,15 @@ export default {
       },
     },
     {
-      name: 'Rock-Paper-Scissors game',
-      description: 'My first programming project. Made with a tutorial, it is a rock-paper-scissors game in Javascript Vanilla',
-      image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
-      github: 'https://github.com/Jocalu/Juego_PPT',
+      name: 'Users CRUD',
+      description: 'CRUD (create, read, update, delete). Done in React Native with Firebase DB.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jose-carcamo.appspot.com/o/CRUD-react-native.png?alt=media&token=97824035-f523-48f1-9fde-ba998a373de1',
+      github: 'https://github.com/Jocalu/CRUD-react-native',
       url: '',
-      video: '',
+      video: 'https://vimeo.com/541541606',
       technology: {
-        name: 'Javascript',
-        icon: faJsSquare,
+        name: 'React Native',
+        icon: faReact,
       },
     },
     {
@@ -306,6 +306,18 @@ export default {
       technology: {
         name: 'Vue',
         icon: faVuejs,
+      },
+    },
+    {
+      name: 'Rock-Paper-Scissors game',
+      description: 'My first programming project. Made with a tutorial, it is a rock-paper-scissors game in Javascript Vanilla',
+      image: 'https://i.postimg.cc/xTGnSMkj/Captura-de-pantalla-2021-04-08-a-las-10-00-33.png',
+      github: 'https://github.com/Jocalu/Juego_PPT',
+      url: '',
+      video: '',
+      technology: {
+        name: 'Javascript',
+        icon: faJsSquare,
       },
     },
   ],
