@@ -5,7 +5,15 @@
 .opening {
   @include flex(column, center, center);
   position: absolute;
-  background-color: $color-blue-hard;
+  background: rgb(164, 74, 209);
+  background: linear-gradient(
+    67deg,
+    rgba(164, 74, 209, 1) 3%,
+    rgba(55, 100, 216, 1) 19%,
+    rgba(0, 124, 237, 1) 50%,
+    rgba(55, 100, 216, 1) 81%,
+    rgba(164, 74, 209, 1) 97%
+  );
   color: $color-white-hard;
   width: 100vw;
   height: 100vh;
